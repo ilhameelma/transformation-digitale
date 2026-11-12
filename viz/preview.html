@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Aperçu simulation</title>
+  <script src="https://unpkg.com/deck.gl@8.9.35/dist.min.js"></script>
+  <style>
+    html, body { margin: 0; height: 100%; background: #1e2227; }
+    #info { position: absolute; z-index: 1; top: 10px; left: 10px;
+            color: #fff; font: 14px sans-serif; }
+  </style>
+</head>
+<body>
+  <div id="info">Données simulées (SUMO) - t = <span id="t">0</span> s</div>
+  <script>
+    fetch("../data/trajectories_actuel.json").then(r => r.json()).then(data => {
+      const deckgl = new deck.DeckGL({
+        views: new deck.MapView({ controller: true }),
+        initialViewState: { longitude: -6.8326, latitude: 34.0132, zoom: 15.5 },
+        layers: []
+      });
+      let time = 0;
+      function frame() {
+        time = (time + 2) % 600;
+        document.getElementById("t").textContent = time;
+        deckgl.setProps({ layers: [
+          new deck.TripsLayer({
+            id: "trips", data,
+            getPath: d => d.path.map(p => [p[0], p[1]]),
+            getTimestamps: d => d.path.map(p => p[2]),
+            getColor: [255, 200, 0],
+            widthMinPixels: 4, trailLength: 25, currentTime: time
+          })
+        ]});
+        requestAnimationFrame(frame);
+      }
+      frame();
+    });
+  </script>
+</body>
+</html>
