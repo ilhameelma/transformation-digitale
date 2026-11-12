@@ -1,0 +1,19 @@
+# Sorties de SUMO (générées par docker compose up --build sim)
+data/*.xml
+
+
+# Fichiers intermédiaires de randomTrips / netconvert
+trips.trips.xml
+*.alt.xml
+map.osm
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Éditeur et système
+.vscode/
+.DS_Store
+Thumbs.db
