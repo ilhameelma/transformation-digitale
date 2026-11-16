@@ -1,5 +1,13 @@
 services:
-  sim:
-    build: ./sim
+  m1:
+    build:
+      context: ./sim
+      dockerfile: Dockerfile.m1
+    volumes:
+      - ./data:/data
+  m2:
+    build:
+      context: ./sim
+      dockerfile: Dockerfile.m2
     volumes:
       - ./data:/data

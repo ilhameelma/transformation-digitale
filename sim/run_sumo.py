@@ -1,7 +1,7 @@
 import subprocess
 
 subprocess.run([
-    "sumo", "-c", "rabat.sumocfg",
+    "sumo", "-c", "hassan.sumocfg",
     "--additional-files", "additional.xml",
     "--tripinfo-output", "/data/tripinfo.xml",
     "--fcd-output", "/data/fcd.xml",

@@ -1,5 +1,4 @@
 # Sorties de SUMO (générées par docker compose up --build sim)
-data/*.xml
 
 
 # Fichiers intermédiaires de randomTrips / netconvert
