@@ -1,0 +1,83 @@
+{
+  "scenario": "rue_fermee",
+  "street_query": "Allal Ben Abdellah",
+  "section_requested_m": 400.0,
+  "section_covered_m": 486,
+  "section_center_fraction": 0.5,
+  "street_span_m": 950,
+  "n_edges": 7,
+  "total_edge_length_m": 501.9,
+  "note": "total_edge_length_m compte chaque sens de circulation ; osmid = identifiant OSM de la voie (les ids SUMO issus de netconvert --osm sont de la forme <osmid>#<n>, a verifier par M2).",
+  "edges": [
+    {
+      "u": 820326550,
+      "v": 1152869978,
+      "key": 0,
+      "osmid": "4330541",
+      "name": "Avenue Allal Ben Abdellah شارع علال بن عبد الله",
+      "highway": "secondary",
+      "oneway": true,
+      "length_m": 64.7
+    },
+    {
+      "u": 1152869978,
+      "v": 1872110762,
+      "key": 0,
+      "osmid": "4330541",
+      "name": "Avenue Allal Ben Abdellah شارع علال بن عبد الله",
+      "highway": "secondary",
+      "oneway": true,
+      "length_m": 94.1
+    },
+    {
+      "u": 2563304657,
+      "v": 820326550,
+      "key": 0,
+      "osmid": "4330541",
+      "name": "Avenue Allal Ben Abdellah شارع علال بن عبد الله",
+      "highway": "secondary",
+      "oneway": true,
+      "length_m": 50.3
+    },
+    {
+      "u": 2972403985,
+      "v": 2563304657,
+      "key": 0,
+      "osmid": "4330541",
+      "name": "Avenue Allal Ben Abdellah شارع علال بن عبد الله",
+      "highway": "secondary",
+      "oneway": true,
+      "length_m": 63.7
+    },
+    {
+      "u": 1872110762,
+      "v": 21518203,
+      "key": 0,
+      "osmid": "4330541",
+      "name": "Avenue Allal Ben Abdellah شارع علال بن عبد الله",
+      "highway": "secondary",
+      "oneway": true,
+      "length_m": 89.7
+    },
+    {
+      "u": 4521762020,
+      "v": 2972403985,
+      "key": 0,
+      "osmid": "4330541",
+      "name": "Avenue Allal Ben Abdellah شارع علال بن عبد الله",
+      "highway": "secondary",
+      "oneway": true,
+      "length_m": 33.1
+    },
+    {
+      "u": 412417273,
+      "v": 4521762020,
+      "key": 0,
+      "osmid": "4330541",
+      "name": "Avenue Allal Ben Abdellah شارع علال بن عبد الله",
+      "highway": "secondary",
+      "oneway": true,
+      "length_m": 106.4
+    }
+  ]
+}

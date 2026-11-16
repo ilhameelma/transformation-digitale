@@ -1,0 +1,29 @@
+# Conteneur M1 : telecharge la zone de Hassan (Rabat), la convertit pour SUMO
+# et lance une simulation de test.
+#
+# Construire (depuis sim/) :   docker build -t jumeau-numerique-rabat .
+# Lancer :                     docker run --rm -v "<dossier data>:/data" jumeau-numerique-rabat
+FROM python:3.11-slim
+
+# SUMO (sumo, netconvert, duarouter, outils) installe via pip : meme version que sous Windows
+RUN pip install --no-cache-dir eclipse-sumo
+
+WORKDIR /app/sim
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Bibliotheques systeme dont les programmes SUMO ont besoin (absentes de l'image slim).
+# Placees apres les installations pip pour reutiliser leur cache lors d'un rebuild.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends libexpat1 libgl1 libxext6 libxrender1 libatomic1 \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY *.py ./
+
+# Les scripts lisent ces variables (voir extract_zone.py) ; tout est ecrit dans /data
+ENV OUTPUT_DIR=/data \
+    BBOX="-6.838888737658811,34.01149086618757,-6.822631862341188,34.024965533812434" \
+    PYTHONUNBUFFERED=1
+
+VOLUME /data
+CMD ["python", "run_pipeline.py"]

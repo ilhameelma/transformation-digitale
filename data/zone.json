@@ -1,0 +1,19 @@
+{
+  "zone_name": null,
+  "center": {
+    "lat": 34.0182282,
+    "lon": -6.8307603
+  },
+  "bbox_west_south_east_north": [
+    -6.838888737658811,
+    34.01149086618757,
+    -6.822631862341188,
+    34.024965533812434
+  ],
+  "area_km2": 2.25,
+  "network_type": "drive",
+  "n_nodes": 419,
+  "n_edges": 744,
+  "n_buildings": 1652,
+  "source": "OpenStreetMap contributors (ODbL)"
+}
