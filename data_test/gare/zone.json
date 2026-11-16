@@ -1,0 +1,19 @@
+{
+  "zone_name": "Gare Rabat Ville, Rabat, Maroc",
+  "center": {
+    "lat": 34.0159887,
+    "lon": -6.8368562
+  },
+  "bbox_west_south_east_north": [
+    -6.844984423223196,
+    34.00925136618757,
+    -6.828727976776803,
+    34.02272603381243
+  ],
+  "area_km2": 2.25,
+  "network_type": "drive",
+  "n_nodes": 359,
+  "n_edges": 634,
+  "n_buildings": 1469,
+  "source": "OpenStreetMap contributors (ODbL)"
+}

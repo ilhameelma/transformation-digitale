@@ -16,3 +16,9 @@ venv/
 .vscode/
 .DS_Store
 Thumbs.db
+
+
+sim/cache/
+data/test.trips.xml
+data/test.rou.xml
+data/tripinfo.xml

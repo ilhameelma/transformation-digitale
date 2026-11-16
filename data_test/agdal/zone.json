@@ -1,0 +1,19 @@
+{
+  "zone_name": "Agdal, Rabat, Maroc",
+  "center": {
+    "lat": 33.9983119,
+    "lon": -6.8542908
+  },
+  "bbox_west_south_east_north": [
+    -6.862417331474756,
+    33.991574566187566,
+    -6.846164268525245,
+    34.00504923381243
+  ],
+  "area_km2": 2.25,
+  "network_type": "drive",
+  "n_nodes": 230,
+  "n_edges": 476,
+  "n_buildings": 1282,
+  "source": "OpenStreetMap contributors (ODbL)"
+}

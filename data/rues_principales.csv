@@ -1,0 +1,32 @@
+﻿rue;type;longueur_m;troncons;sens_unique
+Avenue Moulay Ismail شارع مولاي اسماعيل;primary;2031;32;100%
+Avenue Al Alaouiyine زنقة العلويين;primary;1547;20;100%
+Avenue Hassan II شارع الحسن الثاني;primary;1545;15;100%
+(sans nom);primary;973;39;89%
+Avenue Moulay Al Hassan شارع مولاي الحسن;primary;838;16;0%
+Avenue d'Alger شارع الجزائر;primary;784;17;41%
+Avenue Moulay Hassan شارع مولاي الحسن;primary;760;16;12%
+Avenue Ibn Toumert شارع ابن تومرت;primary;628;8;100%
+Rue d'Annaba زنقة عنابة;primary;346;4;0%
+Avenue Annasr شارع النصر;primary;290;8;100%
+Place Abraham Lincoln ساحة أبراهام لينكولن;primary;161;13;100%
+Avenue Annasr شارع النصر / Avenue Moulay Hassan شارع مولاي الحسن;primary;109;1;100%
+Place Bab El Mellah ساحة باب الملاح;primary;93;5;100%
+Place de l'Unité Africaine ساحة الوحدة الإفريقية;primary;72;6;100%
+Avenue Azilal شارع أزيلال;primary;17;1;100%
+Avenue Mohamed V شارع محمد الخامس;secondary;2135;35;94%
+Avenue Allal Ben Abdellah شارع علال بن عبد الله;secondary;1022;16;100%
+Place Mohamed V ساحة محمد الخامس;secondary;191;8;100%
+Avenue Abou Faris Al Marini شارع أبو فارس المريني;secondary;106;1;100%
+Avenue Yacoub El Mansour شارع يعقوب المنصور;secondary;105;2;100%
+Avenue Chellah شارع شالة;tertiary;1255;15;60%
+Avenue Moulay Youssef شارع مولاي يوسف;tertiary;784;9;33%
+Avenue Abdelkrim Benjelloun شارع عبد الكريم بن جلون;tertiary;762;12;16%
+Avenue Al Mansour Addahbi شارع المنصور الذهبي;tertiary;529;5;100%
+Avenue Franklin Roosevelt شارع فرانكلين روزفلت;tertiary;453;5;20%
+Rue Prince Moulay Abdellah زنقة الأمير مولاي عبد الله;tertiary;409;4;0%
+Rue Soekarno زنقة سوكارنو;tertiary;401;9;11%
+Rue Melilia زنقة مليلية;tertiary;262;5;100%
+Avenue Mohamed Al Yazidi شارع محمد اليزيدي;tertiary;129;3;100%
+Rue Abou Inane زنقة أبو عنان;tertiary;111;1;100%
+Rue de Fès;tertiary;50;1;100%
