@@ -19,3 +19,11 @@ services:
       - "8501:8501"
     volumes:
       - ./data:/data
+
+  # À ajouter dans docker-compose.yml, sous "services:" (même indentation que m1, m2, viz)
+  traffic:
+    build:
+      context: ./traffic
+      dockerfile: Dockerfile.traffic
+    volumes:
+      - ./data:/data
