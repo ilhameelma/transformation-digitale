@@ -11,3 +11,11 @@ services:
       dockerfile: Dockerfile.m2
     volumes:
       - ./data:/data
+  viz:
+    build:
+      context: ./viz
+      dockerfile: Dockerfile.viz
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/data
