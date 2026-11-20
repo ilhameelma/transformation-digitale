@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Test CesiumJS - Rabat</title>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.88/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.88/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  <style>
+    html, body, #cesiumContainer {
+      width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+  <script>
+    // 1. Configure ton token d'accès
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6Imc4aFE5ak01YUd2MGV6VjkiLCJqdGkiOiJmMzQ4N2UwMC00NmVhLTRiNWMtYjdmMS1mZDQ4MGI4ODgxOTQiLCJpZCI6NTUyNzY2LCJpc3MiOiJodHRwczovL2FwaS5jZXNpdW0uY29tIiwiYXVkIjoidW5kZWZpbmVkX2RlZmF1bHQiLCJpYXQiOjE3OTUwOTA2Mjl9.PpdihuurVaTHJbAEbCTJNGP12d3Gy-iLxJzWBsN4Sz0';
+
+    // 2. Initialise la vue 3D
+    const viewer = new Cesium.Viewer('cesiumContainer', {
+      terrainProvider: Cesium.createWorldTerrain()
+    });
+
+    // 3. Ajoute la couche de bâtiments OSM 3D
+    const buildingTileset = viewer.scene.primitives.add(Cesium.createOsmBuildings());
+
+    // 4. Fais voler la caméra vers Rabat Hassan
+    viewer.camera.flyTo({
+      destination: Cesium.Cartesian3.fromDegrees(-6.8416, 34.0209, 1500), // Coordonnées de Hassan
+      orientation: {
+        heading: Cesium.Math.toRadians(90.0),
+        pitch: Cesium.Math.toRadians(-40.0), // Inclinaison pour bien voir les bâtiments
+      }
+    });
+  </script>
+</body>
+</html>
