@@ -87,14 +87,14 @@ def _to_float(value):
 
 
 def building_height(row):
-    """Hauteur en metres : tag height, sinon building:levels x 3, sinon defaut."""
+    """Retourne (hauteur en m, source) : osm_height, osm_levels ou default."""
     h = _to_float(row.get("height"))
     if h is not None and h > 0:
-        return h
+        return h, "osm_height"
     levels = _to_float(row.get("building:levels"))
     if levels is not None and levels > 0:
-        return levels * LEVEL_HEIGHT_M
-    return DEFAULT_HEIGHT_M
+        return levels * LEVEL_HEIGHT_M, "osm_levels"
+    return DEFAULT_HEIGHT_M, "default"
 
 
 def stringify_lists(gdf):
@@ -163,11 +163,16 @@ def main():
     print("Telechargement des batiments...")
     b = with_retry(ox.features_from_bbox, bbox, tags={"building": True}, servers=servers)
     b = b[b.geometry.type.isin(["Polygon", "MultiPolygon"])].copy()
-    b["height"] = b.apply(building_height, axis=1)
-    keep = [c for c in ("name", "building", "height") if c in b.columns]
+    b["osm_id"] = [f"{t}/{i}" for t, i in b.index]      # ex : way/123456, AVANT reset_index
+    res = b.apply(building_height, axis=1)
+    b["height"] = [r[0] for r in res]
+    b["height_source"] = [r[1] for r in res]
+    keep = [c for c in ("osm_id", "name", "building", "height", "height_source") if c in b.columns]
     b = b[keep + ["geometry"]].reset_index(drop=True)
     b.to_file(out / "buildings.geojson", driver="GeoJSON")
     print(f"  {len(b)} batiments")
+    for src, n in b["height_source"].value_counts().items():
+        print(f"    {src} : {n} ({100 * n / len(b):.0f} %)")
 
     # 3) Metadonnees
     west, south, east, north = bbox
