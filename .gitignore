@@ -38,3 +38,4 @@ mon-app-3d/public/data/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*:Zone.Identifier
