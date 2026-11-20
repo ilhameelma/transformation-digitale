@@ -23,3 +23,18 @@ data/test.trips.xml
 data/test.rou.xml
 data/tripinfo.xml
 data/test_height/
+
+# --- React / Node.js ---
+# Dépendances (très lourd, Docker les installera)
+mon-app-3d/node_modules/
+
+# Dossier de build (généré par npm run build)
+mon-app-3d/dist/
+
+# Fichiers de données locaux pour React (ne pas pousser, Docker lira depuis ./data)
+mon-app-3d/public/data/
+
+# Fichiers de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
