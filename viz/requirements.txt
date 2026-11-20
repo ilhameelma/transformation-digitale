@@ -2,3 +2,4 @@ streamlit
 pydeck
 shapely>=2.0
 numpy
+pyproj
