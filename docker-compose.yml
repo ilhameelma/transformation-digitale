@@ -27,3 +27,13 @@ services:
       dockerfile: Dockerfile.traffic
     volumes:
       - ./data:/data
+
+  react-viz:
+    build:
+      context: ./mon-app-3d
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80"  # Le port 5173 de ton PC pointe vers le port 80 du conteneur
+    volumes:
+      # On monte le dossier data à l'endroit où Nginx sert les fichiers statiques
+      - ./data:/usr/share/nginx/html/data:ro 

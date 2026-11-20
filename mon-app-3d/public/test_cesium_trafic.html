@@ -30,7 +30,7 @@
     viewer.scene.primitives.add(Cesium.createOsmBuildings());
 
     // 4. Charge ton fichier CZML
-    Cesium.CzmlDataSource.load('trafic_czml.json').then(function(dataSource) {
+    Cesium.CzmlDataSource.load('data/trafic_czml.json').then(function(dataSource) {
       viewer.dataSources.add(dataSource);
       
       // 5. Centre la caméra sur la zone de Hassan au démarrage
