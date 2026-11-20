@@ -1,0 +1,10 @@
+<configuration>
+  <input>
+    <net-file value="hassan_voie_reservee.net.xml"/>
+    <route-files value="voie_reservee.rou.xml"/>
+  </input>
+  <time>
+    <begin value="0"/>
+    <end value="900"/>
+  </time>
+</configuration>

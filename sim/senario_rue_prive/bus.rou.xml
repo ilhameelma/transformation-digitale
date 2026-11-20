@@ -1,0 +1,5 @@
+<routes>
+  <vType id="bus" vClass="bus" length="12" maxSpeed="16.67" accel="1.2" decel="3.5"/>
+  <route id="axe" edges="4330541#3 4330541#7 4330541#9 4330541#10 4330541#11 4330541#12 4330541#15 4330541#18"/>
+  <flow id="bus" type="bus" route="axe" begin="0" end="1500" period="300" departLane="best" departSpeed="0"/>
+</routes>

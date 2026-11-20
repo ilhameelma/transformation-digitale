@@ -1,0 +1,6 @@
+<connections>
+  <connection from="4330541#18" to="1278789351#0" fromLane="1" toLane="0"/>
+  <connection from="4330541#15" to="407005355#1" fromLane="1" toLane="0"/>
+  <connection from="4330541#12" to="236715625#2" fromLane="1" toLane="0"/>
+  <connection from="-236715625#4" to="4330541#15" fromLane="0" toLane="1"/>
+</connections>
