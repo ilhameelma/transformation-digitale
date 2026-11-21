@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <vType id="bus" vClass="bus" length="12" maxSpeed="16.67" accel="1.2" decel="3.5" />
+  <route id="axe_A" edges="4330541#3 4330541#7 4330541#9 4330541#10 4330541#11 4330541#12 4330541#15 4330541#18" />
+  <vehicle id="bus_axe_A0" type="bus" route="axe_A" depart="40.3" />
+  <vehicle id="bus_axe_A1" type="bus" route="axe_A" depart="340.3" />
+  <vehicle id="bus_axe_A2" type="bus" route="axe_A" depart="640.3" />
+  <vehicle id="bus_axe_A3" type="bus" route="axe_A" depart="940.3" />
+</routes>
