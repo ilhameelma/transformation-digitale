@@ -1,0 +1,10 @@
+{
+  "actuel_bus": {
+    "n": 37,
+    "duree_moyenne_s": 326.1
+  },
+  "voie_reservee": {
+    "n": 37,
+    "duree_moyenne_s": 333.7
+  }
+}
