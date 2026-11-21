@@ -13,6 +13,11 @@ FROM nginx:alpine
 # Copier le résultat du build dans le dossier servi par Nginx
 COPY --from=build /app/dist /usr/share/nginx/html
 
+# Copier les fichiers CZML depuis le sous-dossier data/ vers la RACINE de Nginx
+COPY public/data/trafic_czml_pic.json /usr/share/nginx/html/trafic_czml_pic.json
+COPY public/data/trafic_czml.json /usr/share/nginx/html/trafic_czml.json
+
 COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 # Exposer le port 80 (interne au conteneur)
 EXPOSE 80

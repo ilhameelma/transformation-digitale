@@ -320,7 +320,7 @@
     </node>
     <node id="365557448">
       <data key="d4">34.0179414</data>
-      <data key="d5">-6.8287277</data>
+      <data key="d5">-6.8287269</data>
       <data key="d7">traffic_signals</data>
       <data key="d6">3</data>
     </node>
@@ -375,18 +375,18 @@
       <data key="d6">3</data>
     </node>
     <node id="408921602">
-      <data key="d4">34.0173559</data>
-      <data key="d5">-6.8280321</data>
+      <data key="d4">34.0173561</data>
+      <data key="d5">-6.8280313</data>
       <data key="d6">3</data>
     </node>
     <node id="408922518">
-      <data key="d4">34.0172646</data>
-      <data key="d5">-6.8282483</data>
+      <data key="d4">34.0172647</data>
+      <data key="d5">-6.8282481</data>
       <data key="d6">3</data>
     </node>
     <node id="408925590">
-      <data key="d4">34.0172416</data>
-      <data key="d5">-6.8280908</data>
+      <data key="d4">34.0172407</data>
+      <data key="d5">-6.8280902</data>
       <data key="d6">3</data>
     </node>
     <node id="409701399">
@@ -612,8 +612,8 @@
       <data key="d6">4</data>
     </node>
     <node id="527903386">
-      <data key="d4">34.0178701</data>
-      <data key="d5">-6.8283959</data>
+      <data key="d4">34.0178695</data>
+      <data key="d5">-6.8283944</data>
       <data key="d6">3</data>
     </node>
     <node id="527903388">
@@ -772,8 +772,8 @@
       <data key="d6">3</data>
     </node>
     <node id="1611948663">
-      <data key="d4">34.0180652</data>
-      <data key="d5">-6.8286309</data>
+      <data key="d4">34.0180664</data>
+      <data key="d5">-6.8286316</data>
       <data key="d6">3</data>
     </node>
     <node id="1611948771">
@@ -787,13 +787,13 @@
       <data key="d6">4</data>
     </node>
     <node id="1611948789">
-      <data key="d4">34.0174241</data>
-      <data key="d5">-6.8280971</data>
+      <data key="d4">34.0174233</data>
+      <data key="d5">-6.8280976</data>
       <data key="d6">3</data>
     </node>
     <node id="1611948851">
-      <data key="d4">34.0174113</data>
-      <data key="d5">-6.8280755</data>
+      <data key="d4">34.0174117</data>
+      <data key="d5">-6.8280751</data>
       <data key="d6">3</data>
     </node>
     <node id="1611948930">
@@ -802,18 +802,18 @@
       <data key="d6">4</data>
     </node>
     <node id="1611948933">
-      <data key="d4">34.0179932</data>
-      <data key="d5">-6.8283871</data>
+      <data key="d4">34.0179928</data>
+      <data key="d5">-6.8283882</data>
       <data key="d6">3</data>
     </node>
     <node id="1611949146">
-      <data key="d4">34.0177926</data>
+      <data key="d4">34.0177925</data>
       <data key="d5">-6.8285788</data>
       <data key="d6">3</data>
     </node>
     <node id="1611949228">
-      <data key="d4">34.01808</data>
-      <data key="d5">-6.8285221</data>
+      <data key="d4">34.0180807</data>
+      <data key="d5">-6.828522</data>
       <data key="d6">3</data>
     </node>
     <node id="1611949230">
@@ -1995,7 +1995,7 @@
     </node>
     <node id="10926409917">
       <data key="d4">34.0173146</data>
-      <data key="d5">-6.8282755</data>
+      <data key="d5">-6.8282751</data>
       <data key="d6">3</data>
     </node>
     <node id="11427854335">
@@ -2189,7 +2189,7 @@
       <data key="d8">342538074</data>
       <data key="d9">residential</data>
       <data key="d11">1</data>
-      <data key="d13">Rue Beyrouth زنقة بيروت</data>
+      <data key="d13">Rue de Beyrouth زنقة بيروت</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">75.51720260457199</data>
@@ -2270,7 +2270,7 @@
       <data key="d8">160404499</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Ifrane زنقة إفران</data>
+      <data key="d13">Rue d'Ifrane زنقة إفران</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
       <data key="d17">136.31614733823847</data>
@@ -2356,7 +2356,7 @@
       <data key="d8">609006739</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Beyrouth زنقة بيروت</data>
+      <data key="d13">Rue de Beyrouth زنقة بيروت</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">68.33394390001739</data>
@@ -2648,7 +2648,7 @@
       <data key="d8">27152058</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Avenue Tour Hassan شارع صومعة حسان</data>
+      <data key="d13">Avenue de la Tour Hassan شارع صومعة حسان</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">30.906449467690834</data>
@@ -2684,7 +2684,7 @@
       <data key="d8">27152052</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Avenue Tour Hassan شارع صومعة حسان</data>
+      <data key="d13">Avenue de la Tour Hassan شارع صومعة حسان</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">14.819233669787458</data>
@@ -2704,7 +2704,7 @@
       <data key="d8">27152052</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Avenue Tour Hassan شارع صومعة حسان</data>
+      <data key="d13">Avenue de la Tour Hassan شارع صومعة حسان</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">126.18548897816127</data>
@@ -2744,7 +2744,7 @@
       <data key="d8">27152058</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Avenue Tour Hassan شارع صومعة حسان</data>
+      <data key="d13">Avenue de la Tour Hassan شارع صومعة حسان</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">52.22002942109003</data>
@@ -2770,7 +2770,7 @@
     <edge source="365556262" target="365556268" id="0">
       <data key="d8">157774333</data>
       <data key="d9">residential</data>
-      <data key="d13">Rue Taza زنقة تازة</data>
+      <data key="d13">Rue de Taza زنقة تازة</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">112.80758206413869</data>
@@ -2894,7 +2894,7 @@
     <edge source="365557177" target="365557145" id="0">
       <data key="d8">32512284</data>
       <data key="d9">residential</data>
-      <data key="d13">Rue Oujda زنقة وجدة</data>
+      <data key="d13">Rue d'Oujda زنقة وجدة</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">138.8914762698019</data>
@@ -2922,7 +2922,7 @@
     <edge source="365557310" target="820325896" id="0">
       <data key="d8">[68002816, 1383728101]</data>
       <data key="d9">residential</data>
-      <data key="d13">Rue Sefrou زنقة صفرو</data>
+      <data key="d13">Rue de Sefrou زنقة صفرو</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">76.85459313103343</data>
@@ -2932,7 +2932,7 @@
       <data key="d8">32512296</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Tindouf زنقة تندوف</data>
+      <data key="d13">Rue de Tindouf زنقة تندوف</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
       <data key="d17">26.997873771065663</data>
@@ -2941,7 +2941,7 @@
       <data key="d8">32512296</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Tindouf زنقة تندوف</data>
+      <data key="d13">Rue de Tindouf زنقة تندوف</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
       <data key="d17">84.8538626631597</data>
@@ -2961,7 +2961,7 @@
       <data key="d8">32512294</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Telemcem زنقة تلمسان</data>
+      <data key="d13">Rue de Tlemcen زنقة تلمسان</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">12.871381175534193</data>
@@ -2971,7 +2971,7 @@
       <data key="d8">68002813</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Oran زنقة وهران</data>
+      <data key="d13">Rue d'Oran زنقة وهران</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">37.28301403740805</data>
@@ -2980,7 +2980,7 @@
       <data key="d8">32512294</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Telemcem زنقة تلمسان</data>
+      <data key="d13">Rue de Tlemcen زنقة تلمسان</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">72.10090229251651</data>
@@ -2990,7 +2990,7 @@
       <data key="d8">32512296</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Tindouf زنقة تندوف</data>
+      <data key="d13">Rue de Tindouf زنقة تندوف</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
       <data key="d17">84.8538626631597</data>
@@ -3029,7 +3029,7 @@
       <data key="d8">[252503561, 1390290238]</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Settat زنقة سطات</data>
+      <data key="d13">Rue de Settat زنقة سطات</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">53.71359929597129</data>
@@ -3039,7 +3039,7 @@
       <data key="d8">160404499</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Ifrane زنقة إفران</data>
+      <data key="d13">Rue d'Ifrane زنقة إفران</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
       <data key="d17">136.31614733823847</data>
@@ -3049,7 +3049,7 @@
       <data key="d8">160404499</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Ifrane زنقة إفران</data>
+      <data key="d13">Rue d'Ifrane زنقة إفران</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
       <data key="d17">41.095397593779964</data>
@@ -3059,7 +3059,7 @@
       <data key="d8">[252503561, 1390290239]</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Settat زنقة سطات</data>
+      <data key="d13">Rue de Settat زنقة سطات</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">79.35679215114952</data>
@@ -3069,7 +3069,7 @@
       <data key="d8">32512296</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Tindouf زنقة تندوف</data>
+      <data key="d13">Rue de Tindouf زنقة تندوف</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
       <data key="d17">26.997873771065663</data>
@@ -3078,7 +3078,7 @@
       <data key="d8">[1383728099, 68002813]</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Oran زنقة وهران</data>
+      <data key="d13">['Rue Oran زنقة وهران', "Rue d'Oran زنقة وهران"]</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">117.2345187320661</data>
@@ -3088,7 +3088,7 @@
       <data key="d8">32512294</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Telemcem زنقة تلمسان</data>
+      <data key="d13">Rue de Tlemcen زنقة تلمسان</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">51.93211259325808</data>
@@ -3127,7 +3127,7 @@
     <edge source="365557445" target="365557438" id="0">
       <data key="d8">[32512321, 1390290235]</data>
       <data key="d9">residential</data>
-      <data key="d13">Rue Kairouan زنقة القيروان</data>
+      <data key="d13">['Rue de Kairouan زنقة القيروان', 'Rue Kairouan زنقة القيروان']</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">141.71496369091622</data>
@@ -3139,19 +3139,19 @@
       <data key="d11">['2', '1']</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">183.8892235974122</data>
+      <data key="d17">183.96283796657252</data>
       <data key="d13">Rue Constantine زنقة القسنطينة</data>
-      <data key="d18">LINESTRING (-6.8287277 34.0179414, -6.8288189 34.0179457, -6.8289169 34.0179545, -6.829669 34.0180555, -6.8296819 34.0180575, -6.8296943 34.0180621, -6.8297045 34.0180695, -6.8297114 34.0180792, -6.8297145 34.0180902, -6.8296573 34.0187801, -6.8296631 34.0188516, -6.8296633 34.0188973)</data>
+      <data key="d18">LINESTRING (-6.8287269 34.0179414, -6.8288189 34.0179457, -6.8289169 34.0179545, -6.829669 34.0180555, -6.8296819 34.0180575, -6.8296943 34.0180621, -6.8297045 34.0180695, -6.8297114 34.0180792, -6.8297145 34.0180902, -6.8296573 34.0187801, -6.8296631 34.0188516, -6.8296633 34.0188973)</data>
     </edge>
     <edge source="365557448" target="1611948576" id="0">
       <data key="d8">1101515915</data>
-      <data key="d9">tertiary</data>
+      <data key="d9">primary</data>
       <data key="d10">circular</data>
       <data key="d11">2</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">21.495345796124035</data>
-      <data key="d18">LINESTRING (-6.8287277 34.0179414, -6.8287263 34.0179173, -6.8287184 34.0178895, -6.8287 34.0178579, -6.8286729 34.0178308, -6.8286388 34.0178099, -6.8285996 34.0177964)</data>
+      <data key="d17">21.424354103126234</data>
+      <data key="d18">LINESTRING (-6.8287269 34.0179414, -6.8287254 34.0179174, -6.8287176 34.0178897, -6.8286993 34.0178581, -6.8286724 34.017831, -6.8286385 34.0178101, -6.8285996 34.0177964)</data>
     </edge>
     <edge source="365557451" target="820325890" id="0">
       <data key="d8">[270475121, 1351160846]</data>
@@ -3279,7 +3279,7 @@
       <data key="d8">[32512377, 1390290234]</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Tétouan زنقة تطوان</data>
+      <data key="d13">['Rue Tétouan زنقة تطوان', 'Rue de Tétouan زنقة تطوان']</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
       <data key="d17">117.14532584831343</data>
@@ -3298,7 +3298,7 @@
       <data key="d8">23721065</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Demnate زنقة دمنات</data>
+      <data key="d13">Rue de Demnate زنقة دمنات</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
       <data key="d17">124.22275484976556</data>
@@ -3359,8 +3359,8 @@
       <data key="d13">Avenue d'Alger شارع الجزائر</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">19.068206953410254</data>
-      <data key="d18">LINESTRING (-6.8280321 34.0173559, -6.8279391 34.0173614, -6.8279017 34.0173665, -6.827867 34.0173792, -6.8278372 34.0173985)</data>
+      <data key="d17">18.993095165915264</data>
+      <data key="d18">LINESTRING (-6.8280313 34.0173561, -6.8279391 34.0173614, -6.8279017 34.0173665, -6.827867 34.0173792, -6.8278372 34.0173985)</data>
     </edge>
     <edge source="408921602" target="1611948851" id="0">
       <data key="d8">1101515920</data>
@@ -3370,8 +3370,8 @@
       <data key="d13">Place de l'Unité Africaine ساحة الوحدة الإفريقية</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">7.444535447866519</data>
-      <data key="d18">LINESTRING (-6.8280321 34.0173559, -6.8280483 34.0173866, -6.8280755 34.0174113)</data>
+      <data key="d17">7.482775063763729</data>
+      <data key="d18">LINESTRING (-6.8280313 34.0173561, -6.8280477 34.0173869, -6.8280751 34.0174117)</data>
     </edge>
     <edge source="408922518" target="6808145219" id="0">
       <data key="d8">1058687159</data>
@@ -3380,8 +3380,8 @@
       <data key="d13">Rue d'Annaba زنقة عنابة</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
-      <data key="d17">83.24141392942326</data>
-      <data key="d18">LINESTRING (-6.8282483 34.0172646, -6.8283582 34.0171942, -6.8284037 34.0171669, -6.8288969 34.0168708, -6.8289769 34.0168223)</data>
+      <data key="d17">83.2627989330451</data>
+      <data key="d18">LINESTRING (-6.8282481 34.0172647, -6.8283582 34.0171942, -6.8284037 34.0171669, -6.8288969 34.0168708, -6.8289769 34.0168223)</data>
     </edge>
     <edge source="408922518" target="408925590" id="0">
       <data key="d8">1101929285</data>
@@ -3391,8 +3391,8 @@
       <data key="d13">Place de l'Unité Africaine ساحة الوحدة الإفريقية</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">15.970318954599152</data>
-      <data key="d18">LINESTRING (-6.8282483 34.0172646, -6.8282153 34.0172413, -6.8281747 34.0172289, -6.8281313 34.017229, -6.8280908 34.0172416)</data>
+      <data key="d17">15.996911022823374</data>
+      <data key="d18">LINESTRING (-6.8282481 34.0172647, -6.8282151 34.0172413, -6.8281744 34.0172288, -6.828131 34.0172286, -6.8280902 34.0172407)</data>
     </edge>
     <edge source="408925590" target="1834128268" id="0">
       <data key="d8">4061071</data>
@@ -3401,8 +3401,8 @@
       <data key="d13">Avenue Chellah شارع شالة</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
-      <data key="d17">108.49432567387419</data>
-      <data key="d18">LINESTRING (-6.8280908 34.0172416, -6.8280371 34.0171591, -6.8280197 34.0171324, -6.8276073 34.0164905, -6.8275368 34.0163807)</data>
+      <data key="d17">108.37999352122364</data>
+      <data key="d18">LINESTRING (-6.8280902 34.0172407, -6.8280371 34.0171591, -6.8280197 34.0171324, -6.8276073 34.0164905, -6.8275368 34.0163807)</data>
     </edge>
     <edge source="408925590" target="408921602" id="0">
       <data key="d8">1102462008</data>
@@ -3412,8 +3412,8 @@
       <data key="d13">Place de l'Unité Africaine ساحة الوحدة الإفريقية</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">14.918668369022916</data>
-      <data key="d18">LINESTRING (-6.8280908 34.0172416, -6.8280665 34.0172563, -6.8280474 34.0172755, -6.8280345 34.017298, -6.8280263 34.0173215, -6.828027 34.0173403, -6.8280321 34.0173559)</data>
+      <data key="d17">14.94329886995132</data>
+      <data key="d18">LINESTRING (-6.8280902 34.0172407, -6.8280683 34.0172538, -6.8280504 34.0172706, -6.8280372 34.0172901, -6.8280295 34.0173116, -6.8280274 34.0173339, -6.8280313 34.0173561)</data>
     </edge>
     <edge source="409701399" target="5582921200" id="0">
       <data key="d8">34918052</data>
@@ -3653,7 +3653,7 @@
       <data key="d8">590150503</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Avenue Ouarzazate شارع ورزازات</data>
+      <data key="d13">Avenue d'Ouarzazate شارع ورزازات</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
       <data key="d17">201.69458150348453</data>
@@ -3750,7 +3750,7 @@
       <data key="d8">35160911</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Agadir زنقة أكادير</data>
+      <data key="d13">Rue d'Agadir زنقة أكادير</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
       <data key="d17">42.74822359586707</data>
@@ -3759,7 +3759,7 @@
       <data key="d8">35160913</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Khouribga زنقة خريبكة</data>
+      <data key="d13">Rue de Khouribga زنقة خريبكة</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">33.10469072174895</data>
@@ -3768,7 +3768,7 @@
       <data key="d8">35160911</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Agadir زنقة أكادير</data>
+      <data key="d13">Rue d'Agadir زنقة أكادير</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
       <data key="d17">42.74822359586707</data>
@@ -3816,7 +3816,7 @@
       <data key="d8">590156556</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Agadir زنقة أكادير</data>
+      <data key="d13">Rue d'Agadir زنقة أكادير</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">101.90647534337188</data>
@@ -3835,7 +3835,7 @@
       <data key="d8">590156556</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Agadir زنقة أكادير</data>
+      <data key="d13">Rue d'Agadir زنقة أكادير</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">85.43767947374079</data>
@@ -3845,7 +3845,7 @@
       <data key="d8">35160927</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Azrou زنقة أزرو</data>
+      <data key="d13">Rue d'Azrou زنقة أزرو</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
       <data key="d17">119.9627815803863</data>
@@ -3875,7 +3875,7 @@
       <data key="d8">35160927</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Azrou زنقة أزرو</data>
+      <data key="d13">Rue d'Azrou زنقة أزرو</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
       <data key="d17">119.96278158038629</data>
@@ -3885,7 +3885,7 @@
       <data key="d8">160404496</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Tétouan زنقة تطوان</data>
+      <data key="d13">Rue de Tétouan زنقة تطوان</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">74.32275068331927</data>
@@ -4191,13 +4191,13 @@
     </edge>
     <edge source="527903386" target="1611948933" id="0">
       <data key="d8">1101929286</data>
-      <data key="d9">tertiary</data>
+      <data key="d9">primary</data>
       <data key="d10">circular</data>
       <data key="d11">2</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">14.188858501038835</data>
-      <data key="d18">LINESTRING (-6.8283959 34.0178701, -6.8283799 34.017899, -6.8283742 34.0179306, -6.8283767 34.0179625, -6.8283871 34.0179932)</data>
+      <data key="d17">14.139300776067603</data>
+      <data key="d18">LINESTRING (-6.8283944 34.0178695, -6.8283806 34.0178991, -6.8283748 34.0179306, -6.8283774 34.0179623, -6.8283882 34.0179928)</data>
     </edge>
     <edge source="527903388" target="1611948785" id="0">
       <data key="d8">159800332</data>
@@ -4388,7 +4388,7 @@
     <edge source="820325891" target="2447036189" id="0">
       <data key="d8">1279024071</data>
       <data key="d9">residential</data>
-      <data key="d13">زنقة الحسين الأول</data>
+      <data key="d13">Rue Houssain I زنقة الحسين الأول</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
       <data key="d17">83.43948162630592</data>
@@ -4436,7 +4436,7 @@
     <edge source="820325896" target="10875522512" id="0">
       <data key="d8">1383728101</data>
       <data key="d9">residential</data>
-      <data key="d13">Rue Sefrou زنقة صفرو</data>
+      <data key="d13">Rue de Sefrou زنقة صفرو</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">7.147489018518489</data>
@@ -4705,12 +4705,12 @@
     </edge>
     <edge source="1611948576" target="1611949146" id="0">
       <data key="d8">1101515915</data>
-      <data key="d9">tertiary</data>
+      <data key="d9">primary</data>
       <data key="d10">circular</data>
       <data key="d11">2</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">1.9630587446955634</data>
+      <data key="d17">1.965482176506962</data>
     </edge>
     <edge source="1611948619" target="412118178" id="0">
       <data key="d8">159207429</data>
@@ -4729,18 +4729,18 @@
       <data key="d13">Avenue Chellah شارع شالة</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">83.90489011330766</data>
-      <data key="d18">LINESTRING (-6.8286309 34.0180652, -6.8287215 34.0181951, -6.8287818 34.0182832, -6.8290734 34.0187246)</data>
+      <data key="d17">83.75708463899512</data>
+      <data key="d18">LINESTRING (-6.8286316 34.0180664, -6.8287215 34.0181951, -6.8287818 34.0182832, -6.8290734 34.0187246)</data>
     </edge>
     <edge source="1611948663" target="365557448" id="0">
       <data key="d8">1101515915</data>
-      <data key="d9">tertiary</data>
+      <data key="d9">primary</data>
       <data key="d10">circular</data>
       <data key="d11">2</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">17.19668461588288</data>
-      <data key="d18">LINESTRING (-6.8286309 34.0180652, -6.8286623 34.0180486, -6.8286886 34.0180269, -6.8287095 34.0180012, -6.8287225 34.0179721, -6.8287277 34.0179414)</data>
+      <data key="d17">17.20453802121316</data>
+      <data key="d18">LINESTRING (-6.8286316 34.0180664, -6.8286628 34.0180493, -6.8286889 34.0180272, -6.8287089 34.0180011, -6.8287217 34.017972, -6.8287269 34.0179414)</data>
     </edge>
     <edge source="1611948771" target="1392023819" id="0">
       <data key="d8">125294733</data>
@@ -4782,13 +4782,13 @@
     </edge>
     <edge source="1611948789" target="527903386" id="0">
       <data key="d8">4049989</data>
-      <data key="d9">tertiary</data>
-      <data key="d11">2</data>
+      <data key="d9">primary</data>
+      <data key="d11">3</data>
       <data key="d13">Avenue Chellah شارع شالة</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">56.726916491353656</data>
-      <data key="d18">LINESTRING (-6.8280971 34.0174241, -6.8281582 34.0175158, -6.8283246 34.0177658, -6.8283959 34.0178701)</data>
+      <data key="d17">56.6568934028592</data>
+      <data key="d18">LINESTRING (-6.8280976 34.0174233, -6.8281582 34.0175158, -6.8283246 34.0177658, -6.8283944 34.0178695)</data>
     </edge>
     <edge source="1611948789" target="10926409917" id="0">
       <data key="d8">[1101515921, 34875553]</data>
@@ -4798,8 +4798,8 @@
       <data key="d13">Place de l'Unité Africaine ساحة الوحدة الإفريقية</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">24.977048560463146</data>
-      <data key="d18">LINESTRING (-6.8280971 34.0174241, -6.828123 34.0174313, -6.8281492 34.0174335, -6.8281803 34.0174309, -6.8282097 34.017422, -6.8282352 34.0174075, -6.8282556 34.0173882, -6.8282696 34.0173653, -6.8282764 34.0173403, -6.8282755 34.0173146)</data>
+      <data key="d17">24.9248414609301</data>
+      <data key="d18">LINESTRING (-6.8280976 34.0174233, -6.828125 34.0174312, -6.8281538 34.0174336, -6.8281826 34.0174305, -6.8282097 34.0174219, -6.828235 34.0174074, -6.8282553 34.0173881, -6.8282693 34.0173652, -6.828276 34.0173402, -6.8282751 34.0173146)</data>
     </edge>
     <edge source="1611948851" target="1611948789" id="0">
       <data key="d8">1102462009</data>
@@ -4809,13 +4809,13 @@
       <data key="d13">Place de l'Unité Africaine ساحة الوحدة الإفريقية</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">2.447243651338653</data>
+      <data key="d17">2.4421553908724363</data>
     </edge>
     <edge source="1611948930" target="365558028" id="0">
       <data key="d8">23721065</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Demnate زنقة دمنات</data>
+      <data key="d13">Rue de Demnate زنقة دمنات</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
       <data key="d17">124.22275484976556</data>
@@ -4825,7 +4825,7 @@
       <data key="d8">23721065</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Demnate زنقة دمنات</data>
+      <data key="d13">Rue de Demnate زنقة دمنات</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
       <data key="d17">118.0619901777986</data>
@@ -4835,7 +4835,7 @@
       <data key="d8">32512359</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Bouznika زنقة بوزنيقة</data>
+      <data key="d13">Rue de Bouznika زنقة بوزنيقة</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
       <data key="d17">62.83770642845076</data>
@@ -4845,7 +4845,7 @@
       <data key="d8">1237974357</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Bouznika زنقة بوزنيقة</data>
+      <data key="d13">Rue de Bouznika زنقة بوزنيقة</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">77.84837868653305</data>
@@ -4858,48 +4858,48 @@
       <data key="d13">Avenue Al Alaouiyine زنقة العلويين</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">150.971854921889</data>
-      <data key="d18">LINESTRING (-6.8283871 34.0179932, -6.8283051 34.0181052, -6.8281075 34.0183684, -6.8280351 34.0184529, -6.827958 34.0185229, -6.8278715 34.0185869, -6.8273531 34.0188697, -6.8272422 34.018926)</data>
+      <data key="d17">151.06261327433242</data>
+      <data key="d18">LINESTRING (-6.8283882 34.0179928, -6.8283051 34.0181052, -6.8281075 34.0183684, -6.8280351 34.0184529, -6.827958 34.0185229, -6.8278715 34.0185869, -6.8273531 34.0188697, -6.8272422 34.018926)</data>
     </edge>
     <edge source="1611948933" target="1611949228" id="0">
       <data key="d8">42305068</data>
-      <data key="d9">tertiary</data>
+      <data key="d9">primary</data>
       <data key="d10">circular</data>
       <data key="d11">2</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">16.40673439795381</data>
-      <data key="d18">LINESTRING (-6.8283871 34.0179932, -6.8284228 34.0180376, -6.8284603 34.0180627, -6.8284882 34.0180728, -6.8285221 34.01808)</data>
+      <data key="d17">16.371443377562336</data>
+      <data key="d18">LINESTRING (-6.8283882 34.0179928, -6.8284232 34.0180373, -6.8284607 34.0180621, -6.8284903 34.0180738, -6.828522 34.0180807)</data>
     </edge>
     <edge source="1611949146" target="10926409917" id="0">
       <data key="d8">172515199</data>
-      <data key="d9">tertiary</data>
-      <data key="d11">2</data>
+      <data key="d9">primary</data>
+      <data key="d11">3</data>
       <data key="d13">Avenue Chellah شارع شالة</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">60.05394370148013</data>
-      <data key="d18">LINESTRING (-6.8285788 34.0177926, -6.8283755 34.0174721, -6.8283472 34.0174275, -6.8282755 34.0173146)</data>
+      <data key="d17">60.061311811399</data>
+      <data key="d18">LINESTRING (-6.8285788 34.0177925, -6.8283755 34.0174721, -6.8283472 34.0174275, -6.8282751 34.0173146)</data>
     </edge>
     <edge source="1611949146" target="527903386" id="0">
       <data key="d8">1101515915</data>
-      <data key="d9">tertiary</data>
+      <data key="d9">primary</data>
       <data key="d10">circular</data>
       <data key="d11">2</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">20.13721358655555</data>
-      <data key="d18">LINESTRING (-6.8285788 34.0177926, -6.8285242 34.0177928, -6.8284723 34.0178069, -6.8284281 34.0178335, -6.8283959 34.0178701)</data>
+      <data key="d17">20.247188470104717</data>
+      <data key="d18">LINESTRING (-6.8285788 34.0177925, -6.8285239 34.0177924, -6.8284716 34.0178063, -6.828427 34.0178328, -6.8283944 34.0178695)</data>
     </edge>
     <edge source="1611949228" target="1611948663" id="0">
       <data key="d8">42305068</data>
-      <data key="d9">tertiary</data>
+      <data key="d9">primary</data>
       <data key="d10">circular</data>
       <data key="d11">2</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">10.290342262441838</data>
-      <data key="d18">LINESTRING (-6.8285221 34.01808, -6.8285779 34.0180798, -6.8286309 34.0180652)</data>
+      <data key="d17">10.358733026948236</data>
+      <data key="d18">LINESTRING (-6.828522 34.0180807, -6.8285782 34.0180809, -6.8286316 34.0180664)</data>
     </edge>
     <edge source="1611949230" target="1611949228" id="0">
       <data key="d8">965613761</data>
@@ -4908,8 +4908,8 @@
       <data key="d13">Avenue Al Alaouiyine زنقة العلويين</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">80.60830220404529</data>
-      <data key="d18">LINESTRING (-6.8279758 34.0186438, -6.8281145 34.018533, -6.8284005 34.018207, -6.828429 34.0181744, -6.8285221 34.01808)</data>
+      <data key="d17">80.54227095257664</data>
+      <data key="d18">LINESTRING (-6.8279758 34.0186438, -6.8281145 34.018533, -6.8284005 34.018207, -6.828429 34.0181744, -6.828522 34.0180807)</data>
     </edge>
     <edge source="1653197254" target="297907116" id="0">
       <data key="d8">4061146</data>
@@ -4945,7 +4945,7 @@
       <data key="d8">27152058</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Avenue Tour Hassan شارع صومعة حسان</data>
+      <data key="d13">Avenue de la Tour Hassan شارع صومعة حسان</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">14.308705111596758</data>
@@ -4975,7 +4975,7 @@
       <data key="d8">27152052</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Avenue Tour Hassan شارع صومعة حسان</data>
+      <data key="d13">Avenue de la Tour Hassan شارع صومعة حسان</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">14.640664334648712</data>
@@ -5255,7 +5255,7 @@
       <data key="d8">27152058</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Avenue Tour Hassan شارع صومعة حسان</data>
+      <data key="d13">Avenue de la Tour Hassan شارع صومعة حسان</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">129.1347132287793</data>
@@ -5282,7 +5282,7 @@
     <edge source="1700392233" target="1724502188" id="0">
       <data key="d8">68002816</data>
       <data key="d9">residential</data>
-      <data key="d13">Rue Sefrou زنقة صفرو</data>
+      <data key="d13">Rue de Sefrou زنقة صفرو</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">102.31039339651305</data>
@@ -5292,7 +5292,7 @@
       <data key="d8">27152052</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Avenue Tour Hassan شارع صومعة حسان</data>
+      <data key="d13">Avenue de la Tour Hassan شارع صومعة حسان</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">52.26322333940834</data>
@@ -5438,7 +5438,7 @@
     <edge source="1724502188" target="365557310" id="0">
       <data key="d8">68002816</data>
       <data key="d9">residential</data>
-      <data key="d13">Rue Sefrou زنقة صفرو</data>
+      <data key="d13">Rue de Sefrou زنقة صفرو</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">27.75963136655928</data>
@@ -5447,7 +5447,7 @@
     <edge source="1724502188" target="365557310" id="1">
       <data key="d8">160540293</data>
       <data key="d9">residential</data>
-      <data key="d13">Place Sefrou ساحة صفرو</data>
+      <data key="d13">Place de Sefrou ساحة صفرو</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">112.51170006095978</data>
@@ -5457,7 +5457,7 @@
       <data key="d8">160404496</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Tétouan زنقة تطوان</data>
+      <data key="d13">Rue de Tétouan زنقة تطوان</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">76.43445125672027</data>
@@ -5498,7 +5498,7 @@
       <data key="d8">160404499</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Ifrane زنقة إفران</data>
+      <data key="d13">Rue d'Ifrane زنقة إفران</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
       <data key="d17">41.095397593779964</data>
@@ -5524,7 +5524,7 @@
       <data key="d8">32512359</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Bouznika زنقة بوزنيقة</data>
+      <data key="d13">Rue de Bouznika زنقة بوزنيقة</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
       <data key="d17">62.83770642845076</data>
@@ -5618,7 +5618,7 @@
       <data key="d8">23721065</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Demnate زنقة دمنات</data>
+      <data key="d13">Rue de Demnate زنقة دمنات</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
       <data key="d17">118.0619901777986</data>
@@ -5628,7 +5628,7 @@
       <data key="d8">[1390290236, 1390290237]</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Oran زنقة وهران</data>
+      <data key="d13">['Rue Oran زنقة وهران', "Rue d'Oran زنقة وهران"]</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">60.59983451147753</data>
@@ -5688,7 +5688,7 @@
       <data key="d8">475135485</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Avenue Ouarzazate شارع ورزازات</data>
+      <data key="d13">Avenue d'Ouarzazate شارع ورزازات</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">138.67780495503507</data>
@@ -5708,7 +5708,7 @@
       <data key="d8">475135484</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Tanger زنقة طنجة</data>
+      <data key="d13">Rue de Tanger زنقة طنجة</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">107.58126819348254</data>
@@ -5727,7 +5727,7 @@
     <edge source="1834128166" target="2563304774" id="0">
       <data key="d8">[1383773475, 411814342]</data>
       <data key="d9">primary</data>
-      <data key="d11">['2', '4']</data>
+      <data key="d11">['4', '2']</data>
       <data key="d13">Avenue Moulay Al Hassan شارع مولاي الحسن</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
@@ -5768,7 +5768,7 @@
       <data key="d8">172515197</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Oued Zem زنقة واد زم</data>
+      <data key="d13">Rue d'Oued Zem زنقة واد زم</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">90.25491891905318</data>
@@ -5806,7 +5806,7 @@
       <data key="d8">475135484</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Tanger زنقة طنجة</data>
+      <data key="d13">Rue de Tanger زنقة طنجة</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">132.32848589935946</data>
@@ -5845,7 +5845,7 @@
       <data key="d8">[1390290236, 68002813]</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Oran زنقة وهران</data>
+      <data key="d13">['Rue Oran زنقة وهران', "Rue d'Oran زنقة وهران"]</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">77.68884696736713</data>
@@ -5865,7 +5865,7 @@
       <data key="d8">590150503</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Avenue Ouarzazate شارع ورزازات</data>
+      <data key="d13">Avenue d'Ouarzazate شارع ورزازات</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
       <data key="d17">201.69458150348453</data>
@@ -5887,14 +5887,14 @@
       <data key="d13">Avenue Chellah شارع شالة</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
-      <data key="d17">108.49432567387419</data>
-      <data key="d18">LINESTRING (-6.8275368 34.0163807, -6.8276073 34.0164905, -6.8280197 34.0171324, -6.8280371 34.0171591, -6.8280908 34.0172416)</data>
+      <data key="d17">108.37999352122364</data>
+      <data key="d18">LINESTRING (-6.8275368 34.0163807, -6.8276073 34.0164905, -6.8280197 34.0171324, -6.8280371 34.0171591, -6.8280902 34.0172407)</data>
     </edge>
     <edge source="1834128268" target="1834057023" id="0">
       <data key="d8">1390290237</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Oran زنقة وهران</data>
+      <data key="d13">Rue d'Oran زنقة وهران</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">67.09643862832496</data>
@@ -5904,7 +5904,7 @@
       <data key="d8">475135484</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Tanger زنقة طنجة</data>
+      <data key="d13">Rue de Tanger زنقة طنجة</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">46.14207247114496</data>
@@ -5974,7 +5974,7 @@
       <data key="d8">342538074</data>
       <data key="d9">residential</data>
       <data key="d11">1</data>
-      <data key="d13">Rue Beyrouth زنقة بيروت</data>
+      <data key="d13">Rue de Beyrouth زنقة بيروت</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">21.86983153919468</data>
@@ -6074,7 +6074,7 @@
       <data key="d8">342538074</data>
       <data key="d9">residential</data>
       <data key="d11">1</data>
-      <data key="d13">Rue Beyrouth زنقة بيروت</data>
+      <data key="d13">Rue de Beyrouth زنقة بيروت</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">135.88101514344763</data>
@@ -6103,7 +6103,7 @@
       <data key="d8">475135484</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Tanger زنقة طنجة</data>
+      <data key="d13">Rue de Tanger زنقة طنجة</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">38.09496051200934</data>
@@ -6259,7 +6259,7 @@
       <data key="d8">172515197</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Oued Zem زنقة واد زم</data>
+      <data key="d13">Rue d'Oued Zem زنقة واد زم</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">84.55016427587904</data>
@@ -6317,7 +6317,7 @@
     <edge source="2447036189" target="820325891" id="0">
       <data key="d8">1279024071</data>
       <data key="d9">residential</data>
-      <data key="d13">زنقة الحسين الأول</data>
+      <data key="d13">Rue Houssain I زنقة الحسين الأول</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
       <data key="d17">83.43948162630592</data>
@@ -6547,7 +6547,7 @@
     <edge source="2563304774" target="1834128166" id="0">
       <data key="d8">[1383773475, 411814342]</data>
       <data key="d9">primary</data>
-      <data key="d11">['4', '2']</data>
+      <data key="d11">['2', '4']</data>
       <data key="d13">Avenue Moulay Al Hassan شارع مولاي الحسن</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
@@ -6786,7 +6786,7 @@
       <data key="d8">609006738</data>
       <data key="d9">residential</data>
       <data key="d11">1</data>
-      <data key="d13">Rue Beyrouth زنقة بيروت</data>
+      <data key="d13">Rue de Beyrouth زنقة بيروت</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">15.874390976184308</data>
@@ -6868,8 +6868,8 @@
       <data key="d13">Avenue d'Alger شارع الجزائر</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">22.48477789526839</data>
-      <data key="d18">LINESTRING (-6.8278372 34.0173985, -6.8278702 34.0174129, -6.8279065 34.01742, -6.8279437 34.0174194, -6.8280755 34.0174113)</data>
+      <data key="d17">22.44479494755848</data>
+      <data key="d18">LINESTRING (-6.8278372 34.0173985, -6.8278702 34.0174129, -6.8279065 34.01742, -6.8279437 34.0174194, -6.8280751 34.0174117)</data>
     </edge>
     <edge source="2709405085" target="1834056536" id="0">
       <data key="d8">1101515918</data>
@@ -7131,7 +7131,7 @@
       <data key="d8">342583781</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Al Jadida زنقة الجديدة</data>
+      <data key="d13">Rue d'El Jadida زنقة الجديدة</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">74.58651280120884</data>
@@ -7140,7 +7140,7 @@
       <data key="d8">475135484</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Tanger زنقة طنجة</data>
+      <data key="d13">Rue de Tanger زنقة طنجة</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">77.44602910710799</data>
@@ -7149,7 +7149,7 @@
       <data key="d8">295763772</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Arfoud زنقة أرفود</data>
+      <data key="d13">Rue d'Arfoud زنقة أرفود</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">117.3852827829115</data>
@@ -7818,7 +7818,7 @@
       <data key="d8">475135485</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Avenue Ouarzazate شارع ورزازات</data>
+      <data key="d13">Avenue d'Ouarzazate شارع ورزازات</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">12.098815070808554</data>
@@ -7885,7 +7885,7 @@
       <data key="d8">[32512377, 1390290234]</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Tétouan زنقة تطوان</data>
+      <data key="d13">['Rue Tétouan زنقة تطوان', 'Rue de Tétouan زنقة تطوان']</data>
       <data key="d14">False</data>
       <data key="d16">True</data>
       <data key="d17">117.14532584831343</data>
@@ -7926,7 +7926,7 @@
       <data key="d8">35160913</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Khouribga زنقة خريبكة</data>
+      <data key="d13">Rue de Khouribga زنقة خريبكة</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">96.27523112376198</data>
@@ -7942,7 +7942,7 @@
       <data key="d8">590156556</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Agadir زنقة أكادير</data>
+      <data key="d13">Rue d'Agadir زنقة أكادير</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">32.484353443921975</data>
@@ -8216,8 +8216,8 @@
       <data key="d13">Rue d'Annaba زنقة عنابة</data>
       <data key="d14">False</data>
       <data key="d16">False</data>
-      <data key="d17">83.24141392942326</data>
-      <data key="d18">LINESTRING (-6.8289769 34.0168223, -6.8288969 34.0168708, -6.8284037 34.0171669, -6.8283582 34.0171942, -6.8282483 34.0172646)</data>
+      <data key="d17">83.2627989330451</data>
+      <data key="d18">LINESTRING (-6.8289769 34.0168223, -6.8288969 34.0168708, -6.8284037 34.0171669, -6.8283582 34.0171942, -6.8282481 34.0172647)</data>
     </edge>
     <edge source="6841067902" target="6841067903" id="0">
       <data key="d8">730232564</data>
@@ -8272,7 +8272,7 @@
       <data key="d8">590111669</data>
       <data key="d9">residential</data>
       <data key="d11">2</data>
-      <data key="d13">Rue Beyrouth زنقة بيروت</data>
+      <data key="d13">Rue de Beyrouth زنقة بيروت</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">69.52982418000332</data>
@@ -8291,7 +8291,7 @@
       <data key="d8">609006738</data>
       <data key="d9">residential</data>
       <data key="d11">1</data>
-      <data key="d13">Rue Beyrouth زنقة بيروت</data>
+      <data key="d13">Rue de Beyrouth زنقة بيروت</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">9.338177156836181</data>
@@ -8703,7 +8703,7 @@
     <edge source="10875522512" target="365557314" id="0">
       <data key="d8">[1383728100, 1383728101]</data>
       <data key="d9">residential</data>
-      <data key="d13">Rue Sefrou زنقة صفرو</data>
+      <data key="d13">Rue de Sefrou زنقة صفرو</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">96.67599278779062</data>
@@ -8898,8 +8898,8 @@
       <data key="d13">Place de l'Unité Africaine ساحة الوحدة الإفريقية</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
-      <data key="d17">6.163987539762897</data>
-      <data key="d18">LINESTRING (-6.8282755 34.0173146, -6.8282701 34.0172967, -6.8282609 34.0172798, -6.8282483 34.0172646)</data>
+      <data key="d17">6.147200407697611</data>
+      <data key="d18">LINESTRING (-6.8282751 34.0173146, -6.8282698 34.0172968, -6.8282607 34.0172799, -6.8282481 34.0172647)</data>
     </edge>
     <edge source="11427854335" target="1914791556" id="0">
       <data key="d8">181033301</data>
@@ -9095,7 +9095,7 @@
       <data key="d8">342538065</data>
       <data key="d9">residential</data>
       <data key="d11">1</data>
-      <data key="d13">Rue Halab زنقة حلب</data>
+      <data key="d13">Rue d'Alep زنقة حلب</data>
       <data key="d14">True</data>
       <data key="d16">False</data>
       <data key="d17">63.42196312515962</data>
@@ -9212,7 +9212,7 @@
     <edge source="12488127521" target="5756990185" id="0">
       <data key="d8">[1058657648, 611284772]</data>
       <data key="d9">primary</data>
-      <data key="d11">['6', '5']</data>
+      <data key="d11">['5', '6']</data>
       <data key="d12">60</data>
       <data key="d13">Avenue Moulay Hassan شارع مولاي الحسن</data>
       <data key="d14">False</data>
@@ -9293,7 +9293,7 @@
       <data key="d16">True</data>
       <data key="d17">27.032941065370466</data>
     </edge>
-    <data key="d0">2026-11-15 19:51:25</data>
+    <data key="d0">2026-11-21 09:35:06</data>
     <data key="d1">OSMnx 2.1.1</data>
     <data key="d2">epsg:4326</data>
     <data key="d3">True</data>

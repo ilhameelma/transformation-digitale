@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="Overpass API 0.7.62.11 87bfad18">
 <note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
-<meta osm_base="2026-11-15T20:50:51Z"/>
+<meta osm_base="2026-11-21T10:44:51Z"/>
 
   <node id="20997217" lat="34.0174185" lon="-6.8234606" version="12" timestamp="2024-04-21T13:24:45Z" changeset="150302462" uid="18031142" user="Amany_Osama"/>
   <node id="20997232" lat="34.0195237" lon="-6.8196761" version="11" timestamp="2024-04-30T06:42:06Z" changeset="150691182" uid="15567298" user="shahenda_ahmed"/>
@@ -77,7 +77,7 @@
   </node>
   <node id="21518203" lat="34.0199741" lon="-6.8353150" version="8" timestamp="2024-04-22T12:57:40Z" changeset="150345917" uid="15567153" user="Eman Ghareeb"/>
   <node id="21518206" lat="34.0237744" lon="-6.8297743" version="11" timestamp="2024-05-01T14:03:03Z" changeset="150752551" uid="18031142" user="Amany_Osama"/>
-  <node id="21518238" lat="34.0173653" lon="-6.8282696" version="12" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
+  <node id="21518238" lat="34.0173652" lon="-6.8282693" version="13" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="21584866" lat="34.0152281" lon="-6.8379660" version="8" timestamp="2019-08-20T17:01:08Z" changeset="73549250" uid="9535249" user="Tazewell"/>
   <node id="26086937" lat="34.0128497" lon="-6.8316464" version="6" timestamp="2024-05-02T10:17:21Z" changeset="150786461" uid="18031142" user="Amany_Osama"/>
   <node id="26269170" lat="34.0166015" lon="-6.8389893" version="7" timestamp="2019-11-08T23:47:26Z" changeset="76833540" uid="9202927" user="Araucaria_araucana"/>
@@ -186,7 +186,7 @@
   <node id="365557443" lat="34.0181868" lon="-6.8272632" version="7" timestamp="2024-04-24T17:19:46Z" changeset="150459328" uid="15166886" user="smaptious"/>
   <node id="365557444" lat="34.0179491" lon="-6.8273296" version="6" timestamp="2024-04-24T17:19:46Z" changeset="150459328" uid="15166886" user="smaptious"/>
   <node id="365557445" lat="34.0173896" lon="-6.8272319" version="15" timestamp="2024-05-02T11:10:11Z" changeset="150788499" uid="15567153" user="Eman Ghareeb"/>
-  <node id="365557448" lat="34.0179414" lon="-6.8287277" version="11" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb">
+  <node id="365557448" lat="34.0179414" lon="-6.8287269" version="12" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte">
     <tag k="highway" v="traffic_signals"/>
   </node>
   <node id="365557451" lat="34.0184360" lon="-6.8305441" version="12" timestamp="2024-05-01T14:32:35Z" changeset="150753901" uid="15567153" user="Eman Ghareeb"/>
@@ -203,10 +203,10 @@
   <node id="365558030" lat="34.0153320" lon="-6.8247521" version="6" timestamp="2019-08-20T10:54:04Z" changeset="73533121" uid="9535055" user="HanaumaBay"/>
   <node id="365558263" lat="34.0238191" lon="-6.8260088" version="6" timestamp="2021-12-02T19:55:01Z" changeset="114496453" uid="12491759" user="ChromeLotus"/>
   <node id="365558549" lat="34.0164001" lon="-6.8258633" version="4" timestamp="2019-09-19T11:58:20Z" changeset="74669028" uid="10019188" user="Karlinbach"/>
-  <node id="408921602" lat="34.0173559" lon="-6.8280321" version="9" timestamp="2024-09-01T13:13:50Z" changeset="156053943" uid="578772" user="alain2003"/>
-  <node id="408922518" lat="34.0172646" lon="-6.8282483" version="11" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
-  <node id="408923369" lat="34.0174335" lon="-6.8281492" version="9" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
-  <node id="408925590" lat="34.0172416" lon="-6.8280908" version="13" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
+  <node id="408921602" lat="34.0173561" lon="-6.8280313" version="10" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="408922518" lat="34.0172647" lon="-6.8282481" version="12" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="408923369" lat="34.0174336" lon="-6.8281538" version="10" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="408925590" lat="34.0172407" lon="-6.8280902" version="14" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="408943941" lat="34.0146689" lon="-6.8333900" version="11" timestamp="2025-01-10T12:04:26Z" changeset="161202665" uid="4003485" user="LateNightTone">
     <tag k="crossing" v="uncontrolled"/>
     <tag k="crossing:markings" v="zebra"/>
@@ -358,12 +358,12 @@
   <node id="527903360" lat="34.0161875" lon="-6.8306379" version="5" timestamp="2024-04-24T13:43:35Z" changeset="150448561" uid="15567153" user="Eman Ghareeb"/>
   <node id="527903362" lat="34.0166181" lon="-6.8311006" version="7" timestamp="2024-04-24T13:43:35Z" changeset="150448561" uid="15567153" user="Eman Ghareeb"/>
   <node id="527903372" lat="34.0164451" lon="-6.8300626" version="5" timestamp="2024-04-24T13:43:35Z" changeset="150448561" uid="15567153" user="Eman Ghareeb"/>
-  <node id="527903383" lat="34.0178308" lon="-6.8286729" version="8" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb"/>
-  <node id="527903384" lat="34.0180728" lon="-6.8284882" version="7" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb"/>
-  <node id="527903385" lat="34.0180376" lon="-6.8284228" version="9" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb">
+  <node id="527903383" lat="34.0178310" lon="-6.8286724" version="9" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="527903384" lat="34.0180738" lon="-6.8284903" version="8" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="527903385" lat="34.0180373" lon="-6.8284232" version="10" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte">
     <tag k="railway" v="tram_level_crossing"/>
   </node>
-  <node id="527903386" lat="34.0178701" lon="-6.8283959" version="8" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb"/>
+  <node id="527903386" lat="34.0178695" lon="-6.8283944" version="9" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="527903388" lat="34.0204284" lon="-6.8294364" version="9" timestamp="2021-07-28T23:16:57Z" changeset="108782549" uid="13744183" user="joulahcen"/>
   <node id="527903391" lat="34.0204982" lon="-6.8295050" version="2" timestamp="2019-09-18T16:47:26Z" changeset="74637017" uid="9625568" user="San_Telmo"/>
   <node id="527903395" lat="34.0206282" lon="-6.8296015" version="2" timestamp="2019-09-19T14:01:42Z" changeset="74675495" uid="9625568" user="San_Telmo"/>
@@ -481,42 +481,42 @@
   <node id="1392032517" lat="34.0200867" lon="-6.8267068" version="3" timestamp="2024-04-24T18:03:37Z" changeset="150461102" uid="15166886" user="smaptious"/>
   <node id="1565928023" lat="34.0214060" lon="-6.8363733" version="8" timestamp="2024-04-21T10:17:41Z" changeset="150295478" uid="15567214" user="Nour Ayman"/>
   <node id="1565928078" lat="34.0225200" lon="-6.8369061" version="8" timestamp="2024-04-21T10:17:41Z" changeset="150295478" uid="15567214" user="Nour Ayman"/>
-  <node id="1611948576" lat="34.0177964" lon="-6.8285996" version="8" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb"/>
-  <node id="1611948613" lat="34.0172289" lon="-6.8281747" version="6" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
+  <node id="1611948576" lat="34.0177964" lon="-6.8285996" version="9" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="1611948613" lat="34.0172288" lon="-6.8281744" version="7" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="1611948619" lat="34.0131786" lon="-6.8321694" version="6" timestamp="2024-05-02T10:17:21Z" changeset="150786461" uid="18031142" user="Amany_Osama"/>
   <node id="1611948625" lat="34.0130372" lon="-6.8321617" version="4" timestamp="2024-05-02T10:17:21Z" changeset="150786461" uid="18031142" user="Amany_Osama"/>
   <node id="1611948630" lat="34.0209469" lon="-6.8269731" version="6" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb">
     <tag k="crossing" v="marked"/>
     <tag k="highway" v="crossing"/>
   </node>
-  <node id="1611948663" lat="34.0180652" lon="-6.8286309" version="7" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb"/>
+  <node id="1611948663" lat="34.0180664" lon="-6.8286316" version="8" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="1611948701" lat="34.0127312" lon="-6.8320508" version="4" timestamp="2024-05-02T10:17:21Z" changeset="150786461" uid="18031142" user="Amany_Osama"/>
-  <node id="1611948720" lat="34.0172755" lon="-6.8280474" version="7" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
-  <node id="1611948728" lat="34.0179306" lon="-6.8283742" version="6" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb"/>
-  <node id="1611948741" lat="34.0180012" lon="-6.8287095" version="7" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb"/>
+  <node id="1611948720" lat="34.0172706" lon="-6.8280504" version="8" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="1611948728" lat="34.0179306" lon="-6.8283748" version="7" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="1611948741" lat="34.0180011" lon="-6.8287089" version="8" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="1611948771" lat="34.0187246" lon="-6.8290734" version="5" timestamp="2021-07-28T23:43:06Z" changeset="108782831" uid="13744183" user="joulahcen"/>
-  <node id="1611948773" lat="34.0178895" lon="-6.8287184" version="9" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb">
+  <node id="1611948773" lat="34.0178897" lon="-6.8287176" version="10" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte">
     <tag k="railway" v="tram_level_crossing"/>
   </node>
   <node id="1611948776" lat="34.0132192" lon="-6.8321794" version="7" timestamp="2024-05-02T10:17:21Z" changeset="150786461" uid="18031142" user="Amany_Osama"/>
-  <node id="1611948780" lat="34.0174220" lon="-6.8282097" version="7" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
+  <node id="1611948780" lat="34.0174219" lon="-6.8282097" version="8" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="1611948785" lat="34.0201986" lon="-6.8279393" version="3" timestamp="2018-10-15T15:52:15Z" changeset="63547161" uid="8895620" user="JonathanBoris"/>
-  <node id="1611948789" lat="34.0174241" lon="-6.8280971" version="5" timestamp="2024-05-01T13:30:14Z" changeset="150750834" uid="15567153" user="Eman Ghareeb"/>
-  <node id="1611948851" lat="34.0174113" lon="-6.8280755" version="6" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
-  <node id="1611948872" lat="34.0174309" lon="-6.8281803" version="6" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
-  <node id="1611948876" lat="34.0172563" lon="-6.8280665" version="6" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
-  <node id="1611948900" lat="34.0180269" lon="-6.8286886" version="6" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb"/>
+  <node id="1611948789" lat="34.0174233" lon="-6.8280976" version="6" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="1611948851" lat="34.0174117" lon="-6.8280751" version="7" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="1611948872" lat="34.0174305" lon="-6.8281826" version="7" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="1611948876" lat="34.0172538" lon="-6.8280683" version="7" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="1611948900" lat="34.0180272" lon="-6.8286889" version="7" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="1611948924" lat="34.0131142" lon="-6.8321607" version="4" timestamp="2024-05-02T10:17:21Z" changeset="150786461" uid="18031142" user="Amany_Osama"/>
   <node id="1611948930" lat="34.0160545" lon="-6.8263651" version="5" timestamp="2018-10-15T15:15:11Z" changeset="63546138" uid="8895620" user="JonathanBoris"/>
-  <node id="1611948933" lat="34.0179932" lon="-6.8283871" version="6" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb"/>
-  <node id="1611948989" lat="34.0172967" lon="-6.8282701" version="7" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
-  <node id="1611949079" lat="34.0172413" lon="-6.8282153" version="6" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
-  <node id="1611949146" lat="34.0177926" lon="-6.8285788" version="7" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb"/>
+  <node id="1611948933" lat="34.0179928" lon="-6.8283882" version="7" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="1611948989" lat="34.0172968" lon="-6.8282698" version="8" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="1611949079" lat="34.0172413" lon="-6.8282151" version="7" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="1611949146" lat="34.0177925" lon="-6.8285788" version="8" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="1611949208" lat="34.0135124" lon="-6.8323276" version="4" timestamp="2024-05-02T10:17:21Z" changeset="150786461" uid="18031142" user="Amany_Osama"/>
-  <node id="1611949228" lat="34.0180800" lon="-6.8285221" version="6" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb"/>
+  <node id="1611949228" lat="34.0180807" lon="-6.8285220" version="7" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="1611949230" lat="34.0186438" lon="-6.8279758" version="6" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb"/>
-  <node id="1611949286" lat="34.0173403" lon="-6.8282764" version="7" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
-  <node id="1611949317" lat="34.0178335" lon="-6.8284281" version="7" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb"/>
+  <node id="1611949286" lat="34.0173402" lon="-6.8282760" version="8" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="1611949317" lat="34.0178328" lon="-6.8284270" version="8" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="1653197181" lat="34.0123292" lon="-6.8387140" version="2" timestamp="2024-04-28T14:06:05Z" changeset="150620331" uid="18031083" user="mona_magdy">
     <tag k="railway" v="tram_crossing"/>
   </node>
@@ -650,7 +650,7 @@
   <node id="1700392224" lat="34.0213429" lon="-6.8241988" version="6" timestamp="2024-05-02T06:44:40Z" changeset="150778766" uid="15567298" user="shahenda_ahmed"/>
   <node id="1700392233" lat="34.0192376" lon="-6.8230408" version="7" timestamp="2019-09-30T15:06:51Z" changeset="75107748" uid="9535312" user="Ningaloo7"/>
   <node id="1700392245" lat="34.0215035" lon="-6.8242953" version="4" timestamp="2019-09-30T18:03:07Z" changeset="75114898" uid="9535312" user="Ningaloo7"/>
-  <node id="1713013433" lat="34.0112364" lon="-6.8370552" version="2" timestamp="2012-04-17T14:19:50Z" changeset="11332228" uid="614260" user="maefo">
+  <node id="1713013433" lat="34.0112351" lon="-6.8370610" version="3" timestamp="2026-11-20T13:24:36Z" changeset="192226702" uid="6296343" user="BaboucheVerte">
     <tag k="barrier" v="gate"/>
   </node>
   <node id="1713013503" lat="34.0139661" lon="-6.8328469" version="3" timestamp="2024-05-02T10:17:21Z" changeset="150786461" uid="18031142" user="Amany_Osama"/>
@@ -930,7 +930,7 @@
     <tag k="crossing:markings" v="zebra"/>
     <tag k="highway" v="crossing"/>
   </node>
-  <node id="2658474618" lat="34.0172980" lon="-6.8280345" version="6" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
+  <node id="2658474618" lat="34.0172901" lon="-6.8280372" version="7" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="2658474620" lat="34.0178754" lon="-6.8205668" version="5" timestamp="2024-04-21T13:24:45Z" changeset="150302462" uid="18031142" user="Amany_Osama"/>
   <node id="2658474652" lat="34.0162287" lon="-6.8215493" version="6" timestamp="2024-04-22T12:09:39Z" changeset="150343720" uid="18031142" user="Amany_Osama"/>
   <node id="2658474654" lat="34.0176436" lon="-6.8214582" version="5" timestamp="2024-04-21T13:24:45Z" changeset="150302462" uid="18031142" user="Amany_Osama"/>
@@ -977,7 +977,7 @@
     <tag k="access" v="private"/>
     <tag k="barrier" v="gate"/>
   </node>
-  <node id="2972378187" lat="34.0180627" lon="-6.8284603" version="8" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb">
+  <node id="2972378187" lat="34.0180621" lon="-6.8284607" version="9" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte">
     <tag k="railway" v="tram_level_crossing"/>
   </node>
   <node id="2972388851" lat="34.0214310" lon="-6.8250584" version="3" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb">
@@ -1117,10 +1117,10 @@
   <node id="3983002863" lat="34.0111539" lon="-6.8308031" version="3" timestamp="2024-11-22T03:28:21Z" changeset="159442143" uid="20109085" user="WanakaLake"/>
   <node id="3983002867" lat="34.0113101" lon="-6.8298637" version="1" timestamp="2016-02-01T21:35:32Z" changeset="36945804" uid="578772" user="alain2003"/>
   <node id="3983002883" lat="34.0111285" lon="-6.8292145" version="6" timestamp="2026-02-16T13:29:21Z" changeset="178630448" uid="23470620" user="MountMarmolada"/>
-  <node id="4069903567" lat="34.0174075" lon="-6.8282352" version="6" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
-  <node id="4069903568" lat="34.0172798" lon="-6.8282609" version="6" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
-  <node id="4069903569" lat="34.0172290" lon="-6.8281313" version="5" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
-  <node id="4069903570" lat="34.0173866" lon="-6.8280483" version="5" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
+  <node id="4069903567" lat="34.0174074" lon="-6.8282350" version="7" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="4069903568" lat="34.0172799" lon="-6.8282607" version="7" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="4069903569" lat="34.0172286" lon="-6.8281310" version="6" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="4069903570" lat="34.0173869" lon="-6.8280477" version="6" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="4101239495" lat="34.0097147" lon="-6.8302653" version="6" timestamp="2024-05-02T10:17:21Z" changeset="150786461" uid="18031142" user="Amany_Osama"/>
   <node id="4112082637" lat="34.0225414" lon="-6.8368907" version="4" timestamp="2024-04-21T10:17:41Z" changeset="150295478" uid="15567214" user="Nour Ayman"/>
   <node id="4112082638" lat="34.0224469" lon="-6.8369172" version="4" timestamp="2024-04-21T10:17:41Z" changeset="150295478" uid="15567214" user="Nour Ayman"/>
@@ -1490,11 +1490,11 @@
     <tag k="railway" v="tram_level_crossing"/>
   </node>
   <node id="5755142154" lat="34.0180575" lon="-6.8296819" version="4" timestamp="2024-05-02T09:26:36Z" changeset="150784334" uid="15567153" user="Eman Ghareeb"/>
-  <node id="5755142156" lat="34.0173882" lon="-6.8282556" version="6" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
-  <node id="5755142157" lat="34.0179173" lon="-6.8287263" version="8" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb">
+  <node id="5755142156" lat="34.0173881" lon="-6.8282553" version="7" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="5755142157" lat="34.0179174" lon="-6.8287254" version="9" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte">
     <tag k="railway" v="tram_level_crossing"/>
   </node>
-  <node id="5755142158" lat="34.0178579" lon="-6.8287000" version="6" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb"/>
+  <node id="5755142158" lat="34.0178581" lon="-6.8286993" version="7" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="5755168891" lat="34.0141696" lon="-6.8339710" version="5" timestamp="2024-05-02T10:17:21Z" changeset="150786461" uid="18031142" user="Amany_Osama">
     <tag k="traffic_calming" v="island"/>
   </node>
@@ -1969,7 +1969,7 @@
     <tag k="crossing_ref" v="zebra"/>
     <tag k="highway" v="crossing"/>
   </node>
-  <node id="5766800270" lat="34.0179625" lon="-6.8283767" version="4" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb">
+  <node id="5766800270" lat="34.0179623" lon="-6.8283774" version="5" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte">
     <tag k="highway" v="traffic_signals"/>
   </node>
   <node id="5766800271" lat="34.0174629" lon="-6.8304641" version="5" timestamp="2024-04-24T13:43:35Z" changeset="150448561" uid="15567153" user="Eman Ghareeb">
@@ -2905,12 +2905,12 @@
   <node id="6808066633" lat="34.0176742" lon="-6.8286949" version="1" timestamp="2019-09-19T13:38:05Z" changeset="74674246" uid="9625568" user="San_Telmo"/>
   <node id="6808066634" lat="34.0176914" lon="-6.8286788" version="1" timestamp="2019-09-19T13:38:05Z" changeset="74674246" uid="9625568" user="San_Telmo"/>
   <node id="6808066635" lat="34.0177331" lon="-6.8286446" version="1" timestamp="2019-09-19T13:38:05Z" changeset="74674246" uid="9625568" user="San_Telmo"/>
-  <node id="6808066636" lat="34.0178099" lon="-6.8286388" version="5" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb"/>
-  <node id="6808066637" lat="34.0179721" lon="-6.8287225" version="5" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb"/>
-  <node id="6808066638" lat="34.0180486" lon="-6.8286623" version="4" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb"/>
-  <node id="6808066639" lat="34.0178069" lon="-6.8284723" version="5" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb"/>
-  <node id="6808066640" lat="34.0178990" lon="-6.8283799" version="4" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb"/>
-  <node id="6808066641" lat="34.0180798" lon="-6.8285779" version="4" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb"/>
+  <node id="6808066636" lat="34.0178101" lon="-6.8286385" version="6" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="6808066637" lat="34.0179720" lon="-6.8287217" version="6" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="6808066638" lat="34.0180493" lon="-6.8286628" version="5" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="6808066639" lat="34.0178063" lon="-6.8284716" version="6" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="6808066640" lat="34.0178991" lon="-6.8283806" version="5" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="6808066641" lat="34.0180809" lon="-6.8285782" version="5" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="6808102659" lat="34.0208561" lon="-6.8298972" version="1" timestamp="2019-09-19T14:01:42Z" changeset="74675495" uid="9625568" user="San_Telmo"/>
   <node id="6808102660" lat="34.0207566" lon="-6.8297048" version="1" timestamp="2019-09-19T14:01:42Z" changeset="74675495" uid="9625568" user="San_Telmo"/>
   <node id="6808102661" lat="34.0205760" lon="-6.8295667" version="1" timestamp="2019-09-19T14:01:42Z" changeset="74675495" uid="9625568" user="San_Telmo"/>
@@ -4137,7 +4137,7 @@
   <node id="10926409909" lat="34.0175786" lon="-6.8285438" version="2" timestamp="2024-05-01T13:30:14Z" changeset="150750834" uid="15567153" user="Eman Ghareeb"/>
   <node id="10926409910" lat="34.0175889" lon="-6.8285671" version="2" timestamp="2024-05-01T13:30:14Z" changeset="150750834" uid="15567153" user="Eman Ghareeb"/>
   <node id="10926409911" lat="34.0175835" lon="-6.8286010" version="2" timestamp="2024-05-01T13:30:14Z" changeset="150750834" uid="15567153" user="Eman Ghareeb"/>
-  <node id="10926409917" lat="34.0173146" lon="-6.8282755" version="5" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama"/>
+  <node id="10926409917" lat="34.0173146" lon="-6.8282751" version="6" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="10926907514" lat="34.0198137" lon="-6.8333568" version="2" timestamp="2024-04-22T12:57:40Z" changeset="150345917" uid="15567153" user="Eman Ghareeb"/>
   <node id="10926907516" lat="34.0195741" lon="-6.8334257" version="2" timestamp="2024-04-22T12:57:40Z" changeset="150345917" uid="15567153" user="Eman Ghareeb"/>
   <node id="10927241478" lat="34.0224345" lon="-6.8325739" version="2" timestamp="2024-05-01T08:15:49Z" changeset="150737245" uid="15567153" user="Eman Ghareeb"/>
@@ -5981,13 +5981,17 @@
   <node id="11862350066" lat="34.0109880" lon="-6.8388132" version="1" timestamp="2024-04-28T14:06:05Z" changeset="150620331" uid="18031083" user="mona_magdy"/>
   <node id="11862350067" lat="34.0114118" lon="-6.8387517" version="1" timestamp="2024-04-28T14:06:05Z" changeset="150620331" uid="18031083" user="mona_magdy"/>
   <node id="11862350068" lat="34.0114438" lon="-6.8388115" version="1" timestamp="2024-04-28T14:06:05Z" changeset="150620331" uid="18031083" user="mona_magdy"/>
-  <node id="11862350171" lat="34.0123916" lon="-6.8382609" version="1" timestamp="2024-04-28T14:06:05Z" changeset="150620331" uid="18031083" user="mona_magdy"/>
+  <node id="11862350171" lat="34.0123916" lon="-6.8382609" version="2" timestamp="2026-11-20T13:24:36Z" changeset="192226702" uid="6296343" user="BaboucheVerte">
+    <tag k="barrier" v="kerb"/>
+  </node>
   <node id="11862350172" lat="34.0124344" lon="-6.8382340" version="1" timestamp="2024-04-28T14:06:05Z" changeset="150620331" uid="18031083" user="mona_magdy"/>
   <node id="11862350173" lat="34.0125089" lon="-6.8381908" version="1" timestamp="2024-04-28T14:06:05Z" changeset="150620331" uid="18031083" user="mona_magdy"/>
   <node id="11862350174" lat="34.0125602" lon="-6.8381470" version="1" timestamp="2024-04-28T14:06:05Z" changeset="150620331" uid="18031083" user="mona_magdy"/>
   <node id="11862350175" lat="34.0124779" lon="-6.8382089" version="1" timestamp="2024-04-28T14:06:05Z" changeset="150620331" uid="18031083" user="mona_magdy"/>
   <node id="11862350176" lat="34.0125379" lon="-6.8381685" version="1" timestamp="2024-04-28T14:06:05Z" changeset="150620331" uid="18031083" user="mona_magdy"/>
-  <node id="11862350177" lat="34.0125807" lon="-6.8381229" version="1" timestamp="2024-04-28T14:06:05Z" changeset="150620331" uid="18031083" user="mona_magdy"/>
+  <node id="11862350177" lat="34.0125807" lon="-6.8381229" version="2" timestamp="2026-11-20T13:24:36Z" changeset="192226702" uid="6296343" user="BaboucheVerte">
+    <tag k="barrier" v="kerb"/>
+  </node>
   <node id="11862350294" lat="34.0122287" lon="-6.8388895" version="1" timestamp="2024-04-28T14:06:05Z" changeset="150620331" uid="18031083" user="mona_magdy"/>
   <node id="11862350295" lat="34.0123640" lon="-6.8387727" version="1" timestamp="2024-04-28T14:06:05Z" changeset="150620331" uid="18031083" user="mona_magdy"/>
   <node id="11862350296" lat="34.0123017" lon="-6.8383461" version="1" timestamp="2024-04-28T14:06:05Z" changeset="150620331" uid="18031083" user="mona_magdy"/>
@@ -9009,7 +9013,7 @@
   <node id="11874197171" lat="34.0225731" lon="-6.8395768" version="1" timestamp="2024-05-02T13:51:12Z" changeset="150795426" uid="15567298" user="shahenda_ahmed"/>
   <node id="11874197172" lat="34.0225742" lon="-6.8395972" version="1" timestamp="2024-05-02T13:51:12Z" changeset="150795426" uid="15567298" user="shahenda_ahmed"/>
   <node id="11874197173" lat="34.0225806" lon="-6.8395512" version="1" timestamp="2024-05-02T13:51:12Z" changeset="150795426" uid="15567298" user="shahenda_ahmed"/>
-  <node id="11874197531" lat="34.0177928" lon="-6.8285242" version="1" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb"/>
+  <node id="11874197531" lat="34.0177924" lon="-6.8285239" version="2" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="11874197532" lat="34.0216699" lon="-6.8392780" version="2" timestamp="2025-04-29T11:00:38Z" changeset="165586627" uid="18031083" user="mona_magdy"/>
   <node id="11874197533" lat="34.0165603" lon="-6.8339864" version="1" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb"/>
   <node id="11874197534" lat="34.0165849" lon="-6.8340095" version="1" timestamp="2024-05-02T13:54:10Z" changeset="150795053" uid="15567153" user="Eman Ghareeb"/>
@@ -9172,8 +9176,8 @@
   <node id="11955394347" lat="34.0241479" lon="-6.8225990" version="1" timestamp="2024-06-04T08:47:29Z" changeset="152232777" uid="8821717" user="CasGroenigen"/>
   <node id="11955394348" lat="34.0240277" lon="-6.8229221" version="1" timestamp="2024-06-04T08:47:29Z" changeset="152232777" uid="8821717" user="CasGroenigen"/>
   <node id="11955394349" lat="34.0238391" lon="-6.8234261" version="1" timestamp="2024-06-04T08:47:29Z" changeset="152232777" uid="8821717" user="CasGroenigen"/>
-  <node id="12149723482" lat="34.0173215" lon="-6.8280263" version="1" timestamp="2024-09-01T13:13:50Z" changeset="156053943" uid="578772" user="alain2003"/>
-  <node id="12149723483" lat="34.0173403" lon="-6.8280270" version="1" timestamp="2024-09-01T13:13:50Z" changeset="156053943" uid="578772" user="alain2003"/>
+  <node id="12149723482" lat="34.0173116" lon="-6.8280295" version="2" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
+  <node id="12149723483" lat="34.0173339" lon="-6.8280274" version="2" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="12152166960" lat="34.0229241" lon="-6.8360175" version="1" timestamp="2024-09-02T19:06:48Z" changeset="156113283" uid="578772" user="alain2003"/>
   <node id="12152885054" lat="34.0208146" lon="-6.8337372" version="1" timestamp="2024-09-03T02:35:36Z" changeset="156122171" uid="578772" user="alain2003"/>
   <node id="12153860328" lat="34.0180860" lon="-6.8393862" version="1" timestamp="2024-09-03T14:48:28Z" changeset="156146331" uid="578772" user="alain2003"/>
@@ -9205,7 +9209,7 @@
   <node id="12157875746" lat="34.0181503" lon="-6.8311001" version="1" timestamp="2024-09-05T14:12:47Z" changeset="156233705" uid="578772" user="alain2003"/>
   <node id="12158629413" lat="34.0225797" lon="-6.8312856" version="1" timestamp="2024-09-05T22:20:03Z" changeset="156250213" uid="578772" user="alain2003"/>
   <node id="12160963753" lat="34.0138565" lon="-6.8255764" version="1" timestamp="2024-09-06T23:04:23Z" changeset="156295102" uid="578772" user="alain2003"/>
-  <node id="12164932329" lat="34.0174313" lon="-6.8281230" version="1" timestamp="2024-09-09T07:08:21Z" changeset="156380202" uid="15567285" user="Aya Samir"/>
+  <node id="12164932329" lat="34.0174312" lon="-6.8281250" version="2" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte"/>
   <node id="12179713499" lat="34.0111189" lon="-6.8223447" version="1" timestamp="2024-09-16T07:40:45Z" changeset="156675205" uid="15567285" user="Aya Samir"/>
   <node id="12179742317" lat="34.0112025" lon="-6.8224094" version="1" timestamp="2024-09-16T07:40:45Z" changeset="156675205" uid="15567285" user="Aya Samir"/>
   <node id="12363583449" lat="34.0136751" lon="-6.8308058" version="1" timestamp="2024-11-22T03:28:21Z" changeset="159442143" uid="20109085" user="WanakaLake"/>
@@ -9755,15 +9759,22 @@
   <node id="14008581758" lat="34.0137470" lon="-6.8385234" version="1" timestamp="2026-07-13T12:43:50Z" changeset="185651931" uid="22338831" user="Youness_ss"/>
   <node id="14008581759" lat="34.0137704" lon="-6.8382774" version="1" timestamp="2026-07-13T12:43:50Z" changeset="185651931" uid="22338831" user="Youness_ss"/>
   <node id="14169650163" lat="34.0255653" lon="-6.8372581" version="1" timestamp="2026-09-10T12:56:33Z" changeset="188823323" uid="6296343" user="BaboucheVerte"/>
-  <way id="4049989" version="25" timestamp="2024-05-01T13:30:14Z" changeset="150750834" uid="15567153" user="Eman Ghareeb">
+  <node id="14394018617" lat="34.0245251" lon="-6.8393381" version="1" timestamp="2026-11-19T00:09:20Z" changeset="192157151" uid="6296343" user="BaboucheVerte"/>
+  <node id="14399485294" lat="34.0123031" lon="-6.8383161" version="1" timestamp="2026-11-20T13:24:36Z" changeset="192226702" uid="6296343" user="BaboucheVerte">
+    <tag k="barrier" v="kerb"/>
+  </node>
+  <node id="14399485295" lat="34.0126666" lon="-6.8380112" version="1" timestamp="2026-11-20T13:24:36Z" changeset="192226702" uid="6296343" user="BaboucheVerte">
+    <tag k="barrier" v="kerb"/>
+  </node>
+  <way id="4049989" version="26" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte">
     <nd ref="1611948789"/>
     <nd ref="5779912432"/>
     <nd ref="4530965306"/>
     <nd ref="527903386"/>
     <tag k="foot" v="no"/>
-    <tag k="highway" v="tertiary"/>
+    <tag k="highway" v="primary"/>
     <tag k="int_name" v="Chari Chellah"/>
-    <tag k="lanes" v="2"/>
+    <tag k="lanes" v="3"/>
     <tag k="name" v="Avenue Chellah شارع شالة"/>
     <tag k="name:ar" v="شارع شالة"/>
     <tag k="name:fr" v="Avenue Chellah"/>
@@ -10200,7 +10211,7 @@
     <tag k="sidewalk" v="right"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="23721065" version="16" timestamp="2024-04-24T00:00:02Z" changeset="150419015" uid="15166886" user="smaptious">
+  <way id="23721065" version="17" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="1834057023"/>
     <nd ref="5985901310"/>
     <nd ref="11842515506"/>
@@ -10211,9 +10222,9 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Demnate"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Demnate زنقة دمنات"/>
+    <tag k="name" v="Rue de Demnate زنقة دمنات"/>
     <tag k="name:ar" v="زنقة دمنات"/>
-    <tag k="name:fr" v="Rue Demnate"/>
+    <tag k="name:fr" v="Rue de Demnate"/>
     <tag k="surface" v="asphalt"/>
   </way>
   <way id="27151923" version="27" timestamp="2025-01-09T15:39:52Z" changeset="161174721" uid="4003485" user="LateNightTone">
@@ -10250,7 +10261,7 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="27152052" version="25" timestamp="2025-01-09T13:46:18Z" changeset="161170751" uid="4003485" user="LateNightTone">
+  <way id="27152052" version="26" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="297907348"/>
     <nd ref="3810850461"/>
     <nd ref="10939946555"/>
@@ -10264,13 +10275,13 @@
     <nd ref="1653197282"/>
     <tag k="highway" v="residential"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Avenue Tour Hassan شارع صومعة حسان"/>
+    <tag k="name" v="Avenue de la Tour Hassan شارع صومعة حسان"/>
     <tag k="name:ar" v="شارع صومعة حسان"/>
-    <tag k="name:fr" v="Avenue Tour Hassan"/>
+    <tag k="name:fr" v="Avenue de la Tour Hassan"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="27152058" version="30" timestamp="2024-05-02T06:44:40Z" changeset="150778766" uid="15567298" user="shahenda_ahmed">
+  <way id="27152058" version="31" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="1653197274"/>
     <nd ref="2972388861"/>
     <nd ref="6838436653"/>
@@ -10286,9 +10297,9 @@
     <nd ref="9936955273"/>
     <tag k="highway" v="residential"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Avenue Tour Hassan شارع صومعة حسان"/>
+    <tag k="name" v="Avenue de la Tour Hassan شارع صومعة حسان"/>
     <tag k="name:ar" v="شارع صومعة حسان"/>
-    <tag k="name:fr" v="Avenue Tour Hassan"/>
+    <tag k="name:fr" v="Avenue de la Tour Hassan"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -10468,7 +10479,7 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="32512284" version="19" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb">
+  <way id="32512284" version="20" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="365557177"/>
     <nd ref="11845240249"/>
     <nd ref="11845240247"/>
@@ -10482,9 +10493,9 @@
     <nd ref="11845240239"/>
     <nd ref="365557172"/>
     <tag k="highway" v="residential"/>
-    <tag k="name" v="Rue Oujda زنقة وجدة"/>
+    <tag k="name" v="Rue d'Oujda زنقة وجدة"/>
     <tag k="name:ar" v="زنقة وجدة"/>
-    <tag k="name:fr" v="Rue Oujda"/>
+    <tag k="name:fr" v="Rue d'Oujda"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -10500,7 +10511,7 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="32512294" version="19" timestamp="2024-04-24T17:19:46Z" changeset="150459328" uid="15166886" user="smaptious">
+  <way id="32512294" version="20" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="365557393"/>
     <nd ref="6808242756"/>
     <nd ref="6808242757"/>
@@ -10513,13 +10524,13 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Telemcem"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Telemcem زنقة تلمسان"/>
+    <tag k="name" v="Rue de Tlemcen زنقة تلمسان"/>
     <tag k="name:ar" v="زنقة تلمسان"/>
-    <tag k="name:fr" v="Rue Telemcem"/>
+    <tag k="name:fr" v="Rue de Tlemcen"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="32512296" version="13" timestamp="2019-09-30T15:06:51Z" changeset="75107748" uid="9535312" user="Ningaloo7">
+  <way id="32512296" version="14" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="365557422"/>
     <nd ref="365557314"/>
     <nd ref="6838043396"/>
@@ -10527,12 +10538,12 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Tindouf"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Tindouf زنقة تندوف"/>
+    <tag k="name" v="Rue de Tindouf زنقة تندوف"/>
     <tag k="name:ar" v="زنقة تندوف"/>
-    <tag k="name:fr" v="Rue Tindouf"/>
+    <tag k="name:fr" v="Rue de Tindouf"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="32512321" version="13" timestamp="2025-05-28T04:17:27Z" changeset="166851177" uid="22435148" user="SevierLake">
+  <way id="32512321" version="14" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="11844972878"/>
     <nd ref="8958545935"/>
     <nd ref="365557444"/>
@@ -10544,9 +10555,9 @@
     <nd ref="365557438"/>
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Kairouan"/>
-    <tag k="name" v="Rue Kairouan زنقة القيروان"/>
+    <tag k="name" v="Rue de Kairouan زنقة القيروان"/>
     <tag k="name:ar" v="زنقة القيروان"/>
-    <tag k="name:fr" v="Rue Kairouan"/>
+    <tag k="name:fr" v="Rue de Kairouan"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -10564,7 +10575,7 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="32512345" version="20" timestamp="2024-04-21T10:17:41Z" changeset="150295478" uid="15567214" user="Nour Ayman">
+  <way id="32512345" version="21" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="365557811"/>
     <nd ref="1725935260"/>
     <nd ref="6806335184"/>
@@ -10572,13 +10583,13 @@
     <nd ref="11834689320"/>
     <nd ref="11834689517"/>
     <tag k="highway" v="residential"/>
-    <tag k="name" v="Rue Sebta زنقة سبتة"/>
+    <tag k="name" v="Rue de Sebta زنقة سبتة"/>
     <tag k="name:ar" v="زنقة سبتة"/>
-    <tag k="name:fr" v="Rue Sebta"/>
+    <tag k="name:fr" v="Rue de Sebta"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="32512359" version="13" timestamp="2025-01-13T13:39:00Z" changeset="161310329" uid="4003485" user="LateNightTone">
+  <way id="32512359" version="14" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="1724517514"/>
     <nd ref="12498106377"/>
     <nd ref="11842515507"/>
@@ -10586,21 +10597,21 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Bouznika"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Bouznika زنقة بوزنيقة"/>
+    <tag k="name" v="Rue de Bouznika زنقة بوزنيقة"/>
     <tag k="name:ar" v="زنقة بوزنيقة"/>
-    <tag k="name:fr" v="Rue Bouznika"/>
+    <tag k="name:fr" v="Rue de Bouznika"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="32512377" version="21" timestamp="2025-05-28T04:17:27Z" changeset="166851177" uid="22435148" user="SevierLake">
+  <way id="32512377" version="22" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="2658474517"/>
     <nd ref="6228367045"/>
     <nd ref="6228367044"/>
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Tétouan"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Tétouan زنقة تطوان"/>
+    <tag k="name" v="Rue de Tétouan زنقة تطوان"/>
     <tag k="name:ar" v="زنقة تطوان"/>
-    <tag k="name:fr" v="Rue Tétouan"/>
+    <tag k="name:fr" v="Rue de Tétouan"/>
     <tag k="surface" v="asphalt"/>
   </way>
   <way id="34875553" version="22" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb">
@@ -10818,7 +10829,7 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="35133842" version="18" timestamp="2024-04-24T00:00:02Z" changeset="150419015" uid="15166886" user="smaptious">
+  <way id="35133842" version="19" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="412120886"/>
     <nd ref="256877478"/>
     <nd ref="11842515532"/>
@@ -10826,9 +10837,9 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Essaouira"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Essaouira زنقة الصويرة"/>
+    <tag k="name" v="Rue d'Essaouira زنقة الصويرة"/>
     <tag k="name:ar" v="زنقة الصويرة"/>
-    <tag k="name:fr" v="Rue Essaouira"/>
+    <tag k="name:fr" v="Rue d'Essaouira"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -10910,18 +10921,18 @@
     <tag k="name:fr" v="Avenue Mohamed El Fassi"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="35160911" version="12" timestamp="2018-10-19T07:09:41Z" changeset="63668932" uid="2126146" user="johnparis">
+  <way id="35160911" version="13" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="412414038"/>
     <nd ref="412414037"/>
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Agadir"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Agadir زنقة أكادير"/>
+    <tag k="name" v="Rue d'Agadir زنقة أكادير"/>
     <tag k="name:ar" v="زنقة أكادير"/>
-    <tag k="name:fr" v="Rue Agadir"/>
+    <tag k="name:fr" v="Rue d'Agadir"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="35160913" version="14" timestamp="2019-11-08T20:36:15Z" changeset="76829497" uid="3778777" user="Baconcrisp">
+  <way id="35160913" version="15" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="412414037"/>
     <nd ref="6726435840"/>
     <nd ref="2568961792"/>
@@ -10930,10 +10941,10 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Khouribga"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Khouribga زنقة خريبكة"/>
+    <tag k="name" v="Rue de Khouribga زنقة خريبكة"/>
     <tag k="name:ar" v="زنقة خريبكة"/>
     <tag k="name:en" v="Khouribga Street"/>
-    <tag k="name:fr" v="Rue Khouribga"/>
+    <tag k="name:fr" v="Rue de Khouribga"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -10968,7 +10979,7 @@
     <tag k="old_name:fr" v="Avenue Meknès"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="35160927" version="10" timestamp="2024-04-24T00:00:02Z" changeset="150419015" uid="15166886" user="smaptious">
+  <way id="35160927" version="11" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="412414177"/>
     <nd ref="6726375322"/>
     <nd ref="412414235"/>
@@ -10986,9 +10997,9 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Azrou"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Azrou زنقة أزرو"/>
+    <tag k="name" v="Rue d'Azrou زنقة أزرو"/>
     <tag k="name:ar" v="زنقة أزرو"/>
-    <tag k="name:fr" v="Rue Azrou"/>
+    <tag k="name:fr" v="Rue d'Azrou"/>
     <tag k="surface" v="asphalt"/>
   </way>
   <way id="35161210" version="9" timestamp="2024-05-02T11:10:11Z" changeset="150788499" uid="15567153" user="Eman Ghareeb">
@@ -11292,7 +11303,7 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="42305068" version="19" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb">
+  <way id="42305068" version="20" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte">
     <nd ref="1611948933"/>
     <nd ref="527903385"/>
     <nd ref="2972378187"/>
@@ -11301,7 +11312,7 @@
     <nd ref="6808066641"/>
     <nd ref="1611948663"/>
     <tag k="foot" v="no"/>
-    <tag k="highway" v="tertiary"/>
+    <tag k="highway" v="primary"/>
     <tag k="junction" v="circular"/>
     <tag k="lanes" v="2"/>
     <tag k="oneway" v="yes"/>
@@ -11421,7 +11432,7 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="68002813" version="16" timestamp="2025-05-28T04:17:27Z" changeset="166851177" uid="22435148" user="SevierLake">
+  <way id="68002813" version="17" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="11844972906"/>
     <nd ref="365557393"/>
     <nd ref="365557422"/>
@@ -11430,13 +11441,13 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Wahran"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Oran زنقة وهران"/>
+    <tag k="name" v="Rue d'Oran زنقة وهران"/>
     <tag k="name:ar" v="زنقة وهران"/>
-    <tag k="name:fr" v="Rue Oran"/>
+    <tag k="name:fr" v="Rue d'Oran"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="68002816" version="16" timestamp="2025-05-05T09:46:25Z" changeset="165836360" uid="15567198" user="Merna_mahmoud">
+  <way id="68002816" version="17" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="1700392233"/>
     <nd ref="11845240250"/>
     <nd ref="6838043410"/>
@@ -11452,9 +11463,9 @@
     <nd ref="6838043414"/>
     <nd ref="11844972895"/>
     <tag k="highway" v="residential"/>
-    <tag k="name" v="Rue Sefrou زنقة صفرو"/>
+    <tag k="name" v="Rue de Sefrou زنقة صفرو"/>
     <tag k="name:ar" v="زنقة صفرو"/>
-    <tag k="name:fr" v="Rue Sefrou"/>
+    <tag k="name:fr" v="Rue de Sefrou"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -12000,7 +12011,7 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="157774333" version="22" timestamp="2025-04-29T13:58:03Z" changeset="165594031" uid="15567198" user="Merna_mahmoud">
+  <way id="157774333" version="23" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="9936955272"/>
     <nd ref="5764260476"/>
     <nd ref="6838027484"/>
@@ -12019,9 +12030,9 @@
     <nd ref="365556268"/>
     <tag k="alt_name:ar" v="زنقة تازة العيون"/>
     <tag k="highway" v="residential"/>
-    <tag k="name" v="Rue Taza زنقة تازة"/>
+    <tag k="name" v="Rue de Taza زنقة تازة"/>
     <tag k="name:ar" v="زنقة تازة"/>
-    <tag k="name:fr" v="Rue Taza"/>
+    <tag k="name:fr" v="Rue de Taza"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -12310,7 +12321,7 @@
     <tag k="sidewalk" v="right"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="160404496" version="14" timestamp="2025-01-13T13:39:00Z" changeset="161310329" uid="4003485" user="LateNightTone">
+  <way id="160404496" version="15" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="1724517428"/>
     <nd ref="11842515508"/>
     <nd ref="412414180"/>
@@ -12320,9 +12331,9 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Tétouan"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Tétouan زنقة تطوان"/>
+    <tag k="name" v="Rue de Tétouan زنقة تطوان"/>
     <tag k="name:ar" v="زنقة تطوان"/>
-    <tag k="name:fr" v="Rue Tétouan"/>
+    <tag k="name:fr" v="Rue de Tétouan"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -12357,7 +12368,7 @@
     <tag k="name:fr" v="Place du Pérou"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="160404499" version="13" timestamp="2024-04-21T13:24:45Z" changeset="150302462" uid="18031142" user="Amany_Osama">
+  <way id="160404499" version="14" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="1724517469"/>
     <nd ref="5772006358"/>
     <nd ref="6726375327"/>
@@ -12371,9 +12382,9 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Ifrane"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Ifrane زنقة إفران"/>
+    <tag k="name" v="Rue d'Ifrane زنقة إفران"/>
     <tag k="name:ar" v="زنقة إفران"/>
-    <tag k="name:fr" v="Rue Ifrane"/>
+    <tag k="name:fr" v="Rue d'Ifrane"/>
     <tag k="surface" v="asphalt"/>
   </way>
   <way id="160404500" version="10" timestamp="2018-10-19T07:11:34Z" changeset="63668932" uid="2126146" user="johnparis">
@@ -12401,7 +12412,7 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="160540293" version="15" timestamp="2026-05-14T12:09:44Z" changeset="182645757" uid="21077882" user="gamopeo">
+  <way id="160540293" version="16" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="1724502188"/>
     <nd ref="6838043399"/>
     <nd ref="1725942145"/>
@@ -12423,9 +12434,9 @@
     <nd ref="365557310"/>
     <tag k="highway" v="residential"/>
     <tag k="lane_markings" v="no"/>
-    <tag k="name" v="Place Sefrou ساحة صفرو"/>
+    <tag k="name" v="Place de Sefrou ساحة صفرو"/>
     <tag k="name:ar" v="ساحة صفرو"/>
-    <tag k="name:fr" v="Place Sefrou"/>
+    <tag k="name:fr" v="Place de Sefrou"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -12501,7 +12512,7 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="172515197" version="12" timestamp="2024-04-24T00:00:02Z" changeset="150419015" uid="15166886" user="smaptious">
+  <way id="172515197" version="13" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="1834128195"/>
     <nd ref="1932926807"/>
     <nd ref="11842515501"/>
@@ -12509,22 +12520,22 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Oued Zem"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Oued Zem زنقة واد زم"/>
+    <tag k="name" v="Rue d'Oued Zem زنقة واد زم"/>
     <tag k="name:ar" v="زنقة واد زم"/>
-    <tag k="name:en" v="Oued-Zem Street"/>
-    <tag k="name:fr" v="Rue Oued Zem"/>
+    <tag k="name:en" v="Oued Zem Street"/>
+    <tag k="name:fr" v="Rue d'Oued Zem"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="172515199" version="17" timestamp="2025-01-13T13:39:00Z" changeset="161310329" uid="4003485" user="LateNightTone">
+  <way id="172515199" version="18" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte">
     <nd ref="1611949146"/>
     <nd ref="12498106354"/>
     <nd ref="4530173874"/>
     <nd ref="10926409917"/>
     <tag k="foot" v="no"/>
-    <tag k="highway" v="tertiary"/>
+    <tag k="highway" v="primary"/>
     <tag k="int_name" v="Chari Chellah"/>
-    <tag k="lanes" v="2"/>
+    <tag k="lanes" v="3"/>
     <tag k="name" v="Avenue Chellah شارع شالة"/>
     <tag k="name:ar" v="شارع شالة"/>
     <tag k="name:fr" v="Avenue Chellah"/>
@@ -12935,7 +12946,7 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="252503561" version="18" timestamp="2025-05-28T04:17:27Z" changeset="166851177" uid="22435148" user="SevierLake">
+  <way id="252503561" version="19" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="11844972898"/>
     <nd ref="365557417"/>
     <nd ref="11844972901"/>
@@ -12944,10 +12955,10 @@
     <tag k="int_name" v="Zankat Settat"/>
     <tag k="lanes" v="2"/>
     <tag k="lit" v="yes"/>
-    <tag k="name" v="Rue Settat زنقة سطات"/>
+    <tag k="name" v="Rue de Settat زنقة سطات"/>
     <tag k="name:ar" v="زنقة سطات"/>
     <tag k="name:en" v="Settat Street"/>
-    <tag k="name:fr" v="Rue Settat"/>
+    <tag k="name:fr" v="Rue de Settat"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -13173,16 +13184,16 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="295763772" version="8" timestamp="2024-04-24T00:00:02Z" changeset="150419015" uid="15166886" user="smaptious">
+  <way id="295763772" version="9" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="2995256306"/>
     <nd ref="11842515530"/>
     <nd ref="2995256280"/>
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Arfoud"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Arfoud زنقة أرفود"/>
+    <tag k="name" v="Rue d'Arfoud زنقة أرفود"/>
     <tag k="name:ar" v="زنقة أرفود"/>
-    <tag k="name:fr" v="Rue Arfoud"/>
+    <tag k="name:fr" v="Rue d'Arfoud"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -13348,19 +13359,19 @@
     <tag k="name:fr" v="Rue Souika"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="342538065" version="18" timestamp="2024-04-29T10:57:33Z" changeset="150656937" uid="15567153" user="Eman Ghareeb">
+  <way id="342538065" version="19" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="11865929875"/>
     <nd ref="11865929922"/>
     <nd ref="2658413959"/>
     <tag k="highway" v="residential"/>
     <tag k="lanes" v="1"/>
-    <tag k="name" v="Rue Halab زنقة حلب"/>
+    <tag k="name" v="Rue d'Alep زنقة حلب"/>
     <tag k="name:ar" v="زنقة حلب"/>
-    <tag k="name:fr" v="Rue Halab"/>
+    <tag k="name:fr" v="Rue d'Alep"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="342538074" version="20" timestamp="2024-05-02T13:30:29Z" changeset="150794559" uid="15567214" user="Nour Ayman">
+  <way id="342538074" version="21" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="21072162"/>
     <nd ref="11834684266"/>
     <nd ref="1872110557"/>
@@ -13377,10 +13388,10 @@
     <nd ref="2658413959"/>
     <tag k="highway" v="residential"/>
     <tag k="lanes" v="1"/>
-    <tag k="name" v="Rue Beyrouth زنقة بيروت"/>
+    <tag k="name" v="Rue de Beyrouth زنقة بيروت"/>
     <tag k="name:ar" v="زنقة بيروت"/>
     <tag k="name:en" v="Beirut Street"/>
-    <tag k="name:fr" v="Rue Beyrouth"/>
+    <tag k="name:fr" v="Rue de Beyrouth"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -13399,7 +13410,7 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="342583781" version="12" timestamp="2026-02-16T13:29:21Z" changeset="178630448" uid="23470620" user="MountMarmolada">
+  <way id="342583781" version="13" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="1914791666"/>
     <nd ref="5774156705"/>
     <nd ref="2995256280"/>
@@ -13407,21 +13418,21 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Al Jadida"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Al Jadida زنقة الجديدة"/>
+    <tag k="name" v="Rue d'El Jadida زنقة الجديدة"/>
     <tag k="name:ar" v="زنقة الجديدة"/>
-    <tag k="name:fr" v="Rue Al Jadida"/>
+    <tag k="name:fr" v="Rue d'El Jadida"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="342583782" version="6" timestamp="2018-10-19T07:14:27Z" changeset="63668932" uid="2126146" user="johnparis">
+  <way id="342583782" version="7" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="3495539835"/>
     <nd ref="3495539836"/>
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Al Araich"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Larache زنقة العرائش"/>
+    <tag k="name" v="Rue de Larache زنقة العرائش"/>
     <tag k="name:ar" v="زنقة العرائش"/>
-    <tag k="name:fr" v="Rue Larache"/>
+    <tag k="name:fr" v="Rue de Larache"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -13551,7 +13562,7 @@
     <tag k="source" v="survey"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="344998839" version="11" timestamp="2019-11-08T22:13:17Z" changeset="76831854" uid="9202927" user="Araucaria_araucana">
+  <way id="344998839" version="12" timestamp="2026-11-19T00:09:20Z" changeset="192157151" uid="6296343" user="BaboucheVerte">
     <nd ref="896390331"/>
     <nd ref="6847437570"/>
     <nd ref="6840927355"/>
@@ -13560,9 +13571,8 @@
     <nd ref="6840927356"/>
     <nd ref="896390336"/>
     <tag k="highway" v="living_street"/>
-    <tag k="name" v="Rue Sidi Mohamed El Ghazi زنقة سيدي محمد الغازي"/>
-    <tag k="name:ar" v="زنقة سيدي محمد الغازي"/>
-    <tag k="name:fr" v="Rue Sidi Mohamed El Ghazi"/>
+    <tag k="name" v="Zanqat El Ghomari"/>
+    <tag k="name:fr" v="Zanqat El Ghomari"/>
     <tag k="surface" v="asphalt"/>
   </way>
   <way id="345004018" version="9" timestamp="2020-11-20T01:50:08Z" changeset="94468212" uid="9535554" user="MustafaQasim">
@@ -14146,7 +14156,7 @@
     <tag k="ref" v="RN1"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="475135484" version="14" timestamp="2024-06-02T14:19:47Z" changeset="152162269" uid="18624923" user="adster546">
+  <way id="475135484" version="15" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="1834128213"/>
     <nd ref="1914791497"/>
     <nd ref="9953003644"/>
@@ -14160,13 +14170,13 @@
     <nd ref="1834128225"/>
     <tag k="highway" v="residential"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Tanger زنقة طنجة"/>
+    <tag k="name" v="Rue de Tanger زنقة طنجة"/>
     <tag k="name:ar" v="زنقة طنجة"/>
-    <tag k="name:fr" v="Rue Tanger"/>
+    <tag k="name:fr" v="Rue de Tanger"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="475135485" version="14" timestamp="2024-06-02T14:19:47Z" changeset="152162269" uid="18624923" user="adster546">
+  <way id="475135485" version="15" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="1834128154"/>
     <nd ref="11874245392"/>
     <nd ref="11874236277"/>
@@ -14181,9 +14191,9 @@
     <nd ref="1834128225"/>
     <tag k="highway" v="residential"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Avenue Ouarzazate شارع ورزازات"/>
+    <tag k="name" v="Avenue d'Ouarzazate شارع ورزازات"/>
     <tag k="name:ar" v="شارع ورزازات"/>
-    <tag k="name:fr" v="Avenue Ouarzazate"/>
+    <tag k="name:fr" v="Avenue d'Ouarzazate"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -14202,13 +14212,14 @@
     <tag k="name:fr" v="Avenue Mohamed V"/>
     <tag k="surface" v="paving_stones"/>
   </way>
-  <way id="479951036" version="15" timestamp="2025-11-21T20:58:51Z" changeset="174965685" uid="14857" user="cpot">
+  <way id="479951036" version="16" timestamp="2026-11-19T00:09:20Z" changeset="192157151" uid="6296343" user="BaboucheVerte">
     <nd ref="12616389379"/>
     <nd ref="6958844766"/>
     <nd ref="896389760"/>
     <nd ref="896389859"/>
     <nd ref="896390951"/>
     <nd ref="896387977"/>
+    <nd ref="14394018617"/>
     <nd ref="516664594"/>
     <nd ref="896387730"/>
     <nd ref="486077535"/>
@@ -14683,15 +14694,15 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="590111669" version="9" timestamp="2019-11-11T19:30:41Z" changeset="76927205" uid="9202927" user="Araucaria_araucana">
+  <way id="590111669" version="10" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="6847520218"/>
     <nd ref="6847520220"/>
     <tag k="highway" v="residential"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Beyrouth زنقة بيروت"/>
+    <tag k="name" v="Rue de Beyrouth زنقة بيروت"/>
     <tag k="name:ar" v="زنقة بيروت"/>
     <tag k="name:en" v="Beirut Street"/>
-    <tag k="name:fr" v="Rue Beyrouth"/>
+    <tag k="name:fr" v="Rue de Beyrouth"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -14801,7 +14812,7 @@
     <tag k="oneway" v="no"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="590150503" version="10" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama">
+  <way id="590150503" version="11" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="1834128225"/>
     <nd ref="11874245373"/>
     <nd ref="11874245372"/>
@@ -14825,9 +14836,9 @@
     <nd ref="412120936"/>
     <tag k="highway" v="residential"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Avenue Ouarzazate شارع ورزازات"/>
+    <tag k="name" v="Avenue d'Ouarzazate شارع ورزازات"/>
     <tag k="name:ar" v="شارع ورزازات"/>
-    <tag k="name:fr" v="Avenue Ouarzazate"/>
+    <tag k="name:fr" v="Avenue d'Ouarzazate"/>
     <tag k="surface" v="asphalt"/>
   </way>
   <way id="590150504" version="9" timestamp="2024-09-16T07:40:45Z" changeset="156675205" uid="15567285" user="Aya Samir">
@@ -14902,7 +14913,7 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="590156556" version="6" timestamp="2019-08-20T11:33:09Z" changeset="73534796" uid="9535055" user="HanaumaBay">
+  <way id="590156556" version="7" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="412414048"/>
     <nd ref="6726375308"/>
     <nd ref="412414047"/>
@@ -14917,9 +14928,9 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Agadir"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Agadir زنقة أكادير"/>
+    <tag k="name" v="Rue d'Agadir زنقة أكادير"/>
     <tag k="name:ar" v="زنقة أكادير"/>
-    <tag k="name:fr" v="Rue Agadir"/>
+    <tag k="name:fr" v="Rue d'Agadir"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -15588,7 +15599,7 @@
     <tag k="highway" v="service"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="609006738" version="6" timestamp="2024-04-29T14:11:43Z" changeset="150665647" uid="15567214" user="Nour Ayman">
+  <way id="609006738" version="7" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="2658413959"/>
     <nd ref="11866483253"/>
     <nd ref="6847520220"/>
@@ -15596,23 +15607,23 @@
     <nd ref="21279476"/>
     <tag k="highway" v="residential"/>
     <tag k="lanes" v="1"/>
-    <tag k="name" v="Rue Beyrouth زنقة بيروت"/>
+    <tag k="name" v="Rue de Beyrouth زنقة بيروت"/>
     <tag k="name:ar" v="زنقة بيروت"/>
     <tag k="name:en" v="Beirut Street"/>
-    <tag k="name:fr" v="Rue Beyrouth"/>
+    <tag k="name:fr" v="Rue de Beyrouth"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="609006739" version="6" timestamp="2019-11-11T19:30:41Z" changeset="76927205" uid="9202927" user="Araucaria_araucana">
+  <way id="609006739" version="7" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="21279476"/>
     <nd ref="6847516847"/>
     <nd ref="1872110574"/>
     <tag k="highway" v="residential"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Beyrouth زنقة بيروت"/>
+    <tag k="name" v="Rue de Beyrouth زنقة بيروت"/>
     <tag k="name:ar" v="زنقة بيروت"/>
     <tag k="name:en" v="Beirut Street"/>
-    <tag k="name:fr" v="Rue Beyrouth"/>
+    <tag k="name:fr" v="Rue de Beyrouth"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -17700,7 +17711,7 @@
     <tag k="lanes" v="2"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="1101515915" version="4" timestamp="2025-01-13T13:39:00Z" changeset="161310329" uid="4003485" user="LateNightTone">
+  <way id="1101515915" version="5" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte">
     <nd ref="1611948663"/>
     <nd ref="6808066638"/>
     <nd ref="1611948900"/>
@@ -17719,7 +17730,7 @@
     <nd ref="1611949317"/>
     <nd ref="527903386"/>
     <tag k="foot" v="no"/>
-    <tag k="highway" v="tertiary"/>
+    <tag k="highway" v="primary"/>
     <tag k="junction" v="circular"/>
     <tag k="lanes" v="2"/>
     <tag k="oneway" v="yes"/>
@@ -17865,14 +17876,14 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="1101929286" version="2" timestamp="2024-05-02T08:39:12Z" changeset="150782591" uid="15567153" user="Eman Ghareeb">
+  <way id="1101929286" version="3" timestamp="2026-11-20T13:17:34Z" changeset="192226446" uid="6296343" user="BaboucheVerte">
     <nd ref="527903386"/>
     <nd ref="6808066640"/>
     <nd ref="1611948728"/>
     <nd ref="5766800270"/>
     <nd ref="1611948933"/>
     <tag k="foot" v="no"/>
-    <tag k="highway" v="tertiary"/>
+    <tag k="highway" v="primary"/>
     <tag k="junction" v="circular"/>
     <tag k="lanes" v="2"/>
     <tag k="oneway" v="yes"/>
@@ -18987,7 +18998,7 @@
     <tag k="highway" v="footway"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="1237974357" version="3" timestamp="2024-05-02T14:17:02Z" changeset="150796507" uid="18031142" user="Amany_Osama">
+  <way id="1237974357" version="4" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="1611948930"/>
     <nd ref="11842515505"/>
     <nd ref="11874245371"/>
@@ -18995,7 +19006,7 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Bouznika"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Bouznika زنقة بوزنيقة"/>
+    <tag k="name" v="Rue de Bouznika زنقة بوزنيقة"/>
     <tag k="name:ar" v="زنقة بوزنيقة"/>
     <tag k="name:fr" v="Rue Bouznika"/>
     <tag k="oneway" v="yes"/>
@@ -23346,14 +23357,14 @@
     <tag k="highway" v="footway"/>
     <tag k="surface" v="paving_stones"/>
   </way>
-  <way id="1279024071" version="1" timestamp="2024-05-02T09:26:36Z" changeset="150784334" uid="15567153" user="Eman Ghareeb">
+  <way id="1279024071" version="2" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="820325891"/>
     <nd ref="5766800271"/>
     <nd ref="11844479203"/>
     <nd ref="11844479201"/>
     <nd ref="2447036189"/>
     <tag k="highway" v="residential"/>
-    <tag k="name" v="زنقة الحسين الأول"/>
+    <tag k="name" v="Rue Houssain I زنقة الحسين الأول"/>
     <tag k="name:ar" v="زنقة الحسين الأول"/>
     <tag k="name:fr" v="Rue Houssain I"/>
   </way>
@@ -24776,8 +24787,8 @@
     <tag k="footway" v="traffic_island"/>
     <tag k="highway" v="footway"/>
   </way>
-  <way id="1349965960" version="1" timestamp="2025-01-10T12:04:26Z" changeset="161202665" uid="4003485" user="LateNightTone">
-    <nd ref="11874105105"/>
+  <way id="1349965960" version="2" timestamp="2026-11-20T13:24:36Z" changeset="192226702" uid="6296343" user="BaboucheVerte">
+    <nd ref="14399485295"/>
     <nd ref="5756990175"/>
     <nd ref="11862350177"/>
     <tag k="crossing" v="uncontrolled"/>
@@ -24787,10 +24798,10 @@
     <tag k="highway" v="footway"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="1349965961" version="1" timestamp="2025-01-10T12:04:26Z" changeset="161202665" uid="4003485" user="LateNightTone">
+  <way id="1349965961" version="2" timestamp="2026-11-20T13:24:36Z" changeset="192226702" uid="6296343" user="BaboucheVerte">
     <nd ref="11862350171"/>
     <nd ref="5756990174"/>
-    <nd ref="11862350301"/>
+    <nd ref="14399485294"/>
     <tag k="crossing" v="uncontrolled"/>
     <tag k="crossing:island" v="no"/>
     <tag k="crossing:markings" v="zebra"/>
@@ -26036,28 +26047,28 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="1383728100" version="1" timestamp="2025-05-05T09:46:25Z" changeset="165836360" uid="15567198" user="Merna_mahmoud">
+  <way id="1383728100" version="2" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="11844972896"/>
     <nd ref="6838043415"/>
     <nd ref="365557312"/>
     <nd ref="365557314"/>
     <tag k="highway" v="residential"/>
-    <tag k="name" v="Rue Sefrou زنقة صفرو"/>
+    <tag k="name" v="Rue de Sefrou زنقة صفرو"/>
     <tag k="name:ar" v="زنقة صفرو"/>
-    <tag k="name:fr" v="Rue Sefrou"/>
+    <tag k="name:fr" v="Rue de Sefrou"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="1383728101" version="1" timestamp="2025-05-05T09:46:25Z" changeset="165836360" uid="15567198" user="Merna_mahmoud">
+  <way id="1383728101" version="2" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="11844972895"/>
     <nd ref="820325896"/>
     <nd ref="10875522512"/>
     <nd ref="11844972896"/>
     <tag k="foot" v="no"/>
     <tag k="highway" v="residential"/>
-    <tag k="name" v="Rue Sefrou زنقة صفرو"/>
+    <tag k="name" v="Rue de Sefrou زنقة صفرو"/>
     <tag k="name:ar" v="زنقة صفرو"/>
-    <tag k="name:fr" v="Rue Sefrou"/>
+    <tag k="name:fr" v="Rue de Sefrou"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -26309,7 +26320,7 @@
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="1390290237" version="1" timestamp="2025-05-28T04:17:27Z" changeset="166851177" uid="22435148" user="SevierLake">
+  <way id="1390290237" version="2" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="1834128268"/>
     <nd ref="11842515503"/>
     <nd ref="1834057023"/>
@@ -26317,13 +26328,13 @@
     <tag k="highway" v="residential"/>
     <tag k="int_name" v="Zankat Wahran"/>
     <tag k="lanes" v="2"/>
-    <tag k="name" v="Rue Oran زنقة وهران"/>
+    <tag k="name" v="Rue d'Oran زنقة وهران"/>
     <tag k="name:ar" v="زنقة وهران"/>
-    <tag k="name:fr" v="Rue Oran"/>
+    <tag k="name:fr" v="Rue d'Oran"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="1390290238" version="1" timestamp="2025-05-28T04:17:27Z" changeset="166851177" uid="22435148" user="SevierLake">
+  <way id="1390290238" version="2" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="11844972901"/>
     <nd ref="6838043398"/>
     <nd ref="365557408"/>
@@ -26331,14 +26342,14 @@
     <tag k="int_name" v="Zankat Settat"/>
     <tag k="lanes" v="2"/>
     <tag k="lit" v="yes"/>
-    <tag k="name" v="Rue Settat زنقة سطات"/>
+    <tag k="name" v="Rue de Settat زنقة سطات"/>
     <tag k="name:ar" v="زنقة سطات"/>
     <tag k="name:en" v="Settat Street"/>
-    <tag k="name:fr" v="Rue Settat"/>
+    <tag k="name:fr" v="Rue de Settat"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
-  <way id="1390290239" version="1" timestamp="2025-05-28T04:17:27Z" changeset="166851177" uid="22435148" user="SevierLake">
+  <way id="1390290239" version="2" timestamp="2026-11-16T20:45:07Z" changeset="192050263" uid="24441274" user="atlasmountains">
     <nd ref="365557419"/>
     <nd ref="11842515509"/>
     <nd ref="11844972898"/>
@@ -26346,10 +26357,10 @@
     <tag k="int_name" v="Zankat Settat"/>
     <tag k="lanes" v="2"/>
     <tag k="lit" v="yes"/>
-    <tag k="name" v="Rue Settat زنقة سطات"/>
+    <tag k="name" v="Rue de Settat زنقة سطات"/>
     <tag k="name:ar" v="زنقة سطات"/>
     <tag k="name:en" v="Settat Street"/>
-    <tag k="name:fr" v="Rue Settat"/>
+    <tag k="name:fr" v="Rue de Settat"/>
     <tag k="oneway" v="yes"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -26679,10 +26690,9 @@
     <nd ref="13767796833"/>
     <tag k="highway" v="footway"/>
   </way>
-  <way id="1509645752" version="2" timestamp="2026-05-06T07:14:20Z" changeset="182280960" uid="22378295" user="mariem_mohamed">
+  <way id="1509645752" version="3" timestamp="2026-11-19T00:09:20Z" changeset="192157151" uid="6296343" user="BaboucheVerte">
     <nd ref="13799831666"/>
     <nd ref="13799831667"/>
-    <tag k="fixme" v="Voir ou se termine le derb, check until where the small street goes"/>
     <tag k="highway" v="living_street"/>
     <tag k="name" v="Derb Berbich"/>
   </way>
@@ -26705,6 +26715,16 @@
     <tag k="highway" v="residential"/>
     <tag k="lanes" v="2"/>
     <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="1582379896" version="1" timestamp="2026-11-20T13:24:36Z" changeset="192226702" uid="6296343" user="BaboucheVerte">
+    <nd ref="14399485294"/>
+    <nd ref="11862350301"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="1582379897" version="1" timestamp="2026-11-20T13:24:36Z" changeset="192226702" uid="6296343" user="BaboucheVerte">
+    <nd ref="11874105105"/>
+    <nd ref="14399485295"/>
+    <tag k="highway" v="footway"/>
   </way>
 
 </osm>

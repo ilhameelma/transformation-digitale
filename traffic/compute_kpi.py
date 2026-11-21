@@ -1,7 +1,9 @@
 """
 compute_kpi.py - M4 : les 4 indicateurs a partir des sorties SUMO.
 
-Lit    : data/tripinfo.xml, data/edgedata.xml
+Lit    : data/tripinfo_<scenario>.xml et data/edgedata_<scenario>.xml
+         (pour le scenario "actuel", les anciens noms data/tripinfo.xml et data/edgedata.xml
+          sont utilises si les fichiers suffixes n'existent pas)
 Ecrit  : data/kpi_<scenario>.json
 
 Indicateurs (voir README, section 7) :
@@ -11,6 +13,8 @@ Indicateurs (voir README, section 7) :
                               parmi les intervalles ou la rue a eu des vehicules ;
                               rues avec moins de MIN_MESURES intervalles ignorees
   4. co2_total_g            = somme de CO2_abs (mg) / 1000
+     (+ co2_par_vehicule_g : CO2 total / nombre de trajets termines, pour comparer deux
+      scenarios qui n'ont pas le meme nombre de vehicules)
 
 Usage : python compute_kpi.py [--scenario actuel] [--seuil 0.5] [--min-mesures 3]
 """
@@ -22,6 +26,14 @@ from collections import defaultdict
 from pathlib import Path
 
 DATA = Path(os.getenv("DATA_DIR") or Path(__file__).resolve().parent.parent / "data")
+
+
+def input_file(scenario, base):
+    """data/<base>_<scenario>.xml s'il existe, sinon (scenario actuel) l'ancien nom data/<base>.xml."""
+    suffixed = DATA / f"{base}_{scenario}.xml"
+    if suffixed.exists() or scenario != "actuel":
+        return suffixed
+    return DATA / f"{base}.xml"
 
 
 def trip_kpi(path):
@@ -45,6 +57,7 @@ def trip_kpi(path):
         "temps_trajet_moyen_s": round(duree / n, 1),
         "vitesse_moyenne_kmh": round(vitesse / n, 1),
         "co2_total_g": round(co2_mg / 1000),
+        "co2_par_vehicule_g": round(co2_mg / 1000 / n, 1),
     }
 
 
@@ -71,8 +84,8 @@ def main():
 
     kpi = {"scenario": args.scenario, "donnees": "simulees (SUMO)",
            "seuil_congestion": args.seuil, "min_mesures": args.min_mesures}
-    kpi.update(trip_kpi(DATA / "tripinfo.xml"))
-    kpi.update(congestion(DATA / "edgedata.xml", args.seuil, args.min_mesures))
+    kpi.update(trip_kpi(input_file(args.scenario, "tripinfo")))
+    kpi.update(congestion(input_file(args.scenario, "edgedata"), args.seuil, args.min_mesures))
 
     out = DATA / f"kpi_{args.scenario}.json"
     out.write_text(json.dumps(kpi, ensure_ascii=False, indent=2), encoding="utf-8")

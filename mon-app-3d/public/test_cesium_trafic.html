@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Cesium + Trafic SUMO</title>
   <script src="https://cesium.com/downloads/cesiumjs/releases/1.88/Build/Cesium/Cesium.js"></script>
   <link href="https://cesium.com/downloads/cesiumjs/releases/1.88/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
   <style>
-    html, body, #cesiumContainer {
-      width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+    html,
+    body,
+    #cesiumContainer {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
     }
   </style>
 </head>
+
 <body>
   <div id="cesiumContainer"></div>
   <script>
-    // 1. Ton token (garde le même que tout à l'heure)
+    // 1. Ton token 
     Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6Imc4aFE5ak01YUd2MGV6VjkiLCJqdGkiOiJmMzQ4N2UwMC00NmVhLTRiNWMtYjdmMS1mZDQ4MGI4ODgxOTQiLCJpZCI6NTUyNzY2LCJpc3MiOiJodHRwczovL2FwaS5jZXNpdW0uY29tIiwiYXVkIjoidW5kZWZpbmVkX2RlZmF1bHQiLCJpYXQiOjE3OTUwOTA2Mjl9.PpdihuurVaTHJbAEbCTJNGP12d3Gy-iLxJzWBsN4Sz0';
 
-    // 2. Initialise la vue 3D (sans le terrain mondial pour charger plus vite)
+    // 2. Initialise la vue 3D
     const viewer = new Cesium.Viewer('cesiumContainer', {
       terrainProvider: new Cesium.EllipsoidTerrainProvider(),
-      timeline: true, // Affiche la timeline en bas
-      animation: true // Affiche les contrôles de lecture
+      timeline: true,
+      animation: true
     });
-    viewer.scene.globe.enableLighting = true; // Active l'éclairage du soleil
+    viewer.scene.globe.enableLighting = true;
     viewer.clock.currentTime = Cesium.JulianDate.fromIso8601('2024-06-21T12:00:00Z');
 
     // 3. Charge les bâtiments OSM
     viewer.scene.primitives.add(Cesium.createOsmBuildings());
 
-    // 4. Charge ton fichier CZML
-    Cesium.CzmlDataSource.load('data/trafic_czml.json').then(function(dataSource) {
+    // 4. Détecte le scénario choisi dans l'URL (par défaut : actuel)
+    const urlParams = new URLSearchParams(window.location.search);
+    const scenario = urlParams.get('scenario') || 'actuel';
+    const fichierJson = scenario === 'pic' ? '/trafic_czml_pic.json' : '/trafic_czml.json';
+
+    // 5. Charge le bon fichier JSON
+    Cesium.CzmlDataSource.load(fichierJson).then(function (dataSource) {
       viewer.dataSources.add(dataSource);
-      
-      // 5. Centre la caméra sur la zone de Hassan au démarrage
+
+      // 6. Centre la caméra sur Rabat Hassan
       viewer.camera.flyTo({
         destination: Cesium.Cartesian3.fromDegrees(-6.8416, 34.0209, 800),
         orientation: {
-          heading: Cesium.Math.toRadians(45.0), // Regarde vers le Nord-Est
-          pitch: Cesium.Math.toRadians(-40.0),  // Inclinaison
+          heading: Cesium.Math.toRadians(45.0),
+          pitch: Cesium.Math.toRadians(-40.0),
           roll: 0.0
         }
       });
-      
-      // 6. Lance l'animation automatiquement
+
+      // 7. Lance l'animation
       viewer.clock.shouldAnimate = true;
-      
-    }).catch(function(error) {
+
+    }).catch(function (error) {
       console.error("Erreur de chargement CZML :", error);
       alert("Erreur de chargement CZML. Vérifie la console.");
     });
   </script>
 </body>
+
 </html>

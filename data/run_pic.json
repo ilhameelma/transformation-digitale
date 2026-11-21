@@ -1,0 +1,11 @@
+{
+  "scenario": "pic",
+  "demande": "demand_pic",
+  "vehicules_demandes": 650,
+  "sans_itineraire": 47,
+  "trajets_termines": 460,
+  "en_route_a_la_fin": 143,
+  "fin_simulation_s": 900,
+  "seed": 42,
+  "sumo": "Eclipse SUMO sumo 1.28.0"
+}
