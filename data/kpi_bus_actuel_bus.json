@@ -1,0 +1,9 @@
+{
+  "bus_termines": 4,
+  "duree_moyenne_s": 241.8,
+  "attente_moyenne_s": 169.5,
+  "axe_bus_termines": 4,
+  "axe_duree_moyenne_s": 241.8,
+  "axe_attente_moyenne_s": 169.5,
+  "bus_non_comparables": 18
+}
