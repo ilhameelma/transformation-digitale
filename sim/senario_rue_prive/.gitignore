@@ -1,0 +1,8 @@
+runs/
+edgedata_*.xml
+tripinfo_*.xml
+sumo_log*.txt
+duarouter_log.txt
+hassan_voie_reservee.net.xml
+hassan_voie_reservee_v2.net.xml
+voie_reservee.rou.xml
