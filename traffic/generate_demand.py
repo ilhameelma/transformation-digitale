@@ -14,6 +14,7 @@ Usage : python generate_demand.py [--n 500] [--window morning|evening|day] [--sc
 """
 import argparse
 import csv
+import json
 import os
 import random
 import xml.etree.ElementTree as ET
@@ -60,11 +61,16 @@ def main():
     ap.add_argument("--duration", type=int, default=900, help="duree simulee (s), comme hassan.sumocfg")
     ap.add_argument("--scale", type=float, default=1.0, help="1.3 = scenario pic de trafic +30 %%")
     ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument("--exclude-closure", action="store_true",
+                    help="exclut de la demande les rues de data/closure_sumo.json (origine/destination)")
     ap.add_argument("--out", default=str(DATA / "demand.csv"))
     args = ap.parse_args()
 
     rng = random.Random(args.seed)
     edges = drivable_edges(DATA / "hassan.net.xml")
+    if args.exclude_closure:
+        closed = set(json.loads((DATA / "closure_sumo.json").read_text(encoding="utf-8"))["edges"])
+        edges = [e for e in edges if e not in closed]
     if len(edges) < 2:
         raise SystemExit("Reseau vide ou introuvable : lance d'abord le conteneur sim (M1).")
 
