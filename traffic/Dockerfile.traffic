@@ -1,8 +1,9 @@
+# syntax=docker/dockerfile:1
 # Conteneur M4 : demande de trafic, scenarios SUMO (actuel, rue fermee, pic +30 %)
 # et indicateurs. Meme version de SUMO que sim/ (regle d'equipe : 1.28.0).
 #
-# Un scenario :  docker compose run --rm traffic python run_scenario.py rue_fermee
-# Les trois :    docker compose run --rm traffic python run_scenario.py all
+# Scenario rue fermee (depuis la racine du depot) :
+#   powershell -ExecutionPolicy Bypass -File sim\senario_rue_fermee\scenario_rue_fermee.ps1 -Force
 FROM python:3.11-slim-bookworm
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -11,12 +12,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libgl1 libglu1-mesa libfontconfig1 libxerces-c3.2 \
     && rm -rf /var/lib/apt/lists/*
 
-# Connexion lente : on utilise d'abord les fichiers .whl deposes dans traffic/wheels/
-# (voir instructions), sinon pip telecharge avec plus de patience et reprise.
-COPY wheels /wheels
-RUN pip install --no-cache-dir --upgrade pip \
+# Connexion lente : si des fichiers .whl sont dans traffic/wheels/ (dossier local, non versionne), pip les
+# utilise ; sinon il telecharge avec plus de patience et reprise. Le dossier wheels/ n'a pas besoin d'exister :
+# le contexte est monte le temps de l'installation et n'est pas copie dans l'image.
+RUN --mount=type=bind,target=/ctx \
+    pip install --no-cache-dir --upgrade pip \
  && pip install --no-cache-dir --retries 10 --timeout 120 --resume-retries 20 \
-    --find-links=/wheels eclipse-sumo==1.28.0
+    --find-links=/ctx/wheels eclipse-sumo==1.28.0
 
 ENV SUMO_HOME=/usr/local/lib/python3.11/site-packages/sumo
 ENV PATH="/usr/local/bin:${PATH}"
