@@ -62,17 +62,27 @@ def congestion(path, seuil, min_mesures):
     return {"congestion_moyenne": moy, "rues_mesurees": len(taux), "congestion_par_rue": taux}
 
 
+def pick(nom, scenario):
+    """Fichier propre au scenario s'il existe, sinon le fichier SUMO par defaut."""
+    p = DATA / f"{nom}_{scenario}.xml"
+    return p if p.exists() else DATA / f"{nom}.xml"
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--scenario", default="actuel")
     ap.add_argument("--seuil", type=float, default=0.5)
     ap.add_argument("--min-mesures", type=int, default=3)
+    ap.add_argument("--tripinfo", help="defaut : tripinfo_<scenario>.xml, sinon tripinfo.xml")
+    ap.add_argument("--edgedata", help="defaut : edgedata_<scenario>.xml, sinon edgedata.xml")
     args = ap.parse_args()
 
     kpi = {"scenario": args.scenario, "donnees": "simulees (SUMO)",
            "seuil_congestion": args.seuil, "min_mesures": args.min_mesures}
-    kpi.update(trip_kpi(DATA / "tripinfo.xml"))
-    kpi.update(congestion(DATA / "edgedata.xml", args.seuil, args.min_mesures))
+    trip = Path(args.tripinfo) if args.tripinfo else pick("tripinfo", args.scenario)
+    edge = Path(args.edgedata) if args.edgedata else pick("edgedata", args.scenario)
+    kpi.update(trip_kpi(trip))
+    kpi.update(congestion(edge, args.seuil, args.min_mesures))
 
     out = DATA / f"kpi_{args.scenario}.json"
     out.write_text(json.dumps(kpi, ensure_ascii=False, indent=2), encoding="utf-8")

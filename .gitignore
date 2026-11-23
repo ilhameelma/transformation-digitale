@@ -38,4 +38,8 @@ mon-app-3d/public/data/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
+*:Zone.Identifiertraffic/wheels/ 
+=======
 *:Zone.Identifier
+>>>>>>> origin/main

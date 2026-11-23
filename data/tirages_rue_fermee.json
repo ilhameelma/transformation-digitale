@@ -1,0 +1,113 @@
+{
+  "n_tirages": 10,
+  "voitures_axe": 53,
+  "fin_simulation_s": 1500,
+  "ecart_moyen_axe_s": -19.6,
+  "ecart_type_axe_s": 9.3,
+  "plus_lent": 0,
+  "plus_rapide": 10,
+  "ecart_moyen_tous_s": -0.0,
+  "ecart_type_tous_s": 2.7,
+  "tirages": [
+    {
+      "seed": 1,
+      "finis_actuel": 300,
+      "finis_fermee": 286,
+      "axe_comparables": 39,
+      "duree_axe_actuel_s": 285.0,
+      "duree_axe_fermee_s": 259.9,
+      "ecart_axe_s": -25.1,
+      "ecart_tous_s": -0.4
+    },
+    {
+      "seed": 2,
+      "finis_actuel": 300,
+      "finis_fermee": 286,
+      "axe_comparables": 39,
+      "duree_axe_actuel_s": 290.1,
+      "duree_axe_fermee_s": 260.1,
+      "ecart_axe_s": -30.1,
+      "ecart_tous_s": -1.6
+    },
+    {
+      "seed": 3,
+      "finis_actuel": 300,
+      "finis_fermee": 286,
+      "axe_comparables": 39,
+      "duree_axe_actuel_s": 282.6,
+      "duree_axe_fermee_s": 267.4,
+      "ecart_axe_s": -15.2,
+      "ecart_tous_s": 2.8
+    },
+    {
+      "seed": 4,
+      "finis_actuel": 300,
+      "finis_fermee": 286,
+      "axe_comparables": 39,
+      "duree_axe_actuel_s": 282.3,
+      "duree_axe_fermee_s": 253.7,
+      "ecart_axe_s": -28.6,
+      "ecart_tous_s": -2.0
+    },
+    {
+      "seed": 5,
+      "finis_actuel": 300,
+      "finis_fermee": 286,
+      "axe_comparables": 39,
+      "duree_axe_actuel_s": 284.6,
+      "duree_axe_fermee_s": 266.1,
+      "ecart_axe_s": -18.5,
+      "ecart_tous_s": -0.2
+    },
+    {
+      "seed": 6,
+      "finis_actuel": 300,
+      "finis_fermee": 286,
+      "axe_comparables": 39,
+      "duree_axe_actuel_s": 280.3,
+      "duree_axe_fermee_s": 272.9,
+      "ecart_axe_s": -7.4,
+      "ecart_tous_s": 0.8
+    },
+    {
+      "seed": 7,
+      "finis_actuel": 300,
+      "finis_fermee": 286,
+      "axe_comparables": 39,
+      "duree_axe_actuel_s": 284.7,
+      "duree_axe_fermee_s": 280.2,
+      "ecart_axe_s": -4.4,
+      "ecart_tous_s": 3.5
+    },
+    {
+      "seed": 8,
+      "finis_actuel": 300,
+      "finis_fermee": 286,
+      "axe_comparables": 39,
+      "duree_axe_actuel_s": 281.3,
+      "duree_axe_fermee_s": 267.5,
+      "ecart_axe_s": -13.7,
+      "ecart_tous_s": 3.9
+    },
+    {
+      "seed": 9,
+      "finis_actuel": 300,
+      "finis_fermee": 286,
+      "axe_comparables": 39,
+      "duree_axe_actuel_s": 285.7,
+      "duree_axe_fermee_s": 255.9,
+      "ecart_axe_s": -29.7,
+      "ecart_tous_s": -4.0
+    },
+    {
+      "seed": 10,
+      "finis_actuel": 300,
+      "finis_fermee": 286,
+      "axe_comparables": 39,
+      "duree_axe_actuel_s": 281.7,
+      "duree_axe_fermee_s": 258.4,
+      "ecart_axe_s": -23.3,
+      "ecart_tous_s": -2.8
+    }
+  ]
+}
