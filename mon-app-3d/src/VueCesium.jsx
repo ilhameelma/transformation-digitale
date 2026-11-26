@@ -30,7 +30,7 @@ export default function VueCesium() {
           background: '#000' // Fond noir en attendant le chargement
         }}>
           <iframe 
-            src="/test_cesium_trafic.html" 
+            src="/test_cesium_final.html" 
             style={{ width: '100%', height: '100%', border: 'none' }} 
             title="Vue Cesium 3D"
           />

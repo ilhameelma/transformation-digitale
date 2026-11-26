@@ -6,6 +6,7 @@ import Map from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { Link } from 'react-router-dom';
 
+
 const INITIAL_VIEW_STATE = {
   longitude: -6.8416,
   latitude: 34.0209,
@@ -20,7 +21,9 @@ const LOOP_SECONDS = 300;
 
 const SCENARIOS = [
   { id: 'actuel', label: 'Situation actuelle', color: [60, 210, 255], hex: '#3cd2ff', shortLabel: 'Actuel' },
-  { id: 'pic', label: 'Pic de trafic +30 %', color: [255, 170, 40], hex: '#ffaa28', shortLabel: 'Pic' }
+  { id: 'pic', label: 'Pic de trafic +30 %', color: [255, 170, 40], hex: '#ffaa28', shortLabel: 'Pic' },
+  { id: 'rue_fermee', label: 'Rue Fermée', color: [255, 75, 75], hex: '#ff4b4b', shortLabel: 'Fermée' },
+  { id: 'voie_reservee', label: 'Voie Réservée', color: [75, 211, 123], hex: '#4bd37b', shortLabel: 'Bus' }
 ];
 const scenarioById = (id) => SCENARIOS.find((s) => s.id === id) || SCENARIOS[0];
 
@@ -356,8 +359,7 @@ export default function App() {
           <h1 style={{ margin: 0, fontSize: 24, color: '#fff' }}>Jumeau numérique 3D : Rabat Hassan</h1>
           <p style={{ margin: '2px 0 0 0', color: COLOR_NEUTRAL, fontSize: 13 }}>Données de trafic simulées (SUMO).</p>
         </div>
-        {/* MODIFICATION ICI : Le lien transmet le scénario choisi */}
-        <Link to={`/cesium?scenario=${selected}`} style={{ background: '#3cd2ff', color: '#000', padding: '8px 16px', textDecoration: 'none', borderRadius: 6, fontWeight: 'bold', fontSize: 13 }}>
+        <Link to={`/cesium?scenario=${selected}`} style={{ background: '#3cd2ff', color: '#000', padding: '10px 20px', textDecoration: 'none', borderRadius: 6, fontWeight: 'bold' }}>
           Voir la vue réaliste (Cesium)
         </Link>
       </div>

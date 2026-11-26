@@ -11,14 +11,7 @@ services:
       dockerfile: Dockerfile.m2
     volumes:
       - ./data:/data
-  viz:
-    build:
-      context: ./viz
-      dockerfile: Dockerfile.viz
-    ports:
-      - "8501:8501"
-    volumes:
-      - ./data:/data
+
 
   # À ajouter dans docker-compose.yml, sous "services:" (même indentation que m1, m2, viz)
   traffic:
