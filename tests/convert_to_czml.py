@@ -1,69 +1,69 @@
 import json
-import datetime
+import os
+from datetime import datetime, timedelta, timezone
 
-# 1. Charge tes trajets SUMO
-with open("data/trajectories_actuel.json", "r") as f:
-    raw_trips = json.load(f)
+script_dir = os.path.dirname(os.path.abspath(__file__))
+data_dir = os.path.join(script_dir, "..", "data")
 
-# On prend seulement les 20 premiers véhicules pour le test (pour ne pas surcharger)
-raw_trips = raw_trips[:20]
+SCENARIOS = ["actuel", "pic", "rue_fermee", "voie_reservee"]
+COLORS = {
+    "actuel": [60, 210, 255, 255],
+    "pic": [255, 170, 40, 255],
+    "rue_fermee": [60, 210, 255, 255],       # voitures en cyan, la rue fermée est en rouge
+    "voie_reservee": [60, 210, 255, 255],    # voitures en cyan, bus en orange
+}
+BUS_COLOR = [255, 150, 0, 255]
+MAX_CARS = 80          # on garde tous les bus
+START = datetime(2024, 1, 1, tzinfo=timezone.utc)
 
-# 2. Prépare le paquet CZML
-czml = [
-    {
-        "id": "document",
-        "name": "Trafic Hassan",
-        "version": "1.0",
-        "clock": {
-            "interval": "2024-01-01T00:00:00Z/2024-01-01T00:10:00Z",
-            "currentTime": "2024-01-01T00:00:00Z",
-            "multiplier": 10,  # Accélère le temps 10x
-            "range": "LOOP_STOP",
-            "step": "SYSTEM_CLOCK_MULTIPLIER"
-        }
-    }
-]
+# Fichier de trajectoires à utiliser pour chaque scénario
+SOURCE = {"actuel": "actuel", "pic": "pic", "rue_fermee": "rue_fermee", "voie_reservee": "voie_reservee"}
 
-# 3. Convertit chaque véhicule en entité CZML
-for i, trip in enumerate(raw_trips):
-    path = trip["path"]
-    timestamps = trip.get("timestamps", [p[2] for p in path])
-    
-    # Construit la liste des positions horodatées
-    cartographic_degrees = []
-    for p, t in zip(path, timestamps):
-        # p[0] = longitude, p[1] = latitude. L'altitude est fixée à 10m.
-        cartographic_degrees.extend([t, p[0], p[1], 10.0])
-    
-    # Ajoute l'entité du véhicule
-    czml.append({
-        "id": f"vehicule_{i}",
-        "availability": "2024-01-01T00:00:00Z/2024-01-01T00:10:00Z",
-        "position": {
-            "epoch": "2024-01-01T00:00:00Z",
-            "cartographicDegrees": cartographic_degrees
-        },
-        # On utilise un point lumineux au lieu d'un modèle 3D pour le test
-        "point": {
-            "color": {"rgba": [255, 50, 50, 255]},  # Cyan
-            "pixelSize": 10,
-            "outlineColor": {"rgba": [0, 0, 0, 255]},
-            "outlineWidth": 2
-        },
-        # Ajoute une traînée derrière le véhicule
-        "path": {
-            "resolution": 1,
-            "material": {
-                "solidColor": {"color": {"rgba": [255, 50, 50, 150]}}
-            },
-            "width": 4,
-            "leadTime": 0,
-            "trailTime": 120 # Garde une traînée de 120 secondes
-        }
-    })
 
-# 4. Sauvegarde le fichier CZML
-with open("trafic_czml.json", "w") as f:
-    json.dump(czml, f, indent=2)
+def iso(seconds):
+    return (START + timedelta(seconds=seconds)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-print(f"Fichier trafic_czml.json généré avec {len(raw_trips)} véhicules.")
+
+for scenario in SCENARIOS:
+    input_path = os.path.join(data_dir, f"trajectories_{SOURCE[scenario]}.json")
+    if not os.path.exists(input_path):
+        print(f"Fichier introuvable pour {scenario} : {input_path}")
+        continue
+
+    with open(input_path, "r", encoding="utf-8") as f:
+        raw = json.load(f)
+
+    buses = [t for t in raw if t.get("type") == "bus"]
+    cars = [t for t in raw if t.get("type") != "bus"][:MAX_CARS]
+    trips = cars + buses
+
+    t_max = max((p[2] for t in trips for p in t["path"]), default=600)
+    interval = f"{iso(0)}/{iso(t_max)}"
+
+    czml = [{
+        "id": "document", "name": f"Trafic {scenario}", "version": "1.0",
+        "clock": {"interval": interval, "currentTime": iso(0), "multiplier": 10,
+                  "range": "LOOP_STOP", "step": "SYSTEM_CLOCK_MULTIPLIER"},
+    }]
+
+    for i, trip in enumerate(trips):
+        is_bus = trip.get("type") == "bus"
+        color = BUS_COLOR if is_bus else COLORS[scenario]
+        trail = list(color); trail[3] = 150
+        coords = []
+        for p in trip["path"]:
+            coords.extend([p[2], p[0], p[1], 10.0])
+        czml.append({
+            "id": f"{'bus' if is_bus else 'voiture'}_{scenario}_{i}",
+            "availability": interval,
+            "position": {"epoch": iso(0), "cartographicDegrees": coords},
+            "point": {"color": {"rgba": color}, "pixelSize": 14 if is_bus else 9,
+                      "outlineColor": {"rgba": [0, 0, 0, 255]}, "outlineWidth": 2},
+            "path": {"resolution": 1, "material": {"solidColor": {"color": {"rgba": trail}}},
+                     "width": 6 if is_bus else 3, "leadTime": 0, "trailTime": 120},
+        })
+
+    out = os.path.join(data_dir, f"trafic_czml_{scenario}.json")
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump(czml, f)
+    print(f"{scenario} : {len(cars)} voitures + {len(buses)} bus, {t_max:.0f} s -> {out}")
