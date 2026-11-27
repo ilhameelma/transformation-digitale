@@ -1,84 +1,71 @@
 import json
 import os
+from datetime import datetime, timedelta, timezone
 
-# 1. Déterminer le dossier data/
 script_dir = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(script_dir, "..", "data")
 
-scenarios = ["actuel", "pic", "rue_fermee", "voie_reservee"]
+SCENARIOS = ["actuel", "pic", "rue_fermee", "voie_reservee"]
 
-# 2. Définir une couleur pour chaque scénario (Rouge, Vert, Bleu, Orange)
+# Une couleur de trajets par scénario (mêmes teintes que la vue principale)
 COLORS = {
-    "actuel": [60, 210, 255, 255],       # Bleu cyan (comme la vue analytique)
-    "pic": [255, 170, 40, 255],          # Orange (comme la vue analytique)
-    "rue_fermee": [255, 75, 75, 255],    # Rouge
-    "voie_reservee": [75, 211, 123, 255] # Vert
+    "actuel": [60, 210, 255, 255],         # cyan
+    "pic": [255, 170, 40, 255],            # orange
+    "rue_fermee": [255, 75, 75, 255],      # rouge
+    "voie_reservee": [75, 211, 123, 255],  # vert
 }
+BUS_COLOR = [255, 150, 0, 255]             # les bus restent orange
+MAX_CARS = 80          # on garde tous les bus
+START = datetime(2024, 1, 1, tzinfo=timezone.utc)
 
-for scenario in scenarios:
-    input_path = os.path.join(data_dir, f"trajectories_{scenario}.json")
-    
+# Fichier de trajectoires à utiliser pour chaque scénario
+SOURCE = {"actuel": "actuel", "pic": "pic", "rue_fermee": "rue_fermee", "voie_reservee": "voie_reservee"}
+
+
+def iso(seconds):
+    return (START + timedelta(seconds=seconds)).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+for scenario in SCENARIOS:
+    input_path = os.path.join(data_dir, f"trajectories_{SOURCE[scenario]}.json")
     if not os.path.exists(input_path):
-        print(f"⚠️ Fichier introuvable pour {scenario} : {input_path}")
+        print(f"Fichier introuvable pour {scenario} : {input_path}")
         continue
 
-    with open(input_path, "r") as f:
-        raw_trips = json.load(f)
+    with open(input_path, "r", encoding="utf-8") as f:
+        raw = json.load(f)
 
-    raw_trips = raw_trips[:30] 
+    buses = [t for t in raw if t.get("type") == "bus"]
+    cars = [t for t in raw if t.get("type") != "bus"][:MAX_CARS]
+    trips = cars + buses
 
-    # Récupérer la couleur (par défaut rouge si le scénario n'est pas dans le dico)
-    main_color = COLORS.get(scenario, [255, 50, 50, 255])
-    trail_color = list(main_color)
-    trail_color[3] = 150 # On baisse l'opacité de la traînée pour faire joli
+    t_max = max((p[2] for t in trips for p in t["path"]), default=600)
+    interval = f"{iso(0)}/{iso(t_max)}"
 
-    czml = [
-        {
-            "id": "document",
-            "name": f"Trafic {scenario}",
-            "version": "1.0",
-            "clock": {
-                "interval": "2024-01-01T00:00:00Z/2024-01-01T00:10:00Z",
-                "currentTime": "2024-01-01T00:00:00Z",
-                "multiplier": 10,
-                "range": "LOOP_STOP",
-                "step": "SYSTEM_CLOCK_MULTIPLIER"
-            }
-        }
-    ]
+    czml = [{
+        "id": "document", "name": f"Trafic {scenario}", "version": "1.0",
+        "clock": {"interval": interval, "currentTime": iso(0), "multiplier": 10,
+                  "range": "LOOP_STOP", "step": "SYSTEM_CLOCK_MULTIPLIER"},
+    }]
 
-    for i, trip in enumerate(raw_trips):
-        path = trip["path"]
-        timestamps = trip.get("timestamps", [p[2] for p in path])
-        
-        cartographic_degrees = []
-        for p, t in zip(path, timestamps):
-            cartographic_degrees.extend([t, p[0], p[1], 10.0])
-        
+    for i, trip in enumerate(trips):
+        is_bus = trip.get("type") == "bus"
+        color = BUS_COLOR if is_bus else COLORS[scenario]
+        trail = list(color); trail[3] = 150
+        coords = []
+        for p in trip["path"]:
+            coords.extend([p[2], p[0], p[1], 10.0])
         czml.append({
-            "id": f"vehicule_{scenario}_{i}",
-            "availability": "2024-01-01T00:00:00Z/2024-01-01T00:10:00Z",
-            "position": {
-                "epoch": "2024-01-01T00:00:00Z",
-                "cartographicDegrees": cartographic_degrees
-            },
-            "point": {
-                "color": {"rgba": main_color}, # Utilisation de la couleur
-                "pixelSize": 10,
-                "outlineColor": {"rgba": [0, 0, 0, 255]},
-                "outlineWidth": 2
-            },
-            "path": {
-                "resolution": 1,
-                "material": {"solidColor": {"color": {"rgba": trail_color}}},
-                "width": 4,
-                "leadTime": 0,
-                "trailTime": 120
-            }
+            "id": f"{'bus' if is_bus else 'voiture'}_{scenario}_{i}",
+            "availability": interval,
+            "position": {"epoch": iso(0), "cartographicDegrees": coords},
+            "point": {"color": {"rgba": color}, "pixelSize": 14 if is_bus else 9,
+                      "outlineColor": {"rgba": [0, 0, 0, 255]}, "outlineWidth": 2},
+            "path": {"resolution": 1, "material": {"solidColor": {"color": {"rgba": trail}}},
+                     "width": 6 if is_bus else 3, "leadTime": 0, "trailTime": 120},
         })
 
-    output_path = os.path.join(data_dir, f"trafic_czml_{scenario}.json")
-    with open(output_path, "w") as f:
-        json.dump(czml, f, indent=2)
-    
-    print(f"✅ {scenario} : {len(raw_trips)} véhicules -> {output_path}")
+    out = os.path.join(data_dir, f"trafic_czml_{scenario}.json")
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump(czml, f)
+    print(f"{scenario} : {len(cars)} voitures + {len(buses)} bus, {t_max:.0f} s -> {out}")
