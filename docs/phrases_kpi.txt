@@ -1,0 +1,65 @@
+# Phrases-modèles des KPI (généré par generer_phrases_kpi.py, ne pas éditer à la main)
+# Exclus : kpi_actuel.json. Données simulées (SUMO).
+
+## MODÈLE A : un fichier kpi_<scenario>.json (3 phrases par scénario)
+
+[actuel_ref#resume | scenario=actuel_ref | source=kpi_actuel_ref.json]
+Scénario « situation actuelle de référence » (kpi_actuel_ref.json) : c'est une situation de référence. Elle sert de référence au scénario rue fermée. 295 trajets terminés. Temps de trajet moyen : 174,7 s. Vitesse moyenne : 32,8 km/h. CO₂ total : 162 072 g. Un seul tirage : résultat indicatif. Données simulées (SUMO). Source : kpi_actuel_ref.json.
+
+[actuel_ref#congestion | scenario=actuel_ref | source=kpi_actuel_ref.json]
+Scénario « situation actuelle de référence » : congestion moyenne 30,8 % sur 563 rues mesurées. Une rue est dite congestionnée dans un intervalle de 60 s si sa vitesse relative est inférieure à 0,5 ; seules les rues avec au moins 3 mesures sont comptées. 295 trajets terminés. Le nombre de rues mesurées varie d'un scénario à l'autre : la comparaison est approximative. Données simulées (SUMO). Source : kpi_actuel_ref.json.
+
+[actuel_ref#rues | scenario=actuel_ref | source=kpi_actuel_ref.json]
+Scénario « situation actuelle de référence » : 77 rues sont congestionnées en permanence (100 % des intervalles). 5 d'entre elles, classées par taux puis par identifiant (liste non exhaustive, l'ordre entre rues à égalité est arbitraire) : -1058687159#2 (Rue d'Annaba زنقة عنابة) à 100 % ; -1058687159#3 (Rue d'Annaba زنقة عنابة) à 100 % ; -1169600229 (Rue Mourabitine زنقة المرابطين) à 100 % ; -176730637#1 (Rue Soekarno زنقة سوكارنو) à 100 % ; -35161212#0 (Rue Prince Moulay Abdellah زنقة الأمير مولاي عبد الله) à 100 %. 295 trajets terminés. Données simulées (SUMO). Source : kpi_actuel_ref.json.
+
+[actuel_bus#resume | scenario=actuel_bus | source=kpi_actuel_bus.json]
+Scénario « situation actuelle avec ligne de bus » (kpi_actuel_bus.json) : c'est une situation de référence. Elle sert de référence au scénario voie réservée. 300 trajets terminés. Temps de trajet moyen : 183,2 s. Vitesse moyenne : 32,2 km/h. CO₂ total : 168 478 g. Un seul tirage : résultat indicatif. Données simulées (SUMO). Source : kpi_actuel_bus.json.
+
+[actuel_bus#congestion | scenario=actuel_bus | source=kpi_actuel_bus.json]
+Scénario « situation actuelle avec ligne de bus » : congestion moyenne 31,5 % sur 584 rues mesurées. Une rue est dite congestionnée dans un intervalle de 60 s si sa vitesse relative est inférieure à 0,5 ; seules les rues avec au moins 3 mesures sont comptées. 300 trajets terminés. Le nombre de rues mesurées varie d'un scénario à l'autre : la comparaison est approximative. Données simulées (SUMO). Source : kpi_actuel_bus.json.
+
+[actuel_bus#rues | scenario=actuel_bus | source=kpi_actuel_bus.json]
+Scénario « situation actuelle avec ligne de bus » : 75 rues sont congestionnées en permanence (100 % des intervalles). 5 d'entre elles, classées par taux puis par identifiant (liste non exhaustive, l'ordre entre rues à égalité est arbitraire) : -1058687159#2 (Rue d'Annaba زنقة عنابة) à 100 % ; -1058687159#3 (Rue d'Annaba زنقة عنابة) à 100 % ; -176730637#1 (Rue Soekarno زنقة سوكارنو) à 100 % ; -35161212#0 (Rue Prince Moulay Abdellah زنقة الأمير مولاي عبد الله) à 100 % ; 1058687159#3 (Rue d'Annaba زنقة عنابة) à 100 %. 300 trajets terminés. Données simulées (SUMO). Source : kpi_actuel_bus.json.
+
+[rue_fermee#resume | scenario=rue_fermee | source=kpi_rue_fermee.json]
+Scénario « rue fermée » (kpi_rue_fermee.json), comparé à la situation actuelle de référence (kpi_actuel_ref.json). L'amélioration apparente est en partie un biais de sélection (voitures sans itinéraire écartées, voir hypotheses.md). 281 trajets terminés contre 295. Temps de trajet moyen : 170,7 s contre 174,7 s (−4,0 s, −2,3 %). Vitesse moyenne : 33,6 km/h contre 32,8 km/h (+0,8 km/h, +2,4 %). CO₂ total : 152 794 g contre 162 072 g (−9 278 g, −5,7 %). Attention : les nombres de trajets terminés diffèrent, donc le temps moyen et le CO₂ total ne sont pas strictement comparables (le CO₂ total ne se compare qu'à demande et durée égales). Un seul tirage : résultat indicatif. Données simulées (SUMO). Source : kpi_rue_fermee.json.
+
+[rue_fermee#congestion | scenario=rue_fermee | source=kpi_rue_fermee.json]
+Scénario « rue fermée » : congestion moyenne 30,4 % sur 528 rues mesurées, contre 30,8 % sur 563 rues pour la situation actuelle de référence (−0,4 points). Une rue est dite congestionnée dans un intervalle de 60 s si sa vitesse relative est inférieure à 0,5 ; seules les rues avec au moins 3 mesures sont comptées. 281 trajets terminés. Le nombre de rues mesurées varie d'un scénario à l'autre : la comparaison est approximative. Données simulées (SUMO). Source : kpi_rue_fermee.json.
+
+[rue_fermee#rues | scenario=rue_fermee | source=kpi_rue_fermee.json]
+Scénario « rue fermée » : 75 rues sont congestionnées en permanence (100 % des intervalles). 5 d'entre elles, classées par taux puis par identifiant (liste non exhaustive, l'ordre entre rues à égalité est arbitraire) : -1058687159#2 (Rue d'Annaba زنقة عنابة) à 100 % (référence : 100 %) ; -1058687159#3 (Rue d'Annaba زنقة عنابة) à 100 % (référence : 100 %) ; -176730637#1 (Rue Soekarno زنقة سوكارنو) à 100 % (référence : 100 %) ; 1056990347 (Avenue Moulay Al Hassan شارع مولاي الحسن) à 100 % (référence : 92 %) ; 1058687159#3 (Rue d'Annaba زنقة عنابة) à 100 % (référence : 100 %). 281 trajets terminés. Données simulées (SUMO). Source : kpi_rue_fermee.json.
+
+[voie_reservee#resume | scenario=voie_reservee | source=kpi_voie_reservee.json]
+Scénario « voie réservée aux bus » (kpi_voie_reservee.json), comparé à la situation actuelle avec ligne de bus (kpi_actuel_bus.json). Les chiffres du réseau (toutes les voitures) ne mesurent pas l'effet sur l'axe : voir les phrases dédiées à l'axe et aux bus. 300 trajets terminés contre 300. Temps de trajet moyen : 182,4 s contre 183,2 s (−0,8 s, −0,4 %). Vitesse moyenne : 32,2 km/h (inchangé par rapport à la référence). CO₂ total : 168 885 g contre 168 478 g (+407 g, +0,2 %). Un seul tirage : résultat indicatif. Données simulées (SUMO). Source : kpi_voie_reservee.json.
+
+[voie_reservee#congestion | scenario=voie_reservee | source=kpi_voie_reservee.json]
+Scénario « voie réservée aux bus » : congestion moyenne 31,0 % sur 559 rues mesurées, contre 31,5 % sur 584 rues pour la situation actuelle avec ligne de bus (−0,5 points). Une rue est dite congestionnée dans un intervalle de 60 s si sa vitesse relative est inférieure à 0,5 ; seules les rues avec au moins 3 mesures sont comptées. 300 trajets terminés. Le nombre de rues mesurées varie d'un scénario à l'autre : la comparaison est approximative. Données simulées (SUMO). Source : kpi_voie_reservee.json.
+
+[voie_reservee#rues | scenario=voie_reservee | source=kpi_voie_reservee.json]
+Scénario « voie réservée aux bus » : 78 rues sont congestionnées en permanence (100 % des intervalles). 5 d'entre elles, classées par taux puis par identifiant (liste non exhaustive, l'ordre entre rues à égalité est arbitraire) : -1058687159#2 (Rue d'Annaba زنقة عنابة) à 100 % (référence : 100 %) ; -1058687159#3 (Rue d'Annaba زنقة عنابة) à 100 % (référence : 100 %) ; -1169600229 (Rue Mourabitine زنقة المرابطين) à 100 % (référence : 75 %) ; -176730637#1 (Rue Soekarno زنقة سوكارنو) à 100 % (référence : 100 %) ; -35161212#0 (Rue Prince Moulay Abdellah زنقة الأمير مولاي عبد الله) à 100 % (référence : 100 %). 300 trajets terminés. Données simulées (SUMO). Source : kpi_voie_reservee.json.
+
+[pic#resume | scenario=pic | source=kpi_pic.json]
+Scénario « pic de trafic (+30 %) » (kpi_pic.json), à comparer à la situation actuelle à 500 trajets (kpi_actuel_500.json) : cette référence n'est pas encore disponible, aucune comparaison chiffrée n'est possible. La demande est supérieure de 30 % à celle de la situation actuelle. 460 trajets terminés. Temps de trajet moyen : 163,4 s. Vitesse moyenne : 33,1 km/h. CO₂ total : 234 105 g. Un seul tirage : résultat indicatif. Données simulées (SUMO). Source : kpi_pic.json.
+
+[pic#congestion | scenario=pic | source=kpi_pic.json]
+Scénario « pic de trafic (+30 %) » : congestion moyenne 27,7 % sur 714 rues mesurées. Une rue est dite congestionnée dans un intervalle de 60 s si sa vitesse relative est inférieure à 0,5 ; seules les rues avec au moins 3 mesures sont comptées. 460 trajets terminés. Le nombre de rues mesurées varie d'un scénario à l'autre : la comparaison est approximative. Données simulées (SUMO). Source : kpi_pic.json.
+
+[pic#rues | scenario=pic | source=kpi_pic.json]
+Scénario « pic de trafic (+30 %) » : 94 rues sont congestionnées en permanence (100 % des intervalles). 5 d'entre elles, classées par taux puis par identifiant (liste non exhaustive, l'ordre entre rues à égalité est arbitraire) : -1058687159#1 (Rue d'Annaba زنقة عنابة) à 100 % ; -1058687159#2 (Rue d'Annaba زنقة عنابة) à 100 % ; -1058687159#3 (Rue d'Annaba زنقة عنابة) à 100 % ; -176730637#1 (Rue Soekarno زنقة سوكارنو) à 100 % ; -236715625#4 (Rue Madnine زنقة مادنين) à 100 %. 460 trajets terminés. Données simulées (SUMO). Source : kpi_pic.json.
+
+## MODÈLE B : kpi_axe*.json et kpi_bus_*.json (axe et bus)
+
+[axe_voie_reservee | scenario=voie_reservee | source=kpi_axe.json]
+Scénario « voie réservée aux bus », axe 4330541 : 37 voitures de l'axe terminées (contre 37 en situation actuelle avec ligne de bus). Durée moyenne 333,7 s contre 326,1 s pour la référence « actuel_bus » (+7,6 s, +2,3 %). Un seul tirage, sans écart-type : résultat indicatif, aucun écart n'est affirmé. [À VÉRIFIER : version du réseau de bus de kpi_axe.json.] Données simulées (SUMO). Source : kpi_axe.json.
+
+[bus_voie_reservee | scenario=voie_reservee | source=kpi_bus_voie_reservee.json et kpi_bus_actuel_bus.json]
+Scénario « voie réservée aux bus », bus de l'axe 4330541 : 4 bus comparables terminés (contre 4 en situation actuelle avec ligne de bus ; 18 autres bus non comparables, écartés). Durée moyenne 219,5 s contre 241,8 s (−22,3 s, −9,2 %). Attente moyenne 150,2 s contre 169,5 s (−19,3 s). Échantillon très petit et un seul tirage : résultat indicatif. L'attente des bus vient surtout des feux, que la voie réservée n'évite pas. Données simulées (SUMO). Source : kpi_bus_voie_reservee.json et kpi_bus_actuel_bus.json.
+
+[axe_rue_fermee | scenario=rue_fermee | source=kpi_axe_rue_fermee.json]
+Scénario « rue fermée », axe 4330541 : 53 voitures empruntent l'axe en situation actuelle ; 14 n'ont plus d'itinéraire et 39 sont déviées. Sur les 33 voitures comparables terminées, durée moyenne 243,1 s contre 269,4 s pour la référence « actuel_ref » (−26,3 s). Cette baisse est un biais de sélection : les voitures sans itinéraire sont exclues de la comparaison, elle ne prouve pas un gain. Un seul tirage : résultat indicatif. Données simulées (SUMO). Source : kpi_axe_rue_fermee.json.
+
+## MODÈLE C : tirages_rue_fermee.json
+
+[tirages_rue_fermee | scenario=rue_fermee | source=tirages_rue_fermee.json]
+Scénario « rue fermée » sur 10 tirages (graines 1 à 10, 1500 s), comparé à la situation actuelle : 286 trajets terminés contre 300 par tirage. Sur l'axe (53 voitures, dont 39 comparables par tirage), écart moyen −19,6 s, écart-type 9,3 s, plus rapide dans 10 tirages sur 10 et plus lent dans 0 : écart net. Sur l'ensemble des voitures, écart moyen 0,0 s, écart-type 2,7 s : écart non net (inférieur à 2 fois l'écart-type). Le gain sur l'axe est à lire avec le biais de sélection des voitures sans itinéraire. Données simulées (SUMO). Source : tirages_rue_fermee.json.

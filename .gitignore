@@ -11,7 +11,7 @@ __pycache__/
 *.pyc
 .venv/
 venv/
-
+.env
 # Éditeur et système
 .vscode/
 .DS_Store
