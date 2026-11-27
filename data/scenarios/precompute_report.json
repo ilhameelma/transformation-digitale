@@ -1,0 +1,55 @@
+{
+  "dag_run_id": "manual__2026-11-27T14:12:42+00:00",
+  "rues": [
+    {
+      "street_id": "avenue-mohamed-v",
+      "state": "ready",
+      "durees_s": {
+        "prepare": 2.96,
+        "simulate": 7.85,
+        "export": 2.88
+      },
+      "duree_s": 14.76
+    },
+    {
+      "street_id": "avenue-moulay-ismail",
+      "state": "ready",
+      "durees_s": {
+        "prepare": 2.77,
+        "simulate": 9.45,
+        "export": 5.91
+      },
+      "duree_s": 20.17
+    },
+    {
+      "street_id": "avenue-moulay-al-hassan",
+      "state": "ready",
+      "durees_s": {
+        "prepare": 3.3,
+        "simulate": 7.69,
+        "export": 2.52
+      },
+      "duree_s": 14.48
+    },
+    {
+      "street_id": "rue-d-annaba",
+      "state": "ready",
+      "durees_s": {
+        "prepare": 2.02,
+        "simulate": 8.22,
+        "export": 4.01
+      },
+      "duree_s": 15.45
+    },
+    {
+      "street_id": "avenue-al-alaouiyine",
+      "state": "ready",
+      "durees_s": {
+        "prepare": 1.88,
+        "simulate": 4.96,
+        "export": 2.4
+      },
+      "duree_s": 10.08
+    }
+  ]
+}

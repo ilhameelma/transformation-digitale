@@ -41,5 +41,58 @@ services:
       - hf-cache:/root/.cache/huggingface
     profiles: ["chat"]
 
+  # --- Airflow : simulation à la demande d'une rue fermée (profil "airflow", la démo de base reste légère) ---
+  # Lancer :  docker compose --profile airflow up --build airflow
+  # Interface : http://localhost:8080   API REST : POST /api/v1/dags/closed_street/dagRuns
+  airflow-db:
+    profiles: ["airflow"]
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - airflow-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      retries: 10
+
+  airflow:
+    profiles: ["airflow"]
+    build:
+      context: ./airflow
+    depends_on:
+      airflow-db:
+        condition: service_healthy
+    user: "${AIRFLOW_UID:-50000}:0"
+    ports:
+      - "127.0.0.1:8080:8080"   # accessible depuis ce PC seulement
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-db/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      # Sans ceci, un DAG déclenché par l'API reste en attente : les DAG sont en pause à leur création
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "False"
+      # Authentification basique pour l'API REST (le chatbot appelle l'API avec le compte admin)
+      AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+      AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW_SECRET_KEY:-dev-seulement-a-changer}
+      AIRFLOW_ADMIN_USER: ${AIRFLOW_ADMIN_USER:-admin}
+      AIRFLOW_ADMIN_PASSWORD: ${AIRFLOW_ADMIN_PASSWORD:-admin}
+      # Démarrage rapide d'un run (le délai entre deux tâches compte pour le critère T6, moins de 5 s)
+      AIRFLOW__SCHEDULER__SCHEDULER_IDLE_SLEEP_TIME: "1"
+      AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: "30"
+      AIRFLOW__SCHEDULER__MIN_FILE_PROCESS_INTERVAL: "30"
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/include:/opt/airflow/include
+      - ./data:/data                # sorties : data/scenarios/<rue>/ (lu par react-viz)
+      - ./sim:/sim:ro               # réseau et demande de référence
+      - ./traffic:/traffic:ro       # compute_kpi.py : formules des indicateurs de M4
+      - airflow-logs:/opt/airflow/logs
+
 volumes:
   hf-cache:
+  airflow-db:
+  airflow-logs:
+

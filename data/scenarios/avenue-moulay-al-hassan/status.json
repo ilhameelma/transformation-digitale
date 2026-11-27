@@ -1,0 +1,10 @@
+{
+  "street_id": "avenue-moulay-al-hassan",
+  "state": "ready",
+  "step": "done",
+  "run_id": "manual__2026-11-27T14:12:42+00:00",
+  "started_at": "2026-11-27T14:13:14+00:00",
+  "updated_at": "2026-11-27T14:13:28+00:00",
+  "updated_epoch": 1795788808.5068424,
+  "error": null
+}
