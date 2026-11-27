@@ -367,9 +367,18 @@ export default function App() {
       {/* BARRE D'OUTILS */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap', marginBottom: 12, maxWidth: 1500, width: '100%', alignSelf: 'center', background: 'rgba(255,255,255,0.02)', padding: '8px 16px', borderRadius: 12, border: '1px solid rgba(255,255,255,0.05)' }}>
         <span style={{ color: COLOR_NEUTRAL, fontSize: 13, fontWeight: 'bold', letterSpacing: 1 }}>SCÉNARIOS :</span>
-        {SCENARIOS.map((s) => (
-          <button key={s.id} onClick={() => setSelected(s.id)} style={chip(selected === s.id, s.hex)}>{s.label}</button>
-        ))}
+        {SCENARIOS.map((s) => {
+          const pageDediee = { rue_fermee: '/rue-fermee', voie_reservee: '/voie-reservee' }[s.id];
+          return pageDediee ? (
+            <Link key={s.id} to={pageDediee} style={{ ...chip(false, s.hex), textDecoration: 'none' }}>
+              {s.label} ↗
+            </Link>
+          ) : (
+            <button key={s.id} onClick={() => setSelected(s.id)} style={chip(selected === s.id, s.hex)}>
+              {s.label}
+            </button>
+          );
+        })}
 
         <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 12 }}>
           {compare && impactPct !== null && (
