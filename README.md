@@ -219,7 +219,25 @@ Chaque membre a un binôme de secours : M1 avec M2, M3 avec M4.
 - Point de 15 minutes le lundi et le jeudi.
 - Tableau de tâches partagé (Trello, Notion ou GitHub Projects).
 - Un dépôt Git unique, **une branche par fonctionnalité**, revue avant fusion.
+ ## Chatbot RAG : reconstruire l'index
 
+L'index Chroma (`data/chroma`) est un index de texte jetable, non versionné.
+Il se reconstruit depuis `docs/` et les fichiers `data/kpi_*.json`, qui restent
+la source de vérité des chiffres. À refaire à chaque changement de chiffres ou de texte.
+
+1. Copier `.env.example` en `.env` et renseigner la clé du LLM (`.env` est ignoré par Git).
+2. Reconstruire l'index :
+
+   docker compose --profile chat run --rm chat-api sh -c "python chat-api/rag/generer_phrases_kpi.py && python chat-api/rag/construire_index_rag.py"
+
+3. Interroger le chatbot :
+
+   docker compose --profile chat run --rm chat-api python chat-api/chatbot_test.py "pourquoi les bus attendent autant ?"
+
+Sans Docker : activer le .venv, puis lancer les mêmes scripts avec `python`
+depuis la racine du projet. Le modèle d'embeddings (intfloat/multilingual-e5-small)
+est téléchargé au premier lancement (environ 470 Mo) puis conservé en cache.
+Données simulées (SUMO).
 ## 9. Planning
 
 | Semaine | Objectif | Jalon |

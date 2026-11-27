@@ -16,6 +16,11 @@ venv/
 .vscode/
 .DS_Store
 Thumbs.db
+data/chroma/
+fcd_*.xml
+edgedata_*.xml
+tripinfo_*.xml
+docs/phrases_kpi.txt
 
 
 sim/cache/

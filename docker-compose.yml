@@ -30,3 +30,16 @@ services:
     volumes:
       # On monte le dossier data à l'endroit où Nginx sert les fichiers statiques
       - ./data:/usr/share/nginx/html/data:ro 
+  chat-api:
+    build:
+      context: .
+      dockerfile: chat-api/Dockerfile
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+      - ./docs:/app/docs
+      - hf-cache:/root/.cache/huggingface
+    profiles: ["chat"]
+
+volumes:
+  hf-cache:
