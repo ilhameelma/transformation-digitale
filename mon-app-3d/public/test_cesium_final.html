@@ -1,49 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Visualisation du trafic SUMO - Cesium</title>
 
-    <!-- Bibliothèque Cesium -->
     <script src="https://cesium.com/downloads/cesiumjs/releases/1.88/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.88/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
 
-    <!-- Styles Cesium -->
-    <link
-        href="https://cesium.com/downloads/cesiumjs/releases/1.88/Build/Cesium/Widgets/widgets.css"
-        rel="stylesheet"
-    >
-
-    <!-- Styles personnalisés -->
     <style>
-        html,
-        body,
-        #cesiumContainer {
+        html, body, #cesiumContainer {
             width: 100%;
             height: 100%;
             margin: 0;
             padding: 0;
             overflow: hidden;
+            background: #0f1115;
         }
 
-        /* Panneau d'information */
         #infoPanel {
             position: absolute;
             top: 20px;
             left: 20px;
             z-index: 1000;
-
             padding: 12px 20px;
-
             background: rgba(10, 15, 25, 0.88);
             color: white;
-
             border: 1px solid #3cd2ff;
             border-radius: 8px;
-
             font-family: Arial, sans-serif;
             font-size: 14px;
             line-height: 1.8;
@@ -52,104 +37,71 @@
 </head>
 
 <body>
-
-    <!-- Conteneur de la carte 3D -->
     <div id="cesiumContainer"></div>
 
-    <!-- =========================================
-         SCRIPT PRINCIPAL
-    ========================================== -->
-
     <script>
-
         // =========================================
-        // 1. CONFIGURATION GENERALE
+        // 1. CONFIGURATION
         // =========================================
 
-        Cesium.Ion.defaultAccessToken = 'TON_TOKEN_ACTUEL';
+        // Token Ion : optionnel. Sans token valide, seuls les bâtiments OSM manquent
+        // (le fond de carte et les trajets marchent quand même).
+        // Restreindre le token à ton domaine dans le tableau de bord Ion.
+        const ION_TOKEN = '';
+        if (ION_TOKEN) Cesium.Ion.defaultAccessToken = ION_TOKEN;
 
         const CONFIG = {
-            position: {
-                longitude: -6.8416,
-                latitude: 34.0209,
-                altitude: 800
-            },
-
-            camera: {
-                heading: 45,
-                pitch: -40,
-                roll: 0
-            },
-
-            dataFolder: 'data/'
+            position: { longitude: -6.8416, latitude: 34.0209, altitude: 800 },
+            camera: { heading: 45, pitch: -40, roll: 0 },
+            dataFolder: '/data/'
         };
 
-
         // =========================================
-        // 2. DEFINITION DES SCENARIOS
+        // 2. SCENARIOS
         // =========================================
 
         const SCENARIOS = {
-
-            actuel: {
-                name: 'Situation actuelle',
-                showTrafficLegend: true
-            },
-
-            pic: {
-                name: 'Pic de trafic +30 %',
-                showTrafficLegend: false
-            },
-
-            rue_fermee: {
-                name: 'Rue fermée',
-                overlay: 'rue_fermee_troncons.geojson'
-            },
-
+            actuel: { name: 'Situation actuelle', showTrafficLegend: true },
+            pic: { name: 'Pic de trafic +30 %', showTrafficLegend: false },
+            rue_fermee: { name: 'Rue fermée', overlay: 'rue_fermee_troncons.geojson' },
             voie_reservee: {
                 name: 'Voie réservée aux bus',
                 overlay: 'axe_4330541.geojson',
                 showTrafficLegend: true
             }
-
         };
 
-        const scenario =
-            new URLSearchParams(window.location.search).get('scenario') || 'actuel';
-
-        const currentScenario = SCENARIOS[scenario] || {
-            name: scenario
-        };
-
+        const scenario = new URLSearchParams(window.location.search).get('scenario') || 'actuel';
+        const currentScenario = SCENARIOS[scenario] || { name: scenario };
 
         // =========================================
         // 3. INITIALISATION DE CESIUM
         // =========================================
 
         const viewer = new Cesium.Viewer('cesiumContainer', {
-
+            baseLayerPicker: false,                       // évite les appels à Ion
+            imageryProvider: new Cesium.UrlTemplateImageryProvider({
+                url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+                credit: 'Imagery © Esri, Maxar, Earthstar Geographics',
+                maximumLevel: 19
+            }),
             terrainProvider: new Cesium.EllipsoidTerrainProvider(),
-
             timeline: true,
             animation: true,
-
             shouldAnimate: true
-
         });
 
-        viewer.scene.globe.enableLighting = true;
-
+        // Pas de soleil simulé : sinon la scène est noire (1 Jan 2024 00:00 UTC = nuit)
+        viewer.scene.globe.enableLighting = false;
+        viewer.scene.globe.baseColor = Cesium.Color.fromCssColorString('#1a1d24');
 
         // =========================================
-        // 4. GESTION DU PANNEAU D'INFORMATION
+        // 4. PANNEAU D'INFORMATION
         // =========================================
 
         function createInfoPanel() {
-
             const panel = document.createElement('div');
-
             panel.id = 'infoPanel';
-
             panel.innerHTML = `
                 <strong>Visualisation du trafic SUMO</strong>
                 <br>
@@ -157,282 +109,200 @@
                 <div id="legend"></div>
                 <div id="status"></div>
             `;
-
             document.body.appendChild(panel);
-
             return panel;
-
         }
 
-        const infoPanel = createInfoPanel();
+        createInfoPanel();
 
+        function showStatus(message, color) {
+            document.getElementById('status').innerHTML =
+                `<span style="color:${color}">${message}</span>`;
+        }
 
         // =========================================
-        // 5. GENERATION DE LA LEGENDE
+        // 5. LEGENDE
         // =========================================
 
         function createLegend() {
-
             const legend = document.getElementById('legend');
-
             let content = '';
 
+            const carHex = {
+                actuel: '#3cd2ff', pic: '#ffaa28', rue_fermee: '#ff4b4b', voie_reservee: '#4bd37b'
+            }[scenario] || '#3cd2ff';
+            content += `<span style="color:${carHex}">●</span> Voitures`;
             if (currentScenario.showTrafficLegend) {
-
-                content += `
-                    <span style="color:#ff9600">●</span> Bus
-                    &nbsp;
-                    <span style="color:#3cd2ff">●</span> Voitures
-                    <br>
-                `;
-
+                content += ` &nbsp;<span style="color:#ff9600">●</span> Bus`;
             }
-
+            content += '<br>';
             if (scenario === 'voie_reservee') {
-
                 content += `
                     <span style="color:#28dc78">━</span> Voie réservée
                     &nbsp;
                     <span style="color:#ffd700">━</span> Axe
                 `;
-
             }
-
             if (scenario === 'rue_fermee') {
-
                 content += `
-                    <span style="color:#ff2828">━</span> Avenue fermée
+                    <span style="color:#ffffff">━</span> Avenue fermée
                     <br>
                     <span style="color:#ff5aaa">━</span> Transversales fermées
                 `;
-
             }
-
             legend.innerHTML = content;
-
         }
 
         createLegend();
 
-
         // =========================================
-        // 6. AFFICHAGE DES BATIMENTS 3D
+        // 6. BATIMENTS 3D (protégés : pas de blocage si le token Ion est absent)
         // =========================================
 
-        function loadBuildings() {
-
-            viewer.scene.primitives.add(
-                Cesium.createOsmBuildings()
-            );
-
+        // Les bâtiments OSM d'Ion sont placés à leur altitude réelle (relief + géoïde, ~50-100 m ici).
+        // Notre sol est plat (altitude 0) : sans correction, les bâtiments flottent au-dessus des rues.
+        // On mesure l'altitude du sol au centre de la zone et on descend les bâtiments d'autant.
+        async function alignBuildingsOnFlatGround(tileset) {
+            try {
+                const terrain = Cesium.createWorldTerrain();
+                const pos = [Cesium.Cartographic.fromDegrees(CONFIG.position.longitude, CONFIG.position.latitude)];
+                const sampled = await Cesium.sampleTerrainMostDetailed(terrain, pos);
+                const h = sampled[0].height || 0;
+                const origin = Cesium.Cartesian3.fromDegrees(CONFIG.position.longitude, CONFIG.position.latitude, 0);
+                const normal = Cesium.Ellipsoid.WGS84.geodeticSurfaceNormal(origin, new Cesium.Cartesian3());
+                const offset = Cesium.Cartesian3.multiplyByScalar(normal, -h, new Cesium.Cartesian3());
+                tileset.modelMatrix = Cesium.Matrix4.fromTranslation(offset);
+                console.log('Altitude du sol mesurée :', h.toFixed(1), 'm (bâtiments abaissés d\'autant)');
+            } catch (e) {
+                console.warn('Alignement des bâtiments impossible', e);
+            }
         }
 
-        loadBuildings();
+        async function loadBuildings() {
+            try {
+                let tileset;
+                if (Cesium.createOsmBuildingsAsync) {
+                    tileset = await Cesium.createOsmBuildingsAsync();   // versions récentes
+                } else {
+                    tileset = Cesium.createOsmBuildings();              // 1.88
+                }
+                viewer.scene.primitives.add(tileset);
+                if (tileset.readyPromise) {
+                    tileset.readyPromise.catch((e) =>
+                        console.warn('Bâtiments OSM indisponibles (token Ion ?)', e));
+                }
+                await alignBuildingsOnFlatGround(tileset);
+            } catch (e) {
+                console.warn('Bâtiments OSM indisponibles (token Ion ?)', e);
+            }
+        }
 
+        if (ION_TOKEN) loadBuildings();   // sans token : pas d'appel Ion, pas de bandeau d'erreur
 
         // =========================================
-        // 7. GESTION DES STYLES GEOJSON
+        // 7. STYLES GEOJSON
         // =========================================
 
         function styleGeoJsonEntities(dataSource) {
-
             dataSource.entities.values.forEach(entity => {
-
                 if (!entity.polyline) return;
 
                 const properties = entity.properties || {};
+                const kind = properties.kind ? properties.kind.getValue() : null;
+                const type = properties.type ? properties.type.getValue() : null;
 
-                const kind = properties.kind
-                    ? properties.kind.getValue()
-                    : null;
-
-                const type = properties.type
-                    ? properties.type.getValue()
-                    : null;
-
-                let color = Cesium.Color.RED;
+                let color = Cesium.Color.WHITE;   // avenue fermée
                 let width = 10;
 
-                // Transversales fermées
                 if (type === 'transversale') {
-
                     color = Cesium.Color.fromCssColorString('#ff5aaa');
                     width = 6;
-
                 }
-
-                // Axe principal
                 if (kind === 'axe') {
-
                     color = Cesium.Color.GOLD.withAlpha(0.7);
                     width = 12;
-
                 }
-
-                // Voie réservée aux bus
                 if (kind === 'voie_reservee') {
-
                     color = Cesium.Color.fromCssColorString('#28dc78');
                     width = 6;
-
                 }
 
                 entity.polyline.material = color;
                 entity.polyline.width = width;
                 entity.polyline.clampToGround = true;
-
+                // sans cela, la ligne n'est dessinée que sur le sol et disparaît sous les bâtiments 3D
+                entity.polyline.classificationType = Cesium.ClassificationType.BOTH;
             });
-
         }
 
-
         // =========================================
-        // 8. CHARGEMENT DES COUCHES GEOJSON
+        // 8. COUCHES GEOJSON
         // =========================================
 
         async function loadOverlay() {
+            if (!currentScenario.overlay) return;
 
-            if (!currentScenario.overlay) {
-                return;
-            }
-
-            const file =
-                CONFIG.dataFolder + currentScenario.overlay;
-
+            const file = CONFIG.dataFolder + currentScenario.overlay;
             try {
-
-                const dataSource = await Cesium.GeoJsonDataSource.load(
-                    file,
-                    {
-                        clampToGround: true
-                    }
-                );
-
+                const dataSource = await Cesium.GeoJsonDataSource.load(file, { clampToGround: true });
                 styleGeoJsonEntities(dataSource);
-
                 viewer.dataSources.add(dataSource);
-
             } catch (error) {
-
-                console.error('Erreur GeoJSON :', error);
-
-                showStatus(
-                    'Impossible de charger le fichier GeoJSON.',
-                    '#ff6b6b'
-                );
-
+                console.error('Overlay introuvable :', file, error);
+                showStatus('Impossible de charger le fichier GeoJSON.', '#ff6b6b');
             }
-
         }
 
-
         // =========================================
-        // 9. CHARGEMENT DES DONNEES DE TRAFIC CZML
+        // 9. TRAFIC CZML
         // =========================================
 
         async function loadTraffic() {
-
-            const file =
-                `${CONFIG.dataFolder}trafic_czml_${scenario}.json?v=${Date.now()}`;
-
+            const file = `${CONFIG.dataFolder}trafic_czml_${scenario}.json?v=${Date.now()}`;
             try {
-
                 const dataSource = await Cesium.CzmlDataSource.load(file);
-
                 viewer.dataSources.add(dataSource);
-
                 viewer.clock.shouldAnimate = true;
-
                 showStatus('Données de trafic chargées.', '#28dc78');
-
             } catch (error) {
-
                 console.error('Erreur CZML :', error);
-
-                showStatus(
-                    `Fichier CZML introuvable pour "${scenario}". Vérifiez les données SUMO.`,
-                    '#ff6b6b'
-                );
-
+                showStatus(`Fichier CZML introuvable pour "${scenario}".`, '#ff6b6b');
             }
-
         }
 
-
         // =========================================
-        // 10. POSITIONNEMENT DE LA CAMERA
+        // 10. CAMERA
         // =========================================
 
         function positionCamera() {
-
             viewer.camera.flyTo({
-
                 destination: Cesium.Cartesian3.fromDegrees(
                     CONFIG.position.longitude,
                     CONFIG.position.latitude,
                     CONFIG.position.altitude
                 ),
-
                 orientation: {
-
-                    heading: Cesium.Math.toRadians(
-                        CONFIG.camera.heading
-                    ),
-
-                    pitch: Cesium.Math.toRadians(
-                        CONFIG.camera.pitch
-                    ),
-
+                    heading: Cesium.Math.toRadians(CONFIG.camera.heading),
+                    pitch: Cesium.Math.toRadians(CONFIG.camera.pitch),
                     roll: CONFIG.camera.roll
-
                 },
-
                 duration: 2
-
             });
-
         }
 
-
         // =========================================
-        // 11. AFFICHAGE DES MESSAGES
-        // =========================================
-
-        function showStatus(message, color) {
-
-            const status = document.getElementById('status');
-
-            status.innerHTML = `
-                <span style="color:${color}">
-                    ${message}
-                </span>
-            `;
-
-        }
-
-
-        // =========================================
-        // 12. EXECUTION PRINCIPALE
+        // 11. EXECUTION
         // =========================================
 
         async function initializeApplication() {
-
             showStatus('Chargement des données...', '#3cd2ff');
-
-            // Chargement des couches géographiques
             await loadOverlay();
-
-            // Chargement de la simulation de trafic
             await loadTraffic();
-
-            // Positionnement de la caméra
             positionCamera();
-
         }
 
         initializeApplication();
-
     </script>
-
 </body>
+
 </html>

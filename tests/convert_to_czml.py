@@ -6,13 +6,15 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(script_dir, "..", "data")
 
 SCENARIOS = ["actuel", "pic", "rue_fermee", "voie_reservee"]
+
+# Une couleur de trajets par scénario (mêmes teintes que la vue principale)
 COLORS = {
-    "actuel": [60, 210, 255, 255],
-    "pic": [255, 170, 40, 255],
-    "rue_fermee": [60, 210, 255, 255],       # voitures en cyan, la rue fermée est en rouge
-    "voie_reservee": [60, 210, 255, 255],    # voitures en cyan, bus en orange
+    "actuel": [60, 210, 255, 255],         # cyan
+    "pic": [255, 170, 40, 255],            # orange
+    "rue_fermee": [255, 75, 75, 255],      # rouge
+    "voie_reservee": [75, 211, 123, 255],  # vert
 }
-BUS_COLOR = [255, 150, 0, 255]
+BUS_COLOR = [255, 150, 0, 255]             # les bus restent orange
 MAX_CARS = 80          # on garde tous les bus
 START = datetime(2024, 1, 1, tzinfo=timezone.utc)
 
