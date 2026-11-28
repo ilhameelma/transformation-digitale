@@ -1,0 +1,10 @@
+{
+  "street_id": "avenue-hassan-ii",
+  "state": "ready",
+  "step": "done",
+  "run_id": "manual__2026-11-28T00:55:20+00:00",
+  "started_at": "2026-11-28T00:55:29+00:00",
+  "updated_at": "2026-11-28T00:55:35+00:00",
+  "updated_epoch": 1795827335.5134602,
+  "error": null
+}

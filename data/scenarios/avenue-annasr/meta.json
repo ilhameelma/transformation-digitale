@@ -1,0 +1,93 @@
+{
+  "street_id": "avenue-annasr",
+  "street_name": "Avenue Annasr شارع النصر",
+  "scenario": "rue_fermee",
+  "donnees": "simulees (SUMO)",
+  "genere_le": "2026-11-28T00:55:48+00:00",
+  "dag_run_id": "manual__2026-11-28T00:55:20+00:00",
+  "sumo_version": "1.28.0",
+  "tirage": {
+    "graine": 1,
+    "n_tirages": 1,
+    "fin_simulation_s": 900,
+    "statut": "tirage 1, indicatif"
+  },
+  "fermeture": {
+    "carrefours_fermes": true,
+    "troncons_rue": [
+      "1101528871",
+      "1175903284",
+      "1279071652",
+      "35163135#0",
+      "609612250#1"
+    ],
+    "troncons_transversaux": [
+      "1101929292#2",
+      "156345562#1",
+      "160201041#2",
+      "4060988",
+      "610292115#0",
+      "611291476",
+      "611291480#1"
+    ],
+    "voies_fermees": 26
+  },
+  "impact": {
+    "voitures_concernees": 31,
+    "deviees": 0,
+    "sans_itineraire": 31,
+    "comparables": 0,
+    "duree_moyenne_actuel_s": null,
+    "duree_moyenne_rue_fermee_s": null,
+    "ecart_s": null,
+    "ids_concernees": [
+      "4",
+      "30",
+      "38",
+      "60",
+      "61",
+      "66",
+      "71",
+      "75",
+      "77",
+      "83",
+      "87",
+      "89",
+      "106",
+      "108",
+      "115",
+      "116",
+      "137",
+      "144",
+      "146",
+      "167",
+      "184",
+      "188",
+      "199",
+      "225",
+      "226",
+      "227",
+      "229",
+      "242",
+      "285",
+      "290",
+      "292"
+    ]
+  },
+  "validation": {
+    "positions_sur_rues_fermees": 0,
+    "trajets_termines": 266,
+    "trajets_termines_actuel": 295,
+    "alertes": [],
+    "ok": true
+  },
+  "durees_s": {
+    "prepare": 0.67,
+    "simulate": 3.37,
+    "export": 0.83
+  },
+  "reference": {
+    "trajectoires": "../../trajectories_actuel_ref.json",
+    "kpi": "../../kpi_actuel_ref.json"
+  }
+}

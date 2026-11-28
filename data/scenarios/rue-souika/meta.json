@@ -1,0 +1,112 @@
+{
+  "street_id": "rue-souika",
+  "street_name": "Rue Souika زنقة السويقة",
+  "scenario": "rue_fermee",
+  "donnees": "simulees (SUMO)",
+  "genere_le": "2026-11-28T13:19:48+00:00",
+  "dag_run_id": "manual__2026-11-28T13:19:06.623972+00:00",
+  "sumo_version": "1.28.0",
+  "tirage": {
+    "graine": 1,
+    "n_tirages": 1,
+    "fin_simulation_s": 900,
+    "statut": "tirage 1, indicatif"
+  },
+  "fermeture": {
+    "carrefours_fermes": true,
+    "troncons_rue": [
+      "-336649188#0",
+      "-336649188#11",
+      "-336649188#12",
+      "336649188#0",
+      "336649188#1",
+      "336649188#12"
+    ],
+    "troncons_transversaux": [
+      "-1361559340#1",
+      "-40292546#5",
+      "-40292570#2",
+      "1361559340#0",
+      "40292546#0",
+      "40292570#0"
+    ],
+    "voies_fermees": 12
+  },
+  "impact": {
+    "voitures_concernees": 48,
+    "deviees": 0,
+    "sans_itineraire": 48,
+    "comparables": 0,
+    "duree_moyenne_actuel_s": null,
+    "duree_moyenne_rue_fermee_s": null,
+    "ecart_s": null,
+    "ids_concernees": [
+      "0",
+      "3",
+      "6",
+      "13",
+      "27",
+      "33",
+      "36",
+      "44",
+      "49",
+      "64",
+      "68",
+      "70",
+      "108",
+      "111",
+      "117",
+      "129",
+      "136",
+      "138",
+      "143",
+      "150",
+      "155",
+      "159",
+      "172",
+      "173",
+      "174",
+      "181",
+      "196",
+      "199",
+      "200",
+      "205",
+      "207",
+      "213",
+      "216",
+      "235",
+      "239",
+      "241",
+      "246",
+      "254",
+      "257",
+      "258",
+      "259",
+      "264",
+      "270",
+      "272",
+      "278",
+      "279",
+      "281",
+      "288"
+    ]
+  },
+  "validation": {
+    "positions_sur_rues_fermees": 0,
+    "trajets_termines": 249,
+    "trajets_termines_actuel": 295,
+    "alertes": [
+      "249 trajets terminés contre 295 en situation actuelle"
+    ],
+    "ok": false
+  },
+  "durees_s": {
+    "prepare": 4.7,
+    "simulate": 12.6,
+    "export": 8.55
+  },
+  "reference": {
+    "trajectoires": "../../trajectories_actuel_ref.json",
+    "kpi": "../../kpi_actuel_ref.json"
+  }
+}

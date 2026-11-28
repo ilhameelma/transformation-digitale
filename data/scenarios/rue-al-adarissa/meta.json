@@ -1,0 +1,81 @@
+{
+  "street_id": "rue-al-adarissa",
+  "street_name": "Rue Al Adarissa زنقة الأدارسة",
+  "scenario": "rue_fermee",
+  "donnees": "simulees (SUMO)",
+  "genere_le": "2026-11-28T17:22:24+00:00",
+  "dag_run_id": "manual__2026-11-28T17:22:14.564054+00:00",
+  "sumo_version": "1.28.0",
+  "tirage": {
+    "graine": 1,
+    "n_tirages": 1,
+    "fin_simulation_s": 900,
+    "statut": "tirage 1, indicatif"
+  },
+  "fermeture": {
+    "carrefours_fermes": true,
+    "troncons_rue": [
+      "152500608#0",
+      "590087323#0",
+      "590087323#3",
+      "590087326",
+      "590161951#0",
+      "590161951#1"
+    ],
+    "troncons_transversaux": [
+      "1383728088",
+      "155793694#0",
+      "155793694#2",
+      "365618918#2",
+      "365618918#3",
+      "590081359#3",
+      "590081359#4"
+    ],
+    "voies_fermees": 14
+  },
+  "impact": {
+    "voitures_concernees": 18,
+    "deviees": 4,
+    "sans_itineraire": 14,
+    "comparables": 4,
+    "duree_moyenne_actuel_s": 162.2,
+    "duree_moyenne_rue_fermee_s": 176.0,
+    "ecart_s": 13.8,
+    "ids_concernees": [
+      "9",
+      "10",
+      "20",
+      "73",
+      "110",
+      "114",
+      "118",
+      "127",
+      "134",
+      "154",
+      "158",
+      "180",
+      "182",
+      "211",
+      "223",
+      "249",
+      "250",
+      "283"
+    ]
+  },
+  "validation": {
+    "positions_sur_rues_fermees": 0,
+    "trajets_termines": 280,
+    "trajets_termines_actuel": 295,
+    "alertes": [],
+    "ok": true
+  },
+  "durees_s": {
+    "prepare": 1.19,
+    "simulate": 3.88,
+    "export": 1.57
+  },
+  "reference": {
+    "trajectoires": "../../trajectories_actuel_ref.json",
+    "kpi": "../../kpi_actuel_ref.json"
+  }
+}

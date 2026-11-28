@@ -1,0 +1,10 @@
+{
+  "street_id": "rue-souika",
+  "state": "ready",
+  "step": "done",
+  "run_id": "manual__2026-11-28T13:19:06.623972+00:00",
+  "started_at": "2026-11-28T13:19:12+00:00",
+  "updated_at": "2026-11-28T13:19:53+00:00",
+  "updated_epoch": 1795871993.1472085,
+  "error": null
+}

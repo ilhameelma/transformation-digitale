@@ -1,0 +1,10 @@
+{
+  "street_id": "rue-al-adarissa",
+  "state": "ready",
+  "step": "done",
+  "run_id": "manual__2026-11-28T17:22:14.564054+00:00",
+  "started_at": "2026-11-28T17:22:15+00:00",
+  "updated_at": "2026-11-28T17:22:25+00:00",
+  "updated_epoch": 1795886545.3746488,
+  "error": null
+}
